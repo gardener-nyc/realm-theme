@@ -1,0 +1,52 @@
+{
+  "src/entrypoints/theme.css": {
+    "file": "theme-0106d551.css",
+    "isEntry": true,
+    "src": "src/entrypoints/theme.css"
+  },
+  "src/entrypoints/theme.js": {
+    "file": "theme-38f27298.js",
+    "isEntry": true,
+    "src": "src/entrypoints/theme.js"
+  },
+  "src/fonts/bb-modern-regular-pro.woff": {
+    "file": "bb-modern-regular-pro-2ced39b7.woff",
+    "src": "src/fonts/bb-modern-regular-pro.woff"
+  },
+  "src/fonts/bb-modern-regular-pro.woff2": {
+    "file": "bb-modern-regular-pro-be270829.woff2",
+    "src": "src/fonts/bb-modern-regular-pro.woff2"
+  },
+  "src/fonts/ft-polar-bold-italic.woff": {
+    "file": "ft-polar-bold-italic-d4efb0c7.woff",
+    "src": "src/fonts/ft-polar-bold-italic.woff"
+  },
+  "src/fonts/ft-polar-bold-italic.woff2": {
+    "file": "ft-polar-bold-italic-36b419fa.woff2",
+    "src": "src/fonts/ft-polar-bold-italic.woff2"
+  },
+  "src/fonts/ft-polar-bold.woff": {
+    "file": "ft-polar-bold-2173fa7b.woff",
+    "src": "src/fonts/ft-polar-bold.woff"
+  },
+  "src/fonts/ft-polar-bold.woff2": {
+    "file": "ft-polar-bold-a7c2b0fa.woff2",
+    "src": "src/fonts/ft-polar-bold.woff2"
+  },
+  "src/fonts/ft-polar-medium-italic.woff": {
+    "file": "ft-polar-medium-italic-9711f46b.woff",
+    "src": "src/fonts/ft-polar-medium-italic.woff"
+  },
+  "src/fonts/ft-polar-medium-italic.woff2": {
+    "file": "ft-polar-medium-italic-af218177.woff2",
+    "src": "src/fonts/ft-polar-medium-italic.woff2"
+  },
+  "src/fonts/ft-polar-medium.woff": {
+    "file": "ft-polar-medium-2cf78bdb.woff",
+    "src": "src/fonts/ft-polar-medium.woff"
+  },
+  "src/fonts/ft-polar-medium.woff2": {
+    "file": "ft-polar-medium-c80dbe3c.woff2",
+    "src": "src/fonts/ft-polar-medium.woff2"
+  }
+}
