@@ -6,6 +6,9 @@ const reduce = require('lodash/reduce');
 const COLORS = {
 	black: '#000',
 	white: '#fff',
+
+	'off-white': '#FFFAEF',
+	brown: '#636154',
 };
 
 const SPACING = {
@@ -16,7 +19,10 @@ const SPACING = {
 };
 
 const FONT_FAMILIES = {
+	serif: ['BB Modern', 'serif'],
+
 	sans: [
+		'FT Polar',
 		'Helvetica Neue LT Std',
 		'-apple-system',
 		'BlinkMacSystemFont',
@@ -26,21 +32,10 @@ const FONT_FAMILIES = {
 	],
 };
 
-const FONT_SIZES = {
-	// Sans
-	'sans-16': ['16px', '24px'],
-};
-
-const LINE_HEIGHTS = reduce(
-	FONT_SIZES,
-	(lineHeights, value, key) => ({...lineHeights, [key]: value[1]}),
-	{},
-);
-
 const GRID_COLUMNS = 12;
 const GRID_MAX_WIDTH = 1600;
 
-const MAX_SPACER = 20;
+const MAX_SPACER = 100;
 const MAX_Z_INDEX = 100;
 
 //
@@ -113,11 +108,9 @@ const theme = {
 	},
 	fontFamily: FONT_FAMILIES,
 	fontSize: {
-		...FONT_SIZES,
 		...generateValues(200),
 	},
 	lineHeight: {
-		...LINE_HEIGHTS,
 		...generateValues(200),
 	},
 	fontWeight: {
@@ -135,7 +128,8 @@ const theme = {
 		grid: `${GRID_MAX_WIDTH}px`,
 	},
 	transitionTimingFunction: {
-		DEFAULT: 'cubic-bezier(0.23, 1, 0.32, 1)',
+		DEFAULT: 'cubic-bezier(0.16, 1, 0.3, 1)',
+		appear: 'cubic-bezier(0.16, 1, 0.3, 1)',
 		'in-quad': 'cubic-bezier(0.55, 0.085, 0.68, 0.53)',
 		'in-cubic': 'cubic-bezier(0.55, 0.055, 0.675, 0.19)',
 		'in-quart': 'cubic-bezier(0.895, 0.03, 0.685, 0.22)',

@@ -1,4 +1,4 @@
-# Shopify Starter Theme
+# Realm Theme
 
 ## Dependencies
 

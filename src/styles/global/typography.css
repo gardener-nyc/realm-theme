@@ -4,7 +4,7 @@
 
 html,
 body {
-	@apply font-sans text-sans-16 font-400;
+	@apply bg-off-white text-brown font-sans text-16/18 font-400;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -15,12 +15,12 @@ body {
 
 * {
 	&::-moz-selection {
-		background-color: theme('colors.black');
-		color: theme('colors.white');
+		background-color: theme('colors.brown');
+		color: theme('colors.off-white');
 	}
 	&::selection {
-		background-color: theme('colors.black');
-		color: theme('colors.white');
+		background-color: theme('colors.brown');
+		color: theme('colors.off-white');
 	}
 }
 
@@ -36,7 +36,7 @@ body {
 	ol,
 	ul,
 	p {
-		margin-bottom: theme('lineHeight.sans-16');
+		margin-bottom: 16px;
 
 		&:last-child {
 			margin-bottom: 0;

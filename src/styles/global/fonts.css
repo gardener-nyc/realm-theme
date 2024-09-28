@@ -1,11 +1,47 @@
 /*
-// === Goudy Old Style ===
+// === FT Polar ===
 */
 
-/*@font-face {
-	font-family: 'Goudy Old Style';
-	src: url('/fonts/goudy-old-style.woff2') format('woff2'),
-		url('/fonts/goudy-old-style.woff') format('woff');
+@font-face {
+	font-family: 'FT Polar';
+	src: url('../../fonts/ft-polar-medium.woff2') format('woff2'),
+		url('../../fonts/ft-polar-medium.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'FT Polar';
+	src: url('../../fonts/ft-polar-medium-italic.woff2') format('woff2'),
+		url('../../fonts/ft-polar-medium-italic.woff') format('woff');
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'FT Polar';
+	src: url('../../fonts/ft-polar-bold.woff2') format('woff2'),
+		url('../../fonts/ft-polar-bold.woff') format('woff');
+	font-style: normal;
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: 'FT Polar';
+	src: url('../../fonts/ft-polar-bold-italic.woff2') format('woff2'),
+		url('../../fonts/ft-polar-bold-italic.woff') format('woff');
+	font-style: italic;
+	font-weight: 800;
+}
+
+/*
+// === BB Modern ===
+*/
+
+@font-face {
+	font-family: 'BB Modern';
+	src: url('../../fonts/bb-modern-regular-pro.woff2') format('woff2'),
+		url('../../fonts/bb-modern-regular-pro.woff') format('woff');
 	font-style: normal;
 	font-weight: 400;
 }
