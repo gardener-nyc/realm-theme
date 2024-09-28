@@ -1,0 +1,78 @@
+{% schema %}
+{
+	"name": "Lander",
+	"settings": [
+		{
+			"type": "richtext",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "richtext",
+			"id": "description",
+			"label": "Description"
+		},
+		{
+			"type": "text",
+			"id": "klaviyo_list_id",
+			"label": "Klaviyo List ID"
+		},
+		{
+			"type": "image_picker",
+			"id": "background_image",
+			"label": "Background Image"
+		}
+	],
+	"presets": [{
+		"name": "Lander",
+		"category": "Lander"
+	}]
+}
+{% endschema %}
+
+<div class="fixed inset-0 bg-brown text-off-white text-center">
+	<div
+		data-component="image"
+		class="image absolute inset-0">
+		<picture class="blur-xl scale-110">
+			<source
+				data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
+				media="(min-width: 1200px)">
+			<source
+				data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
+				media="(min-width: 1000px)">
+			<source
+				data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
+				media="(min-width: 800px)">
+			
+			{% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
+			<img
+				src="{{ lqip }}"
+				data-src="{{ section.settings.background_image | image_url: width: 800 }}"
+				alt="{{ section.settings.background_image.alt }}"
+			/>
+		</picture>
+	</div>
+
+	<div class="absolute inset-0 flex flex-col justify-center">
+		<div class="px-container-mobile md:px-container-desktop">
+			<div class="flex flex-col gap-4 justify-center items-center">
+				{% if section.settings.title %}
+					<div class="rich-text font-serif rich-text-bold-sans-regular text-36/36 md:text-70/70">
+						{{ section.settings.title }}
+					</div>
+				{% endif %}
+
+				{% if section.settings.description %}
+					<div class="rich-text line-break text-24/24 max-w-[520px]">
+						{{ section.settings.description }}
+					</div>
+				{% endif %}
+
+				<div class="w-full max-w-[320px]">
+					sup
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>

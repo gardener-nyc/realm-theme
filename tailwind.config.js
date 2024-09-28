@@ -14,8 +14,8 @@ const COLORS = {
 const SPACING = {
 	'container-mobile': '20px',
 	'container-desktop': '20px',
-	'gutter-mobile': '20px',
-	'gutter-desktop': '20px',
+	'gutter-mobile': '15px',
+	'gutter-desktop': '15px',
 };
 
 const FONT_FAMILIES = {
@@ -164,8 +164,13 @@ const theme = {
 
 module.exports = {
 	content: [
-		'./src/pages/**/*.{js,ts,jsx,tsx}',
-		'./src/components/**/*.{js,ts,jsx,tsx}',
+		'./assets/**/*.liquid',
+		'./config/**/*.liquid',
+		'./layout/**/*.liquid',
+		'./sections/**/*.liquid',
+		'./snippets/**/*.liquid',
+		'./templates/**/*.liquid',
+		'./src/components/**/*.{js,jsx,ts,tsx}',
 	],
 	darkMode: 'class',
 	theme,

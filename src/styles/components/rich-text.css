@@ -71,4 +71,12 @@
 			content: counter(section, lower-roman) '.';
 		}
 	}
+
+	.rich-text-bold-sans-regular {
+		b,
+		strong {
+			@apply font-sans;
+			font-weight: 400;
+		}
+	}
 }
