@@ -59,3 +59,20 @@ button,
 		text-align: left;
 	}
 }
+
+@layer components {
+	.button-primary {
+		@apply text-brown px-[15px] uppercase tracking-wide;
+		height: 36px;
+		border-radius: 36px;
+		font-size: 16px;
+		line-height: 34px;
+		background: theme('colors.off-white');
+		border: 1px solid theme('colors.brown');
+
+		&:focus-visible {
+			outline: none;
+			box-shadow: 0 0 5px theme('colors.highlight');
+		}
+	}
+}

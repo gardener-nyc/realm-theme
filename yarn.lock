@@ -1651,6 +1651,11 @@ json-stable-stringify-without-jsonify@^1.0.1:
     object.assign "^4.1.4"
     object.values "^1.1.6"
 
+klaviyo-subscribe@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/klaviyo-subscribe/-/klaviyo-subscribe-1.0.0.tgz#e908fe03851bca5cf8d998fcc1d3d281f16be64f"
+  integrity sha512-7CJvKYU3fV8xfJ6hyafUJhUGupHL39IDpzpqn8i4fMmYCR1OW4Yi5p5mfE+oJW/UEbwg0U90lQsX6CiCXQ6zww==
+
 levn@^0.3.0, levn@~0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/levn/-/levn-0.3.0.tgz#3b09924edf9f083c0490fdd4c0bc4421e04764ee"

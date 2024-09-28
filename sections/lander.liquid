@@ -18,9 +18,19 @@
 			"label": "Klaviyo List ID"
 		},
 		{
+			"type": "text",
+			"id": "klaviyo_source_id",
+			"label": "Klaviyo Source ID"
+		},
+		{
 			"type": "image_picker",
 			"id": "background_image",
 			"label": "Background Image"
+		},
+		{
+			"type": "image_picker",
+			"id": "logo",
+			"label": "Logo"
 		}
 	],
 	"presets": [{
@@ -54,25 +64,54 @@
 		</picture>
 	</div>
 
-	<div class="absolute inset-0 flex flex-col justify-center">
-		<div class="px-container-mobile md:px-container-desktop">
-			<div class="flex flex-col gap-4 justify-center items-center">
-				{% if section.settings.title %}
-					<div class="rich-text font-serif rich-text-bold-sans-regular text-36/36 md:text-70/70">
-						{{ section.settings.title }}
-					</div>
-				{% endif %}
-
-				{% if section.settings.description %}
-					<div class="rich-text line-break text-24/24 max-w-[520px]">
-						{{ section.settings.description }}
-					</div>
-				{% endif %}
-
-				<div class="w-full max-w-[320px]">
-					sup
-				</div>
+	<div class="absolute inset-0 flex flex-col justify-between py-4 px-container-mobile md:px-container-desktop">
+		<div class="flex justify-center items-center lg:justify-start">
+			<div class="image block w-[192px] h-[53px]">
+				<picture>
+					<img
+						src="{{ section.settings.logo | image_url: width: 400 }}"
+						alt="{{ section.settings.logo.alt }}"
+					/>
+				</picture>
 			</div>
 		</div>
+
+		<div class="flex flex-col gap-4 justify-center items-center">
+			{% if section.settings.title %}
+				<div class="rich-text font-serif rich-text-bold-sans-regular text-36/36 md:text-70/70">
+					{{ section.settings.title }}
+				</div>
+			{% endif %}
+
+			{% if section.settings.description %}
+				<div class="rich-text line-break text-24/24 max-w-[520px]">
+					{{ section.settings.description }}
+				</div>
+			{% endif %}
+
+			<form
+				data-component="newsletter"
+				data-list-id="{{ section.settings.klaviyo_list_id }}"
+				data-source-id="{{ section.settings.klaviyo_source_id }}"
+				data-success-message="Thanks!"
+				class="w-full max-w-[320px] flex flex-col gap-1">
+				<input
+					class="block w-full input-lander newsletter__input"
+					type="email"
+					placeholder="Email"	
+				/>
+
+				<button type="submit" class="block w-full button-primary">Sign Up</button>
+
+				<div class="relative">
+					<div
+						style="display: none;"
+						class="newsletter__caption absolute top-0 left-0 right-0">
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div></div>
 	</div>	
 </div>

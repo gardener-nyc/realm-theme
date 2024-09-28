@@ -9,6 +9,7 @@ const COLORS = {
 
 	'off-white': '#FFFAEF',
 	brown: '#636154',
+	highlight: '#D8F8B3',
 };
 
 const SPACING = {
@@ -124,6 +125,12 @@ const theme = {
 		800: 800,
 		900: 900,
 	},
+	letterSpacing: {
+		tighter: '-0.03em',
+		tight: '-0.02em',
+		normal: '0',
+		wide: '0.04em',
+	},
 	maxWidth: {
 		grid: `${GRID_MAX_WIDTH}px`,
 	},
@@ -155,9 +162,25 @@ const theme = {
 		'in-out-circ': 'cubic-bezier(0.785, 0.135, 0.15, 0.86)',
 		'in-out-back': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
 	},
+	transitionDuration: {
+		100: '100ms',
+		200: '200ms',
+		300: '300ms',
+		400: '400ms',
+		500: '500ms',
+		600: '600ms',
+		700: '700ms',
+		800: '800ms',
+		900: '900ms',
+		1000: '1000ms',
+	},
 	zIndex: {
 		auto: 'auto',
 		...generateValues(MAX_Z_INDEX, 10, ''),
+	},
+	aspectRatio: {
+		square: '1 / 1',
+		video: '1920 / 1080',
 	},
 	extend: {},
 };
