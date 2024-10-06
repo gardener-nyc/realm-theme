@@ -10,6 +10,54 @@
 {
 	"current": {
 		"favicon": "shopify://shop_images/favicon.jpg",
+		"sections": {
+			"footer-instagram-carousel": {
+				"type": "footer-instagram-carousel",
+				"blocks": {
+					"slide_hkJqpj": {
+						"type": "slide",
+						"settings": {
+							"image": "shopify://shop_images/image_4.jpg"
+						}
+					},
+					"slide_WEeJiy": {
+						"type": "slide",
+						"settings": {
+							"image": "shopify://shop_images/image_6.jpg"
+						}
+					},
+					"slide_TzARPW": {
+						"type": "slide",
+						"settings": {
+							"image": "shopify://shop_images/image_12.jpg"
+						}
+					},
+					"slide_NknkhC": {
+						"type": "slide",
+						"settings": {
+							"image": "shopify://shop_images/image_1.jpg"
+						}
+					},
+					"slide_UTbAti": {
+						"type": "slide",
+						"settings": {
+							"image": "shopify://shop_images/image_7.jpg"
+						}
+					}
+				},
+				"block_order": [
+					"slide_hkJqpj",
+					"slide_WEeJiy",
+					"slide_TzARPW",
+					"slide_NknkhC",
+					"slide_UTbAti"
+				],
+				"settings": {
+					"title": "Welcome to our Realm™",
+					"description": "<a href=\"https://www.instagram.com/experiencetherealm\" target=\"_blank\" title=\"@experiencetherealm\">@experiencetherealm</a>"
+				}
+			}
+		},
 		"content_for_index": []
 	}
 }

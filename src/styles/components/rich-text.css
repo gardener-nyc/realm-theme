@@ -72,11 +72,26 @@
 		}
 	}
 
-	.rich-text-bold-sans-regular {
+	.rich-text.rich-text-bold-sans-regular {
 		b,
 		strong {
 			@apply font-sans;
 			font-weight: 400;
+		}
+	}
+
+	.rich-text.rich-text-link-hover {
+		a {
+			text-decoration: underline;
+			text-decoration-thickness: 1px;
+			text-underline-offset: 1px;
+			text-decoration-color: transparent;
+			transition: text-decoration-color 300ms
+				theme('transitionTimingFunction.in-out-quint');
+
+			&:hover {
+				text-decoration-color: currentColor;
+			}
 		}
 	}
 }

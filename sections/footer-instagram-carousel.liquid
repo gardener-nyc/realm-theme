@@ -1,0 +1,59 @@
+{% schema %}
+{
+	"name": "Footer Instagram Carousel",
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "inline_richtext",
+			"id": "description",
+			"label": "Description"
+		}
+	],
+	"max_blocks": 5,
+	"blocks": [
+		 {
+			 "name": "Slide",
+			 "type": "slide",
+			 "settings": [
+				 {
+					 "type": "image_picker",
+					 "id": "image",
+					 "label": "Image"
+				 }
+			 ]
+		 }
+	]
+}
+{% endschema %}
+
+<div class="my-3 px-container-mobile md:px-container-desktop overflow-hidden flex flex-col gap-container-mobile md:gap-3">
+	<div class="flex justify-between gap-1 text-16/20 md:text-24/28 font-serif">
+		<p>{{ section.settings.title }}</p>
+		<div class="rich-text rich-text-link-hover">{{ section.settings.description }}</div>
+	</div>
+
+	<div
+		data-component="footerInstagramCarousel"
+		class="keen-slider overflow-visible">
+		{% for block in section.blocks %}
+			<div class="keen-slider__slide">
+				<div
+					data-component="image"
+					class="image aspect-square">
+					<picture class="blur-xl scale-110">
+						{% assign lqip = block.settings.image | image_url: width: 10 %}
+						<img
+							src="{{ lqip }}"
+							data-src="{{ block.settings.image | image_url: width: 800 }}"
+							alt="{{ section.settings.background_image.alt }}"
+						/>
+					</picture>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>

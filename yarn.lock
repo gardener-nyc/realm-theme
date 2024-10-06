@@ -1651,6 +1651,11 @@ json-stable-stringify-without-jsonify@^1.0.1:
     object.assign "^4.1.4"
     object.values "^1.1.6"
 
+keen-slider@^6.8.6:
+  version "6.8.6"
+  resolved "https://registry.yarnpkg.com/keen-slider/-/keen-slider-6.8.6.tgz#17bb7b219860f291a5ea5fde4496b737bf407a83"
+  integrity sha512-dcEQ7GDBpCjUQA8XZeWh3oBBLLmyn8aoeIQFGL/NTVkoEOsmlnXqA4QykUm/SncolAZYGsEk/PfUhLZ7mwMM2w==
+
 klaviyo-subscribe@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/klaviyo-subscribe/-/klaviyo-subscribe-1.0.0.tgz#e908fe03851bca5cf8d998fcc1d3d281f16be64f"
