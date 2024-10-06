@@ -8,6 +8,10 @@ const COLORS = {
 	white: '#fff',
 
 	'off-white': '#FFFAEF',
+	'gray-light': '#F3EEE5',
+	'gray-medium': '#E0D9CA',
+
+	green: '#A4B79F',
 	brown: '#636154',
 	highlight: '#D8F8B3',
 };

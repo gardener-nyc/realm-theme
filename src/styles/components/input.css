@@ -92,4 +92,23 @@ textarea {
 			box-shadow: 0 0 5px theme('colors.highlight');
 		}
 	}
+
+	.input-footer-newsletter {
+		@apply text-brown font-serif px-1 duration-400 ease-appear transition-all;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+		background: theme('colors.gray-medium');
+
+		@screen md {
+			height: 46px;
+			line-height: 46px;
+			font-size: 20px;
+		}
+
+		&:focus-visible {
+			outline: none;
+			box-shadow: 0 0 5px theme('colors.highlight');
+		}
+	}
 }

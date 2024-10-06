@@ -56,6 +56,17 @@
 					"title": "Welcome to our Realm™",
 					"description": "<a href=\"https://www.instagram.com/experiencetherealm\" target=\"_blank\" title=\"@experiencetherealm\">@experiencetherealm</a>"
 				}
+			},
+			"footer": {
+				"type": "footer",
+				"settings": {
+					"newsletter_title": "Join the movement for better air care. Sign up to get the latest news from Realm™.",
+					"klaviyo_list_id": "RmXajH",
+					"klaviyo_source_id": "website_footer",
+					"menu": "footer",
+					"legal_menu": "footer-legal",
+					"logo": "shopify://shop_images/icon-logo-footer.svg"
+				}
 			}
 		},
 		"content_for_index": []

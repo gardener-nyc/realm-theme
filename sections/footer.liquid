@@ -1,0 +1,122 @@
+{% schema %}
+{
+	"name": "Footer",
+	"settings": [
+		{
+			"type": "text",
+			"id": "newsletter_title",
+			"label": "Newsletter Title"
+		},
+		{
+			"type": "text",
+			"id": "klaviyo_list_id",
+			"label": "Klaviyo List ID"
+		},
+		{
+			"type": "text",
+			"id": "klaviyo_source_id",
+			"label": "Klaviyo Source ID"
+		},
+		{
+			"type": "link_list",
+			"id": "menu",
+			"label": "Menu"
+		},
+		{
+			"type": "link_list",
+			"id": "legal_menu",
+			"label": "Legal Menu"
+		},
+		{
+			"type": "image_picker",
+			"id": "logo",
+			"label": "Logo"
+		}
+	]
+}
+{% endschema %}
+
+<div class="p-3 bg-gray-light">
+	<div class="grid lg:grid-cols-12 gap-y-3 gap-x-gutter-desktop">
+		<div class="lg:col-span-5 flex flex-col gap-1">
+			<p class="text-24/28 md:text-36/44 font-serif">{{ section.settings.newsletter_title }}</p>
+			<form
+				data-component="newsletter"
+				data-list-id="{{ section.settings.klaviyo_list_id }}"
+				data-source-id="{{ section.settings.klaviyo_source_id }}"
+				data-success-message="Thanks!"
+				class="flex flex-col gap-1">
+				
+				<input
+					class="block w-full input-footer-newsletter newsletter__input"
+					type="email"
+					placeholder="Email"	
+				/>
+
+				<button type="submit" class="block w-full button-primary">Sign Up</button>
+
+				<div class="relative">
+					<div
+						style="display: none;"
+						class="newsletter__caption absolute top-0 left-0 right-0">
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="lg:col-span-6 lg:col-start-7">
+			<div class="grid lg:grid-cols-3 gap-y-3 gap-x-gutter-desktop">
+				{% for link in section.settings.menu.links %}
+					<div class="flex flex-col gap-1 text-center lg:text-left">
+						<div class="pb-1 border-b border-solid border-green">
+							<p class="font-serif text-18/24 md:text-24/28">{{ link.title }}</p>
+						</div>
+
+						<ul class="flex flex-col gap-half">
+							{% for link in link.links %}
+								<li>
+									<a
+										href="{{ link.url }}"
+										class="link-opacity-hover">
+										{{ link.title }}
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+
+		<div class="lg:col-span-12">
+			<div class="grid xl:grid-cols-3 items-end grid-reverse gap-y-1 gap-x-gutter-mobile md:gap-x-gutter-desktop text-12/15 md:text-14/18">
+				<div class="flex justify-center xl:justify-end">
+					<div class="image block aspect-[350/96] w-full max-w-[350px]">
+						<picture>
+							<img
+								src="{{ section.settings.logo | image_url: width: 400 }}"
+								alt="{{ section.settings.logo.alt }}"
+							/>
+						</picture>
+					</div>
+				</div>
+
+				<ul class="flex gap-2 md:gap-3 justify-center">
+					{% for link in section.settings.legal_menu.links %}
+						<li>
+							<a
+								href="{{ link.url }}"
+								class="link-opacity-hover">
+								{{ link.title }}
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+
+				<p class="text-center xl:text-left">
+					Copyright © {{ 'now' | date: '%Y' }} Realm's Naturals Co. All Rights Reserved.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

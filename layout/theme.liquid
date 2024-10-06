@@ -26,9 +26,11 @@
 </head>
 <body class="text-16/18">
 	{{ content_for_layout }}
-	
-	{% render 'assets' with 'theme.js'%}
 
 	{% section 'footer-instagram-carousel' %}
+	{% section 'footer' %}
+
+	{% render 'hydrate' %}
+	{% render 'assets' with 'theme.js'%}
 </body>
 </html>
