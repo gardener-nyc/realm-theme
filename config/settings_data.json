@@ -72,7 +72,7 @@
 				"type": "header",
 				"settings": {
 					"menu": "main-menu",
-					"menu_mobile": "",
+					"menu_mobile": "main-menu-mobile",
 					"logo": "shopify://shop_images/icon-logo-footer.svg"
 				}
 			}

@@ -5,6 +5,7 @@ import newsletter from './newsletter';
 import footerInstagramCarousel from './footerInstagramCarousel';
 import cartCount from './cartCount';
 import menuTrigger from './menuTrigger';
+import menu from './menu';
 
 let cart = {};
 
@@ -28,6 +29,7 @@ const components = {
 	footerInstagramCarousel,
 	cartCount,
 	menuTrigger,
+	menu,
 };
 
 const app = picoapp(components, state);
