@@ -13,6 +13,11 @@
 			"label": "Menu (Mobile)"
 		},
 		{
+			"type": "link_list",
+			"id": "menu_mobile_footer",
+			"label": "Menu (Mobile Footer)"
+		},
+		{
 			"type": "image_picker",
 			"id": "logo",
 			"label": "Logo"
@@ -25,7 +30,7 @@
 	data-component="menu"
 	data-menu="mobile-menu"
 	style="display: none;"
-	class="bg-gray-light fixed inset-0 pt-10 px-3 md:hidden overflow-y-auto scroll-touch">
+	class="bg-gray-light fixed inset-0 pt-10 px-2 md:hidden overflow-y-auto scroll-touch flex flex-col justify-between pb-8">
 	<div class="flex flex-col gap-3 text-center">
 		{% for link in section.settings.menu_mobile.links %}
 			<div class="flex flex-col gap-1 text-center lg:text-left">
@@ -46,6 +51,20 @@
 				</ul>
 			</div>
 		{% endfor %}
+	</div>
+
+	<div class="fixed left-0 right-0 bottom-0 px-2 pb-1 bg-gray-light">
+		<ul class="flex justify-between border-t border-solid border-green">
+			{% for link in section.settings.menu_mobile_footer.links %}
+				<li class="w-1/3 {% if forloop.first %}text-left{% elsif forloop.last %}text-right{% else %}text-center{% endif %}">
+					<a
+						href="{{ link.url }}"
+						class="py-1 block">
+						{{ link.title }}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
 	</div>
 </div>
 

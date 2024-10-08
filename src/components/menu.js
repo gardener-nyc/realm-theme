@@ -6,8 +6,6 @@ export default component((node, ctx) => {
 	ctx.on('menu:toggle', state => {
 		const {activeMenu} = state;
 
-		console.log({activeMenu, menuType});
-
 		if (activeMenu === menuType) {
 			node.style.display = null;
 		} else {
