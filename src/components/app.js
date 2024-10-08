@@ -3,9 +3,33 @@ import {picoapp} from 'picoapp';
 import image from './image';
 import newsletter from './newsletter';
 import footerInstagramCarousel from './footerInstagramCarousel';
+import cartCount from './cartCount';
+import menuTrigger from './menuTrigger';
 
-const state = {};
+let cart = {};
 
-const components = {image, newsletter, footerInstagramCarousel};
+// Hydrate from HTML
+try {
+	cart = window.CART;
+} catch (error) {
+	console.log(error);
+}
 
-export default picoapp(components, state);
+const state = {
+	cart,
+
+	// State
+	activeMenu: null,
+};
+
+const components = {
+	image,
+	newsletter,
+	footerInstagramCarousel,
+	cartCount,
+	menuTrigger,
+};
+
+const app = picoapp(components, state);
+
+export default app;

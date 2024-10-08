@@ -12,13 +12,6 @@ export default component((node, ctx) => {
 	const klaviyoSourceId = node.dataset.sourceId || '';
 	const successMessage = node.dataset.successMessage || DEFAULT_SUCCESS;
 
-	console.log({
-		klaviyoListId,
-		klaviyoSourceId,
-		successMessage,
-		dataset: node.dataset,
-	});
-
 	const caption = node.querySelector('.newsletter__caption');
 	const input = node.querySelector('.newsletter__input');
 	const submit = node.querySelector('button[type="submit"]');

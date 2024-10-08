@@ -1,11 +1,13 @@
 {
   "src/entrypoints/theme.css": {
-    "file": "theme-0106d551.css",
-    "isEntry": true,
+    "file": "theme-32ce0960.css",
     "src": "src/entrypoints/theme.css"
   },
   "src/entrypoints/theme.js": {
-    "file": "theme-38f27298.js",
+    "css": [
+      "theme-32ce0960.css"
+    ],
+    "file": "theme-33f5229f.js",
     "isEntry": true,
     "src": "src/entrypoints/theme.js"
   },

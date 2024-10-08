@@ -24,7 +24,11 @@
 
 	{{ content_for_header }}
 </head>
-<body class="text-16/18">
+<body>
+	<div class="sticky top-0 z-10">
+		{% section 'header' %}
+	</div>
+
 	{{ content_for_layout }}
 
 	{% section 'footer-instagram-carousel' %}

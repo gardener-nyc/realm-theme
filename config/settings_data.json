@@ -67,6 +67,14 @@
 					"legal_menu": "footer-legal",
 					"logo": "shopify://shop_images/icon-logo-footer.svg"
 				}
+			},
+			"header": {
+				"type": "header",
+				"settings": {
+					"menu": "main-menu",
+					"menu_mobile": "",
+					"logo": "shopify://shop_images/icon-logo-footer.svg"
+				}
 			}
 		},
 		"content_for_index": []
