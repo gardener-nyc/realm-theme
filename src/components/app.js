@@ -6,6 +6,7 @@ import footerInstagramCarousel from './footerInstagramCarousel';
 import cartCount from './cartCount';
 import menuTrigger from './menuTrigger';
 import menu from './menu';
+import parallaxBackground from './parallaxBackground';
 
 let cart = {};
 
@@ -30,6 +31,7 @@ const components = {
 	cartCount,
 	menuTrigger,
 	menu,
+	parallaxBackground,
 };
 
 const app = picoapp(components, state);

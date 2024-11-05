@@ -1,0 +1,113 @@
+{% schema %}
+{
+	"name": "Home Hero",
+	"settings": [
+		{
+			"type": "richtext",
+			"id": "title",
+			"label": "Title"
+		},
+        {
+			"type": "richtext",
+			"id": "subtitle",
+			"label": "Subtitle"
+		},
+        {
+			"type": "url",
+			"id": "url",
+			"label": "URL"
+		},
+        {
+			"type": "text",
+			"id": "cta",
+			"label": "CTA"
+		},
+		{
+			"type": "image_picker",
+			"id": "background_image",
+			"label": "Background Image"
+		}
+	],
+    "presets": [{
+		"name": "Home Hero",
+		"category": "Hero"
+	}]
+}
+{% endschema %}
+
+<div class="relative overflow-hidden">
+    <div
+        data-component="parallaxBackground"
+        data-scroll-factor="0.5"
+        class="absolute inset-0">
+        <div
+            data-component="image"
+            class="image absolute inset-0">
+            <picture class="blur-xl scale-110">
+                <source
+                    data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
+                    media="(min-width: 1200px)">
+                <source
+                    data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
+                    media="(min-width: 1000px)">
+                <source
+                    data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
+                    media="(min-width: 800px)">
+                
+                {% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
+                <img
+                    src="{{ lqip }}"
+                    data-src="{{ section.settings.background_image | image_url: width: 800 }}"
+                    alt="{{ section.settings.background_image.alt }}"
+                />
+            </picture>
+        </div>
+    </div>
+
+    <div class="absolute -left-1 -right-1 -bottom-1">
+        <svg
+            width="1512"
+            height="58"
+            viewBox="0 0 1512 58"
+            preserveAspectRatio="none"
+            class="w-full h-[58px]">
+            <path d="M0 58L1512 48.9999C1454.31 30.4086 1322.54 11.5659 1239.38 2.99907C1135.43 -7.70951 1039.18 13.0622 969.371 21.4123C820.161 39.2599 695.818 40.1523 563.518 30.7823C468.816 24.0751 403.389 10.4994 287.028 10.4994C192.152 10.4994 55.3737 44.8355 0 48.9999V58Z" fill="#FFFAEF"/>
+        </svg>
+    </div>
+
+    <div class="relative z-1">
+        <div class="px-container-mobile md:px-container-desktop pt-6 md:pt-8">
+            <div class="grid grid-cols-6 md:grid-cols-12 gap-x-gutter-mobile md:gap-x-gutter-desktop">
+                <div class="col-span-6 md:col-span-8 md:col-start-3 lg:col-span-6 lg:col-start-4 px-1 md:px-0">
+                    <div class="bg-green text-white rounded-t-10 pt-3 md:pt-4 px-2 md:px-6">
+                        <div class="text-center rich-text font-serif rich-text-bold-sans-regular text-36/36 md:text-70/70">
+                            {{ section.settings.title }}
+                        </div>
+                    </div>
+
+                    <div class="px-4 py-3 md:py-4 flex justify-center items-center overflow-hidden">
+                        <div class="w-full max-w-[200px] md:max-w-[300px]">
+                            <div class="aspect-square md:aspect-video rounded-10 hero-hole">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green text-white rounded-b-10 pb-3 md:pb-4 px-2 md:px-6 flex flex-col gap-3 md:gap-4">
+                        <div class="text-center rich-text font-serif rich-text-bold-sans-regular text-36/36 md:text-70/70">
+                            {{ section.settings.subtitle }}
+                        </div>
+                        {% if section.settings.url and section.settings.cta %}
+                            <hr />
+
+                            <div class="flex justify-center items-center">
+                                <a href="{{ section.settings.url }}" class="block button button-primary">{{ section.settings.cta }}</a>
+                            </div>
+                        {% endif %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

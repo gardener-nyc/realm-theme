@@ -1,13 +1,17 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
-	"sections": {},
-	"order": []
+  "sections": {
+    "home_hero_RgQpwU": {
+      "type": "home-hero",
+      "settings": {
+        "title": "<p><strong>A New Standard<\/strong><\/p>",
+        "subtitle": "<p>of Air Care™<\/p>",
+        "url": "shopify:\/\/collections\/all",
+        "cta": "Enter Realm",
+        "background_image": "shopify:\/\/shop_images\/background.jpg"
+      }
+    }
+  },
+  "order": [
+    "home_hero_RgQpwU"
+  ]
 }
