@@ -7,6 +7,7 @@ import cartCount from './cartCount';
 import menuTrigger from './menuTrigger';
 import menu from './menu';
 import parallaxBackground from './parallaxBackground';
+import productFormQuickAdd from './productFormQuickAdd';
 
 let cart = {};
 
@@ -20,7 +21,7 @@ try {
 const state = {
 	cart,
 
-	// State
+	// UI State
 	activeMenu: null,
 };
 
@@ -32,8 +33,11 @@ const components = {
 	menuTrigger,
 	menu,
 	parallaxBackground,
+	productFormQuickAdd,
 };
 
 const app = picoapp(components, state);
+
+window.app = app;
 
 export default app;

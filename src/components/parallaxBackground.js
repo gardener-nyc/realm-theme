@@ -6,6 +6,9 @@ export default component((node, ctx) => {
 		? parseFloat(node.dataset.scrollFactor)
 		: 0.2;
 
+	const start = node.dataset.scrollStart || 'top top';
+	const end = node.dataset.scrollEnd || 'bottom top';
+
 	gsap.to(node, {
 		y: () => node.clientHeight * factor,
 		ease: 'none',
@@ -13,8 +16,8 @@ export default component((node, ctx) => {
 			trigger: node.parentElement,
 			scrub: true,
 			invalidateOnRefresh: true,
-			start: 'top top',
-			end: 'bottom top',
+			start,
+			end,
 		},
 	});
 

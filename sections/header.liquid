@@ -127,10 +127,8 @@
 							class="w-[24px] h-[24px] block md:hidden"
 						/>
 						<span class="hidden md:inline">Cart </span>
-						<span
-							data-component="cartCount"
-							class="hidden md:inline">
-							({{ cart.item_count  }})
+						<span class="hidden md:inline">
+							(<span data-component="cartCount">{{ cart.item_count }}</span>)
 						</span>
 					</button>
 				</li>

@@ -3,6 +3,7 @@ import captcha from '../components/captcha';
 
 // Start up app
 app.mount();
+window.app = app;
 
 // Side effects
 captcha();

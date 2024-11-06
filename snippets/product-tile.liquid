@@ -1,0 +1,74 @@
+{% assign product_title_parts = product.title | split: "-" %}
+{% assign product_title = product_title_parts[0] | trim %}
+{% assign product_subtitle = product_title_parts[1] | downcase | trim %}
+{% assign product_image = product.featured_image %}
+{% assign product_color = product.metafields.custom.color %}
+{% assign product_description = product.metafields.custom.tile_description %}
+
+<div
+    {% if enable_color %}style="background: {{ product_color }}"{% endif %}
+    class="relative rounded-10 p-[15px] md:p-2 {% unless enable_color %}bg-white border border-solid{% endunless %}">
+    <div class="flex flex-col gap-1">
+        <div
+            data-component="image"
+            class="image w-full aspect-square">
+            <picture class="blur-xl scale-110">
+                <source
+                    data-srcset="{{ product_image | image_url: width: 800 }}"
+                    media="(min-width: 800px)">
+                {% assign lqip = product_image | format: 'jpg' | image_url: width: 10 %}
+                <img
+                    src="{{ lqip }}"
+                    data-src="{{ product_image | image_url: width: 400 }}"
+                    alt="{{ tile_image.alt }}"
+                />
+            </picture>
+        </div>
+
+
+        <div class="flex flex-col gap-half">
+            <p>
+                <a
+                    aria-label="{{ product.title }}"
+                    href="{{ product.url }}"
+                    class="link-cover link-opacity-hover uppercase text-30/38 md:text-36/45">
+                    {{ product_title }}
+                </a>
+            </p>
+    
+            {% if product_subtitle != blank %}
+                <p class="font-serif text-20/25 md:text-24/30">
+                    {{ product_subtitle }}
+                </p>
+            {% endif %}
+        </div>
+
+        <hr {% if enable_color %}class="text-white"{% endif %} />
+
+        {% if product_description != blank %}
+            <p class="text-16/20 md:text-18/24">
+                {{ product_description }}
+            </p>
+        {% endif %}
+
+        {% form 'product', product, data-component: "productFormQuickAdd" %}
+            <input
+                type="hidden"
+                name="id"
+                value="{{ product.selected_or_first_available_variant.id }}"
+            />
+            <div class="w-full relative z-1">
+                <button
+                    {% unless product.available %}disabled="true"{% endunless %}
+                    type="submit"
+                    class="block w-full button {% if enable_color %}button-primary{% else %}button-primary-gray{% endif %}">
+                    {% if product.available %}
+                        {{ product.price | money_without_trailing_zeros }} | Add to Cart
+                    {% else %}
+                        Sold Out
+                    {% endif %}
+                </button>
+            </div>
+        {% endform %}
+    </div>
+</div>

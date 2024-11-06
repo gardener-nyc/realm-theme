@@ -44,64 +44,67 @@
 {% endschema %}
 
 <div class="px-container-mobile md:px-container-desktop mb-6 md:mb-10">
-    <div class="grid grid-cols-6 md:grid-cols-12 gap-x-gutter-mobile md:gap-x-gutter-desktop">
-        <div class="col-span-6 md:col-span-10 md:col-start-2">
-            <div class="bg-white rounded-10 p-2 pt-4 md:pt-6">
-                <div class="flex flex-col gap-5 md:gap-6">
-                    <div class="flex flex-col gap-3 items-center">
-                         <div class="flex flex-col gap-1 items-center justify-center text-center rich-text font-serif rich-text-bold-sans-regular text-24/24 md:text-36/36">
-                            {{ section.settings.title }}
-                         </div>
-
-                        <div class="max-w-50 rich-text text-center font-serif rich-text-regular text-16/20 md:text-18/23">
-                            {{ section.settings.description }}
+    <div class="max-w-grid mx-auto">
+        <div class="grid grid-cols-6 md:grid-cols-12 gap-x-gutter-mobile md:gap-x-gutter-desktop">
+            <div class="col-span-6 md:col-span-10 md:col-start-2">
+                <div class="bg-white rounded-10 p-2 pt-4 md:pt-6">
+                    <div class="flex flex-col gap-5 md:gap-6">
+                        <div class="flex flex-col gap-3 items-center">
+                            <div class="flex flex-col gap-1 items-center justify-center text-center rich-text font-serif rich-text-bold-sans-regular text-24/24 md:text-36/36">
+                                {{ section.settings.title }}
+                            </div>
+    
+                            <div class="max-w-50 rich-text text-center font-serif rich-text-regular text-16/20 md:text-18/23">
+                                {{ section.settings.description }}
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="relative">
-                        <div
-                            data-component="image"
-                            class="image absolute inset-0">
-                            <picture class="blur-xl scale-110">
-                                <source
-                                    data-srcset="{{ section.settings.background_image | image_url: width: 2000, height: 1000 }}"
-                                    media="(min-width: 1200px)">
-                                <source
-                                    data-srcset="{{ section.settings.background_image | image_url: width: 1400, height: 700 }}"
-                                    media="(min-width: 1000px)">
-                                <source
-                                    data-srcset="{{ section.settings.background_image | image_url: width: 1200, height: 600 }}"
-                                    media="(min-width: 800px)">
-                                
-                                {% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
-                                <img
-                                    src="{{ lqip }}"
-                                    data-src="{{ section.settings.background_image | image_url: width: 800, height: 800 }}"
-                                    alt="{{ section.settings.background_image.alt }}"
-                                />
-                            </picture>
-                        </div>
-
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-[1px]">
-                            {% for block in section.blocks %}
-                                <div class="relative z-1 aspect-square w-full outline-1 outline-white outline flex flex-col text-white justify-center items-center gap-1 md:gap-3 p-1">
-                                    <div
-                                        data-component="image"
-                                        class="image aspect-square w-6 md:w-10">
-                                        <picture class="blur-xl scale-110">
-                                            <img
-                                                src="{{ lqip }}"
-                                                data-src="{{ block.settings.image | image_url: width: 200, height: 200 }}"
-                                                alt="{{ block.settings.imagre.alt }}"
-                                            />
-                                        </picture>
+    
+                        <div class="relative">
+                            <div
+                                data-component="image"
+                                class="image absolute inset-0">
+                                <picture class="blur-xl scale-110">
+                                    <source
+                                        data-srcset="{{ section.settings.background_image | image_url: width: 2000, height: 1000 }}"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        data-srcset="{{ section.settings.background_image | image_url: width: 1400, height: 700 }}"
+                                        media="(min-width: 1000px)">
+                                    <source
+                                        data-srcset="{{ section.settings.background_image | image_url: width: 1200, height: 600 }}"
+                                        media="(min-width: 800px)">
+                                    
+                                    {% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
+                                    <img
+                                        src="{{ lqip }}"
+                                        data-src="{{ section.settings.background_image | image_url: width: 800, height: 800 }}"
+                                        alt="{{ section.settings.background_image.alt }}"
+                                    />
+                                </picture>
+                            </div>
+    
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-[1px]">
+                                {% for block in section.blocks %}
+                                    <div class="relative z-1 aspect-square w-full outline-1 outline-white outline flex flex-col text-white justify-center items-center gap-1 md:gap-3 p-1">
+                                        <div
+                                            data-component="image"
+                                            class="image aspect-square w-6 md:w-10">
+                                            <picture class="blur-xl scale-110">
+                                                {% assign lqip = block.settings.image | format: 'jpg' | image_url: width: 10 %}
+                                                <img
+                                                    src="{{ lqip }}"
+                                                    data-src="{{ block.settings.image | image_url: width: 200, height: 200 }}"
+                                                    alt="{{ block.settings.imagre.alt }}"
+                                                />
+                                            </picture>
+                                        </div>
+    
+                                        <p class="text-16/20 md:text-24/30 text-center max-w-15">
+                                            {{ block.settings.title }}
+                                        </p>
                                     </div>
-
-                                    <p class="text-16/20 md:text-24/30 text-center max-w-15">
-                                        {{ block.settings.title }}
-                                    </p>
-                                </div>
-                            {% endfor %}
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
                 </div>

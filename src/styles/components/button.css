@@ -74,6 +74,32 @@ button,
 		&:focus-visible {
 			outline: none;
 			box-shadow: 0 0 15px theme('colors.highlight');
+
+			&:disabled,
+			&.disabled {
+				box-shadow: none;
+			}
+		}
+	}
+
+	.button.button-primary-gray {
+		@apply text-brown px-[15px] uppercase tracking-wide transition-shadow duration-400 ease-appear;
+		height: 36px;
+		border-radius: 36px;
+		font-size: 16px;
+		line-height: 34px;
+		background: theme('colors.gray-medium');
+		border: 1px solid theme('colors.brown');
+
+		&:hover,
+		&:focus-visible {
+			outline: none;
+			box-shadow: 0 0 15px theme('colors.highlight');
+
+			&:disabled,
+			&.disabled {
+				box-shadow: none;
+			}
 		}
 	}
 

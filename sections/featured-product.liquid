@@ -1,0 +1,107 @@
+{% schema %}
+{
+	"name": "Featured Product",
+	"settings": [
+		{
+			"type": "richtext",
+			"id": "title",
+			"label": "Title"
+		},
+        {
+			"type": "richtext",
+			"id": "description",
+			"label": "Description"
+		},
+        {
+			"type": "url",
+			"id": "url",
+			"label": "URL"
+		},
+        {
+			"type": "text",
+			"id": "cta",
+			"label": "CTA"
+		},
+		{
+			"type": "image_picker",
+			"id": "background_image",
+			"label": "Background Image"
+		},
+        {
+			"type": "product",
+			"id": "product",
+			"label": "Product"
+		}
+	],
+    "presets": [{
+		"name": "Featured Product",
+		"category": "Marketing"
+	}]
+}
+{% endschema %}
+
+<div class="px-container-mobile md:px-container-desktop my-6 md:my-10">
+    <div class="max-w-grid mx-auto">
+        <div class="grid grid-cols-6 md:grid-cols-12 gap-x-gutter-mobile md:gap-x-gutter-desktop">
+            <div class="col-span-3 hidden md:flex flex-col justify-between gap-3">
+                <div class="rich-text font-serif rich-text-bold-sans-regular text-24/24 md:text-36/36">
+                    {{ section.settings.title }}
+                </div>
+
+                <div class="pt-3 border-t border-solid flex flex-col gap-3 items-start">
+                    <div class="rich-text font-serif rich-text-regular text-16/20 md:text-24/30">
+                        {{ section.settings.description }}
+                    </div>
+
+                    {% if section.settings.url and section.settings.cta %}
+                        <a 
+                            href="{{ section.settings.url }}"
+                            class="block button button-primary">
+                            {{ section.settings.cta }}
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="col-span-6 md:col-span-9 md:pl-2 lg:pl-4">
+                <div class="h-full w-full relative overflow-hidden">
+                    <div
+                        data-component="parallaxBackground"
+                        data-scroll-factor="0.1"
+                        data-scroll-start="top bottom"
+                        data-scroll-end="bottom top"
+                        class="absolute inset-x-0 inset-y-[-25vh]">
+                        <div
+                            data-component="image"
+                            class="hidden md:block image absolute inset-0">
+                            <picture class="blur-xl scale-110">
+                                <source
+                                    data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
+                                    media="(min-width: 1000px)">
+                                <source
+                                    data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
+                                    media="(min-width: 800px)">
+                                
+                                {% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
+                                <img
+                                    src="{{ lqip }}"
+                                    data-src="{{ section.settings.background_image | image_url: width: 800 }}"
+                                    alt="{{ section.settings.background_image.alt }}"
+                                />
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="relative z-1 flex justify-end md:py-4 md:pr-[10%]">
+                        <div class="w-full md:max-w-45">
+                            {% render 'product-tile', product: section.settings.product, enable_color: true %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
