@@ -1,1 +1,108 @@
-{% layout 'redirect_home' %}
+{% assign collection_title = collection.metafields.custom.hero_title | metafield_tag %}
+{% assign collection_bumper_image = collection.metafields.custom.bumper_tile_image %}
+{% assign collection_bumper_title = collection.metafields.custom.bumper_tile_title | metafield_tag %}
+{% assign collection_bumper_cta = collection.metafields.custom.bumper_tile_cta %}
+{% assign collection_bumper_url = collection.metafields.custom.bumper_tile_url %}
+
+<div class="py-10 relative overflow-hidden">
+    <div
+        data-component="parallaxBackground"
+        data-scroll-factor="0.5"
+        class="absolute inset-0">
+        <div
+            data-component="image"
+            class="image absolute inset-0">
+            <picture class="blur-xl scale-110">
+                <source
+                    data-srcset="{{ collection.featured_image | image_url: width: 2000 }}"
+                    media="(min-width: 1200px)">
+                <source
+                    data-srcset="{{ collection.featured_image | image_url: width: 1400 }}"
+                    media="(min-width: 1000px)">
+                <source
+                    data-srcset="{{ collection.featured_image | image_url: width: 1200 }}"
+                    media="(min-width: 800px)">
+                
+                {% assign lqip = collection.featured_image | format: 'jpg' | image_url: width: 10 %}
+                <img
+                    src="{{ lqip }}"
+                    data-src="{{ collection.featured_image | image_url: width: 800 }}"
+                    alt="{{ collection.featured_image.alt }}"
+                />
+            </picture>
+        </div>
+    </div>
+
+    <div class="px-container-mobile md:px-container-desktop relative z-1 text-white text-center">
+        <div class="max-w-grid mx-auto">
+            <div class="flex flex-col gap-2">
+                {% if collection_title != blank %}
+                    <div class="rich-text line-break font-serif rich-text-bold-sans-regular text-36/36 md:text-70/70">
+                        {{ collection_title  }}
+                    </div>
+                {% else %}
+                    <h1 class="text-36/36 md:text-70/70">{{ collection.title }}</h1>
+                {% endif %}
+
+                <div class="rich-text line-break font-serif text-18/24">
+                    {{ collection.description }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="p-container-mobile md:p-container-desktop">
+    <div class="max-w-grid mx-auto">
+        <div class="grid gap-gutter-mobile md:gap-gutter-desktop grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            {% for product in collection.products %}
+                {% render 'product-tile', product: product %}
+            {% endfor %}
+
+            {% unless collection_bumper_image == blank %}
+                <div class="min-h-[100vw] md:min-h-0 relative overflow-hidden">
+                    <div
+                        data-component="parallaxBackground"
+                        data-scroll-factor="0.1"
+                        data-scroll-start="top bottom"
+                        data-scroll-end="bottom top"
+                        class="absolute inset-[-20%]">
+                        <div
+                            data-component="image"
+                            class="image absolute inset-0">
+                            <picture class="blur-xl scale-110">
+                                <source
+                                    data-srcset="{{ collection_bumper_image | image_url: width: 1200 }}"
+                                    media="(min-width: 800px)">
+                                
+                                {% assign lqip = collection_bumper_image | format: 'jpg' | image_url: width: 10 %}
+                                <img
+                                    src="{{ lqip }}"
+                                    data-src="{{ collection_bumper_image | image_url: width: 800 }}"
+                                    alt="{{ collection_bumper_image.alt }}"
+                                />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            {% endunless %}
+
+            {% unless
+                collection_bumper_title == blank or
+                collection_bumper_cta == blank or
+                collection_bumper_url == blank
+            %}
+                <div class="flex flex-col gap-2 md:gap-3 md:p-2 lg:p-3 justify-center items-start">
+                    <div class="rich-text line-break font-serif rich-text-bold-sans-regular text-24/24 md:text-36/36">
+                        {{ collection_bumper_title }}
+                    </div>
+                    <a
+                        href="{{ collection_bumper_url }}"
+                        class="button button-primary-violet">
+                        {{ collection_bumper_cta }}
+                    </a>
+                </div>
+            {% endunless %}
+        </div>
+    </div>
+</div>

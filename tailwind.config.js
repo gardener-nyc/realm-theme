@@ -14,6 +14,8 @@ const COLORS = {
 	green: '#A4B79F',
 	brown: '#636154',
 	highlight: '#D8F8B3',
+
+	violet: '#CAC0DB',
 };
 
 const SPACING = {
