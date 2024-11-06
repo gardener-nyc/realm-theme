@@ -4,9 +4,9 @@ import gsap from '@/lib/gsap';
 export default component((node, ctx) => {
 	const factor = node.dataset.scrollFactor
 		? parseFloat(node.dataset.scrollFactor)
-		: 0.2;
+		: 0.25;
 
-	const start = node.dataset.scrollStart || 'top top';
+	const start = node.dataset.scrollStart || 'top bottom';
 	const end = node.dataset.scrollEnd || 'bottom top';
 
 	gsap.to(node, {

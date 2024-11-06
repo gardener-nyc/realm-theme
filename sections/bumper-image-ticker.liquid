@@ -1,0 +1,123 @@
+{% schema %}
+{
+	"name": "Bumper (Image +Ticker)",
+	"settings": [
+		{
+			"type": "richtext",
+			"id": "title",
+			"label": "Title"
+		},
+        {
+			"type": "richtext",
+			"id": "description",
+			"label": "Description"
+		},
+        {
+			"type": "url",
+			"id": "url",
+			"label": "URL"
+		},
+        {
+			"type": "text",
+			"id": "cta",
+			"label": "CTA"
+		},
+		{
+			"type": "image_picker",
+			"id": "background_image",
+			"label": "Background Image"
+		}
+	],
+	"blocks": [
+        {
+            "type": "ticker_item",
+            "name": "Ticker Item",
+            "settings": [
+                {
+                    "type": "inline_richtext",
+                    "id": "text",
+                    "label": "Text"
+                },
+            ]
+        }
+    ],
+    "presets": [{
+		"name": "Bumper (Image + Ticker)",
+		"category": "Marketing"
+	}]
+}
+{% endschema %}
+
+{% assign ticker_repeat_count = 10 %}
+
+<div class="overflow-hidden bg-green text-white py-1">
+	<div class="table table-fixed">
+		{% for i in (1..ticker_repeat_count) %}
+			<div class="table-cell ticker">
+				<div class="table table-fixed">
+					{% for block in section.blocks %}
+						<div class="table-cell whitespace-nowrap pl-1">
+							<div class="rich-text font-serif rich-text-bold-sans-regular text-16/20">
+								{{ block.settings.text }}
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+<div class="overflow-hidden relative">
+	<div
+        data-component="parallaxBackground"
+		class="absolute inset-x-0 inset-y-[-25vh]">
+        <div
+            data-component="image"
+            class="image absolute inset-0">
+            <picture class="blur-xl scale-110">
+                <source
+                    data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
+                    media="(min-width: 1200px)">
+                <source
+                    data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
+                    media="(min-width: 1000px)">
+                <source
+                    data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
+                    media="(min-width: 800px)">
+                
+                {% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
+                <img
+                    src="{{ lqip }}"
+                    data-src="{{ section.settings.background_image | image_url: width: 800 }}"
+                    alt="{{ section.settings.background_image.alt }}"
+                />
+            </picture>
+        </div>
+    </div>
+
+	<div class="relative z-1">
+		<div class="px-container-mobile md:px-container-desktop py-6 md:py-10">
+			<div class="max-w-65 text-white text-center mx-auto flex flex-col items-center justify-center gap-2 md:gap-3">
+				{% unless section.settings.title == blank %}
+				<div class="rich-text font-serif rich-text-bold-sans-regular text-36/36 md:text-70/70">
+					{{ section.settings.title }}
+					</div>
+				{% endunless %}
+
+				{% unless section.settings.description == blank %}
+					<div class="rich-text font-serif rich-text-regular text-16/20 md:text-24/30">
+						{{ section.settings.description }}
+					</div>
+				{% endunless %}
+
+				 {% if section.settings.url and section.settings.cta %}
+					<a 
+						href="{{ section.settings.url }}"
+						class="block button button-primary-violet">
+						{{ section.settings.cta }}
+					</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>

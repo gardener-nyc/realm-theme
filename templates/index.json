@@ -64,11 +64,47 @@
         "background_image": "shopify:\/\/shop_images\/background.jpg",
         "product": "wild-lavender"
       }
+    },
+    "bumper_image_ticker_TdwJqL": {
+      "type": "bumper-image-ticker",
+      "blocks": {
+        "ticker_item_WUza3h": {
+          "type": "ticker_item",
+          "settings": {
+            "text": "<strong>NO<\/strong> Benzene"
+          }
+        },
+        "ticker_item_K8gFi4": {
+          "type": "ticker_item",
+          "settings": {
+            "text": "<strong>NO<\/strong> Phthalates"
+          }
+        },
+        "ticker_item_MyLi3z": {
+          "type": "ticker_item",
+          "settings": {
+            "text": "<strong>NO<\/strong> Formaldehyde"
+          }
+        }
+      },
+      "block_order": [
+        "ticker_item_WUza3h",
+        "ticker_item_K8gFi4",
+        "ticker_item_MyLi3z"
+      ],
+      "settings": {
+        "title": "<p><strong>It’s Time to<\/strong><br\/>Clean Up Air Care<\/p>",
+        "description": "<p>Our natural, patent-pending formula works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means cleaner air—and cleaner lungs.<\/p>",
+        "url": "shopify:\/\/pages\/about",
+        "cta": "Our Story",
+        "background_image": "shopify:\/\/shop_images\/background.jpg"
+      }
     }
   },
   "order": [
     "home_hero_RgQpwU",
     "home_product_benefits_pYxBCG",
-    "featured_product_CVGqYk"
+    "featured_product_CVGqYk",
+    "bumper_image_ticker_TdwJqL"
   ]
 }
