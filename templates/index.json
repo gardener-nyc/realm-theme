@@ -53,10 +53,22 @@
         "description": "<p>Your home is your safe space. Our products are both safe and effective, so you don’t have to compromise.<\/p>",
         "background_image": "shopify:\/\/shop_images\/placeholder-home-product.jpg"
       }
+    },
+    "featured_product_CVGqYk": {
+      "type": "featured-product",
+      "settings": {
+        "title": "<p><strong>A Fresh Take<\/strong><\/p><p>on Air & Fabric Spray<\/p>",
+        "description": "<p>Realm™ is formulated to be safe to use every day, and smell so good that you’ll actually want to.<\/p>",
+        "url": "shopify:\/\/products\/wild-lavender",
+        "cta": "Get Fresh",
+        "background_image": "shopify:\/\/shop_images\/background.jpg",
+        "product": "wild-lavender"
+      }
     }
   },
   "order": [
     "home_hero_RgQpwU",
-    "home_product_benefits_pYxBCG"
+    "home_product_benefits_pYxBCG",
+    "featured_product_CVGqYk"
   ]
 }
