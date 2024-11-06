@@ -136,6 +136,7 @@ const theme = {
 		wide: '0.04em',
 	},
 	maxWidth: {
+		...generateValues(MAX_SPACER, 10),
 		grid: `${GRID_MAX_WIDTH}px`,
 	},
 	transitionTimingFunction: {

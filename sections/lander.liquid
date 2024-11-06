@@ -84,7 +84,7 @@
 			{% endif %}
 
 			{% if section.settings.description %}
-				<div class="rich-text line-break text-24/24 max-w-[520px]">
+				<div class="rich-text line-break text-24/24 max-w-52">
 					{{ section.settings.description }}
 				</div>
 			{% endif %}
@@ -94,7 +94,7 @@
 				data-list-id="{{ section.settings.klaviyo_list_id }}"
 				data-source-id="{{ section.settings.klaviyo_source_id }}"
 				data-success-message="Thanks!"
-				class="w-full max-w-[320px] flex flex-col gap-1">
+				class="w-full max-w-32 flex flex-col gap-1">
 				<input
 					class="block w-full input-lander newsletter__input"
 					type="email"

@@ -6,23 +6,17 @@ export default component((node, ctx) => {
 		? parseFloat(node.dataset.scrollFactor)
 		: 0.2;
 
-	gsap.fromTo(
-		node,
-		{
-			y: 0,
+	gsap.to(node, {
+		y: () => node.clientHeight * factor,
+		ease: 'none',
+		scrollTrigger: {
+			trigger: node.parentElement,
+			scrub: true,
+			invalidateOnRefresh: true,
+			start: 'top top',
+			end: 'bottom top',
 		},
-		{
-			y: () => node.clientHeight * factor,
-			ease: 'none',
-			scrollTrigger: {
-				trigger: node.parentElement,
-				scrub: true,
-				invalidateOnRefresh: true,
-				start: 'top top',
-				end: 'bottom top',
-			},
-		},
-	);
+	});
 
 	return () => {
 		const trigger = gsap.getById(node);

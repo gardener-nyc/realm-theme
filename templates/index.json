@@ -9,9 +9,54 @@
         "cta": "Enter Realm",
         "background_image": "shopify:\/\/shop_images\/background.jpg"
       }
+    },
+    "home_product_benefits_pYxBCG": {
+      "type": "home-product-benefits",
+      "blocks": {
+        "benefit_bfzWtE": {
+          "type": "benefit",
+          "settings": {
+            "title": "Works Instantly",
+            "image": "shopify:\/\/shop_images\/Realm_InstantDeodorizing_White_HighRes.svg"
+          }
+        },
+        "benefit_6wqC97": {
+          "type": "benefit",
+          "settings": {
+            "title": "Long Lasting Freshness",
+            "image": "shopify:\/\/shop_images\/Realm_LongLasting_White_HighRes_1.svg"
+          }
+        },
+        "benefit_kBdEMh": {
+          "type": "benefit",
+          "settings": {
+            "title": "Natural Deodorizer",
+            "image": "shopify:\/\/shop_images\/Realm_NaturalDeodorizer_White_HighRes_1.svg"
+          }
+        },
+        "benefit_NqYjBB": {
+          "type": "benefit",
+          "settings": {
+            "title": "Certified Non-Toxic",
+            "image": "shopify:\/\/shop_images\/Realm_CertifiedNonToxic_White_HighRes.svg"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_bfzWtE",
+        "benefit_6wqC97",
+        "benefit_kBdEMh",
+        "benefit_NqYjBB"
+      ],
+      "settings": {
+        "title": "<p><strong>An Air + Fabric Spray<\/strong><\/p><p>Designed with Life in Mind<\/p>",
+        "description": "<p>Your home is your safe space. Our products are both safe and effective, so you don’t have to compromise.<\/p>",
+        "background_image": "shopify:\/\/shop_images\/placeholder-home-product.jpg"
+      }
     }
   },
   "order": [
-    "home_hero_RgQpwU"
+    "home_hero_RgQpwU",
+    "home_product_benefits_pYxBCG"
   ]
 }
