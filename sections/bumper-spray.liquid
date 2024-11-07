@@ -1,0 +1,55 @@
+{% schema %}
+{
+	"name": "Bumper (Spray)",
+	"settings": [
+		{
+			"type": "richtext",
+			"id": "title",
+			"label": "Title"
+		},
+        {
+			"type": "richtext",
+			"id": "description",
+			"label": "Description"
+		},
+        {
+			"type": "url",
+			"id": "url",
+			"label": "URL"
+		},
+        {
+			"type": "text",
+			"id": "cta",
+			"label": "CTA"
+		}
+	],
+    "presets": [{
+		"name": "Bumper (Spray)",
+		"category": "Marketing"
+	}]
+}
+{% endschema %}
+
+<div class="px-container-mobile md:px-container-desktop my-6 md:my-10">
+	<div class="max-w-65 text-rust text-center mx-auto flex flex-col items-center justify-center gap-2 md:gap-3">
+		{% unless section.settings.title == blank %}
+		<div class="rich-text font-serif rich-text-bold-sans-regular text-36/36 md:text-70/70">
+			{{ section.settings.title }}
+			</div>
+		{% endunless %}
+
+		{% unless section.settings.description == blank %}
+			<div class="rich-text font-serif text-18/24 md:text-24/30">
+				{{ section.settings.description }}
+			</div>
+		{% endunless %}
+
+			{% if section.settings.url and section.settings.cta %}
+			<a 
+				href="{{ section.settings.url }}"
+				class="block button button-primary">
+				{{ section.settings.cta }}
+			</a>
+		{% endif %}
+	</div>
+</div>

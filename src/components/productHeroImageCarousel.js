@@ -4,44 +4,19 @@ import KeenSlider from 'keen-slider';
 import {forEach} from 'lodash';
 
 export default component((node, ctx) => {
+	const sliderEl = node.querySelector('.keen-slider');
 	const slides = node.querySelectorAll('.keen-slider__slide');
 	const navButtons = node.querySelectorAll('button[data-index]');
 
-	const slider = new KeenSlider(node, {
-		loop: slides.length > 2,
-		drag: slides.length > 2,
+	const slider = new KeenSlider(sliderEl, {
+		loop: slides.length > 1,
+		drag: slides.length > 1,
 		slides: {
 			perView: 1,
-			spacing: 30,
-			origin: 'center',
-		},
-		breakpoints: {
-			'(min-width: 800px)': {
-				slides: {
-					perView: 2,
-					spacing: 60,
-					origin: 'center',
-				},
-			},
-			'(min-width: 1200px)': {
-				slides: {
-					perView: 2,
-					spacing: 120,
-					origin: 'center',
-				},
-			},
 		},
 	});
 
 	const updateActiveSlide = () => {
-		forEach(slides, (slide, index) => {
-			if (index === slider.track.details.rel) {
-				slide.classList.add('active');
-			} else {
-				slide.classList.remove('active');
-			}
-		});
-
 		forEach(navButtons, button => {
 			const index = Number(button.dataset.index);
 

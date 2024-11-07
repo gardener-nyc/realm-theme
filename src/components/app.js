@@ -13,18 +13,10 @@ import pressCarousel from './pressCarousel';
 import menuDrawer from './menuDrawer';
 import cart from './cart';
 import cartSubtotal from './cartSubtotal';
+import productHeroImageCarousel from './productHeroImageCarousel';
 
-let initialCart = {};
-
-// Hydrate from HTML
-try {
-	initialCart = window.CART;
-} catch (error) {
-	console.log(error);
-}
-
-const state = {
-	cart: initialCart,
+const defaultState = {
+	cart: {},
 
 	// UI State
 	activeMenu: null,
@@ -44,10 +36,12 @@ const components = {
 	menuDrawer,
 	cart,
 	cartSubtotal,
+	productHeroImageCarousel,
 };
 
-const app = picoapp(components, state);
-
-window.app = app;
-
-export default app;
+export default function createApp(initialState) {
+	return picoapp(components, {
+		...defaultState,
+		...initialState,
+	});
+}

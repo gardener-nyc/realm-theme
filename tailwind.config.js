@@ -16,6 +16,7 @@ const COLORS = {
 	highlight: '#D8F8B3',
 
 	violet: '#CAC0DB',
+	rust: '#70251B',
 };
 
 const SPACING = {

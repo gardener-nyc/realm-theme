@@ -57,7 +57,7 @@ export default component((node, ctx) => {
 
 	const onInput = event => {
 		if (shouldValidateOnInput) {
-			if (emailRegex.test(event.target.value)) {
+			if (emailRegex.test(event.currentTarget.value)) {
 				shouldValidateOnInput = false;
 				hideCaption();
 			} else {

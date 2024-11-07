@@ -100,6 +100,12 @@
         "background_image": "shopify:\/\/shop_images\/background.jpg"
       }
     },
+    "featured_product_hero_feGHmb": {
+      "type": "featured-product-hero",
+      "settings": {
+        "product": "wild-lavender"
+      }
+    },
     "image_grid_carousel_AyVRfC": {
       "type": "image-grid-carousel",
       "blocks": {
@@ -221,6 +227,15 @@
       "settings": {
         "background_image": "shopify:\/\/shop_images\/background.jpg"
       }
+    },
+    "bumper_spray_Yzyjgz": {
+      "type": "bumper-spray",
+      "settings": {
+        "title": "<p><strong>A breath<\/strong><br\/>of fresh air.<\/p>",
+        "description": "",
+        "url": "shopify:\/\/products\/wild-lavender",
+        "cta": "Get spraying"
+      }
     }
   },
   "order": [
@@ -228,8 +243,10 @@
     "home_product_benefits_pYxBCG",
     "featured_product_CVGqYk",
     "bumper_image_ticker_TdwJqL",
+    "featured_product_hero_feGHmb",
     "image_grid_carousel_AyVRfC",
     "press_ticker_9zAeHR",
-    "press_carousel_tgfr44"
+    "press_carousel_tgfr44",
+    "bumper_spray_Yzyjgz"
   ]
 }

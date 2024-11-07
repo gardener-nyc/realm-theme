@@ -170,4 +170,17 @@ button,
 			@apply bg-white;
 		}
 	}
+
+	.button.button-image-carousel {
+		@apply w-5 h-5 rounded-full overflow-hidden;
+		@apply bg-green border border-solid border-transparent transition-colors duration-400 ease-appear;
+
+		&.active {
+			@apply border-white;
+		}
+
+		@screen md {
+			@apply w-7 h-7;
+		}
+	}
 }

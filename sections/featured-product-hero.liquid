@@ -1,0 +1,33 @@
+{% schema %}
+{
+	"name": "Featured Product (Hero)",
+	"settings": [
+        {
+			"type": "product",
+			"id": "product",
+			"label": "Product"
+		}
+	],
+    "presets": [{
+		"name": "Featured Product (Hero)",
+		"category": "Marketing"
+	}]
+}
+{% endschema %}
+
+{% assign product = section.settings.product %}
+
+<div class="px-container-mobile md:px-container-desktop my-6 md:my-10">
+    <div class="mx-auto max-w-grid">
+        <div class="grid grid-cols-6 md:grid-cols-12 gap-y-4 gap-x-gutter-mobile md:gap-gutter-desktop">
+            <div class="col-span-6 xl:col-span-5 xl:col-start-2">
+                {% render 'product-hero-image-carousel', images: product.images %}
+            </div>
+            <div class="col-span-6 xl:col-span-5">
+                <div class="xl:px-5">
+                    sup
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+
+<div
+    data-component="productHeroImageCarousel"
+    class="relative">
+    <div class="keen-slider">
+        {% for image in images %}
+            <div class="keen-slider__slide">
+                <div
+                    data-component="image"
+                    class="image aspect-[6/7]">
+                    <picture class="blur-xl scale-110">
+                        <source
+                            data-srcset="{{ image | image_url: width: 1400 }}"
+                            media="(min-width: 1200px)">
+                        <source
+                            data-srcset="{{ image | image_url: width: 1200 }}"
+                            media="(min-width: 1000px)">
+                        <source
+                            data-srcset="{{ image | image_url: width: 1000 }}"
+                            media="(min-width: 800px)">
+                        {% assign lqip = image | image_url: width: 10 %}
+                        <img
+                            src="{{ lqip }}"
+                            data-src="{{ image | image_url: width: 800 }}"
+                            alt="{{ image.alt }}"
+                        />
+                    </picture>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="absolute inset-x-0 bottom-[-25px] md:top-3 md:bottom-0 md:right-auto md:left-[-35px]">
+        <div class="flex gap-[15px] items-center justify-center md:flex-col md:justify-around">
+            {% for image in images %}
+                <button
+                    data-index="{{ forloop.index0 }}"
+                    class="block button button-image-carousel {% if forloop.first %}active{% endif %}">
+                    <div
+                        data-component="image"
+                        class="image aspect-square">
+                        <picture class="blur-xl scale-110">
+                            <img
+                                src="{{ lqip }}"
+                                data-src="{{ image | image_url: width: 150 }}"
+                                alt="{{ image.alt }}"
+                            />
+                        </picture>
+                    </div>
+                </button>
+            {% endfor %}
+        </div>
+    </div>
+</div>

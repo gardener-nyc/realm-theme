@@ -1,7 +1,20 @@
-import app from '../components/app';
+import createApp from '../components/app';
 import captcha from '../components/captcha';
 
+// Hydrate from HTML
+let initialCart = {};
+
+try {
+	initialCart = window.CART;
+} catch (error) {
+	console.log(error);
+}
+
 // Start up app
+const app = createApp({
+	cart: initialCart,
+});
+
 app.mount();
 window.app = app;
 
