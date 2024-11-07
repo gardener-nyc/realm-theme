@@ -1,0 +1,69 @@
+{% schema %}
+{
+	"name": "Cart",
+	"settings": [
+		{
+			"type": "number",
+			"id": "free_shipping_threshold",
+			"label": "Free Shipping Threshold (Cents)"
+		}
+	]
+}
+{% endschema %}
+
+<div
+	data-component="menuDrawer"
+	data-menu="cart"
+	class="cart-container">
+	<div
+		data-component="menuTrigger"
+		data-menu="cart"
+		class="cart-backdrop">
+	</div>
+
+	<div class="cart-drawer bg-off-white flex flex-col">
+		<div class="p-container-mobile md:p-container-desktop flex justify-between items-center">
+			<h2 class="text-16/20 font-sans uppercase">
+				Cart
+			</h2>
+			<div class="link-opacity-hover">
+				<button
+					data-component="menuTrigger"
+					data-menu="cart"
+					class="block button button-mobile-trigger">
+					{% render 'icon-mobile-menu-trigger' %}
+				</button>
+			</div>
+		</div>
+
+		<div class="flex-grow px-container-mobile md:px-container-desktop flex flex-col">
+			<div class="relative flex-grow">
+				<div
+					data-component="cart"
+					data-free-shipping-threshold="{{ section.settings.free_shipping_threshold | default: 0 }}"
+					class="absolute inset-0">
+				</div>
+			</div>
+		</div>
+
+		<div class="px-container-mobile md:px-container-desktop">
+			<div class="border-t border-solid border-gray-medium py-container-mobile md:py-container-desktop">
+				<div class="flex flex-col gap-2">
+					<div class="flex justify-between">
+						<p class="text-16/20 font-sans uppercase">Subtotal</p>
+						<p
+							class="text-16/20 font-sans uppercase"
+							data-component="cartSubtotal">
+							{{ cart.items_subtotal_price |  money_without_trailing_zeros }}
+						</p>
+					</div>
+					<a
+						href="/checkout"
+						class="block w-full button button-primary-brown">
+						Checkout
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

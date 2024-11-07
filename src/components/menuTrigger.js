@@ -3,14 +3,22 @@ import {component} from 'picoapp';
 export default component((node, ctx) => {
 	const menuType = node.dataset.menu;
 
+	ctx.on('menu:toggle', state => {
+		const {activeMenu} = state;
+
+		if (activeMenu === menuType) {
+			node.classList.add('active');
+		} else {
+			node.classList.remove('active');
+		}
+	});
+
 	const onToggleMenu = () => {
 		const {activeMenu} = ctx.getState();
 
 		if (activeMenu === menuType) {
-			node.classList.remove('active');
 			ctx.emit('menu:toggle', {activeMenu: null});
 		} else {
-			node.classList.add('active');
 			ctx.emit('menu:toggle', {activeMenu: menuType});
 		}
 	};

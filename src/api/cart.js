@@ -19,3 +19,17 @@ export const addItemsToCart = async (items = []) => {
 
 	return cart;
 };
+
+export const updateCart = async (updates = {}) => {
+	const response = await fetch('/cart/update.js', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify({updates}),
+	});
+
+	const cart = await response.json();
+
+	return cart;
+};

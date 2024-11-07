@@ -1,0 +1,26 @@
+@layer components {
+	.cart-container {
+		.cart-backdrop {
+			@apply fixed inset-0 z-10 backdrop-blur-xl transition-opacity duration-400 ease-appear;
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		.cart-drawer {
+			@apply fixed inset-y-0 right-0 z-20 transition-transform duration-400 ease-appear;
+			@apply w-full md:max-w-40 md:rounded-l-10;
+			transform: translateX(100%);
+		}
+
+		&.active {
+			.cart-backdrop {
+				opacity: 1;
+				pointer-events: auto;
+			}
+
+			.cart-drawer {
+				transform: translateX(0);
+			}
+		}
+	}
+}

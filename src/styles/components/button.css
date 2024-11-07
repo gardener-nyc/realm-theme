@@ -62,12 +62,11 @@ button,
 
 @layer components {
 	.button.button-primary {
-		@apply text-brown px-[15px] uppercase tracking-wide transition-shadow duration-400 ease-appear;
+		@apply text-brown bg-white px-[15px] uppercase tracking-wide transition-shadow duration-400 ease-appear;
 		height: 36px;
 		border-radius: 36px;
 		font-size: 16px;
 		line-height: 34px;
-		background: theme('colors.white');
 		border: 1px solid theme('colors.brown');
 
 		&:hover,
@@ -83,12 +82,31 @@ button,
 	}
 
 	.button.button-primary-gray {
-		@apply text-brown px-[15px] uppercase tracking-wide transition-shadow duration-400 ease-appear;
+		@apply text-brown bg-gray-medium px-[15px] uppercase tracking-wide transition-shadow duration-400 ease-appear;
 		height: 36px;
 		border-radius: 36px;
 		font-size: 16px;
 		line-height: 34px;
-		background: theme('colors.gray-medium');
+		border: 1px solid theme('colors.brown');
+
+		&:hover,
+		&:focus-visible {
+			outline: none;
+			box-shadow: 0 0 15px theme('colors.highlight');
+
+			&:disabled,
+			&.disabled {
+				box-shadow: none;
+			}
+		}
+	}
+
+	.button.button-primary-brown {
+		@apply text-white bg-brown px-[15px] uppercase tracking-wide transition-shadow duration-400 ease-appear;
+		height: 36px;
+		border-radius: 36px;
+		font-size: 16px;
+		line-height: 34px;
 		border: 1px solid theme('colors.brown');
 
 		&:hover,
@@ -104,12 +122,11 @@ button,
 	}
 
 	.button.button-primary-violet {
-		@apply text-brown px-[15px] uppercase tracking-wide transition-shadow duration-400 ease-appear;
+		@apply text-brown bg-violet px-[15px] uppercase tracking-wide transition-shadow duration-400 ease-appear;
 		height: 36px;
 		border-radius: 36px;
 		font-size: 16px;
 		line-height: 34px;
-		background: theme('colors.violet');
 		border: 1px solid theme('colors.brown');
 
 		&:hover,

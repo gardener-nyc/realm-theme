@@ -10,17 +10,21 @@ import parallaxBackground from './parallaxBackground';
 import productFormQuickAdd from './productFormQuickAdd';
 import imageGridCarousel from './imageGridCarousel';
 import pressCarousel from './pressCarousel';
-let cart = {};
+import menuDrawer from './menuDrawer';
+import cart from './cart';
+import cartSubtotal from './cartSubtotal';
+
+let initialCart = {};
 
 // Hydrate from HTML
 try {
-	cart = window.CART;
+	initialCart = window.CART;
 } catch (error) {
 	console.log(error);
 }
 
 const state = {
-	cart,
+	cart: initialCart,
 
 	// UI State
 	activeMenu: null,
@@ -37,6 +41,9 @@ const components = {
 	productFormQuickAdd,
 	imageGridCarousel,
 	pressCarousel,
+	menuDrawer,
+	cart,
+	cartSubtotal,
 };
 
 const app = picoapp(components, state);
