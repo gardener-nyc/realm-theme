@@ -133,6 +133,52 @@
         "url": "shopify:\/\/pages\/about",
         "cta": "Learn more"
       }
+    },
+    "press_ticker_9zAeHR": {
+      "type": "press-ticker",
+      "blocks": {
+        "ticker_item_PEA88m": {
+          "type": "ticker_item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/placeholder-hypebeast.png",
+            "url": "",
+            "cta": "Hypebeast"
+          }
+        },
+        "ticker_item_Rdd6rC": {
+          "type": "ticker_item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/placeholder-hypebeast.png",
+            "url": "",
+            "cta": "Hypebeast"
+          }
+        },
+        "ticker_item_NU4ULF": {
+          "type": "ticker_item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/placeholder-hypebeast.png",
+            "url": "",
+            "cta": "Hypebeast"
+          }
+        },
+        "ticker_item_y6jA6h": {
+          "type": "ticker_item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/placeholder-hypebeast.png",
+            "url": "",
+            "cta": "Hypebeast"
+          }
+        }
+      },
+      "block_order": [
+        "ticker_item_PEA88m",
+        "ticker_item_Rdd6rC",
+        "ticker_item_NU4ULF",
+        "ticker_item_y6jA6h"
+      ],
+      "settings": {
+        "title": "As seen in"
+      }
     }
   },
   "order": [
@@ -140,6 +186,7 @@
     "home_product_benefits_pYxBCG",
     "featured_product_CVGqYk",
     "bumper_image_ticker_TdwJqL",
-    "image_grid_carousel_AyVRfC"
+    "image_grid_carousel_AyVRfC",
+    "press_ticker_9zAeHR"
   ]
 }

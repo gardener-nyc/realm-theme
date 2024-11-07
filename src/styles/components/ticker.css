@@ -2,6 +2,14 @@
 	.ticker {
 		animation: ticker 5s linear infinite;
 	}
+
+	.ticker.ticker-slow {
+		animation: ticker 10s linear infinite;
+	}
+
+	.ticker-container:hover .ticker {
+		animation-play-state: paused;
+	}
 }
 
 @keyframes ticker {
