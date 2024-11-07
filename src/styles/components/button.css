@@ -67,7 +67,7 @@ button,
 		border-radius: 36px;
 		font-size: 16px;
 		line-height: 34px;
-		background: theme('colors.off-white');
+		background: theme('colors.white');
 		border: 1px solid theme('colors.brown');
 
 		&:hover,

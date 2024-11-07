@@ -8,6 +8,7 @@ import menuTrigger from './menuTrigger';
 import menu from './menu';
 import parallaxBackground from './parallaxBackground';
 import productFormQuickAdd from './productFormQuickAdd';
+import imageGridCarousel from './imageGridCarousel';
 
 let cart = {};
 
@@ -34,6 +35,7 @@ const components = {
 	menu,
 	parallaxBackground,
 	productFormQuickAdd,
+	imageGridCarousel,
 };
 
 const app = picoapp(components, state);

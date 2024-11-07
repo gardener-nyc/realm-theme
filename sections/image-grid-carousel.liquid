@@ -1,0 +1,100 @@
+{% schema %}
+{
+	"name": "Image Grid Carousel",
+	"settings": [
+		{
+			"type": "richtext",
+			"id": "title",
+			"label": "Title"
+		},
+        {
+			"type": "richtext",
+			"id": "description",
+			"label": "Description"
+		},
+        {
+			"type": "url",
+			"id": "url",
+			"label": "URL"
+		},
+        {
+			"type": "text",
+			"id": "cta",
+			"label": "CTA"
+		}
+	],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "Image",
+            "settings": [
+                {
+                    "type": "image_picker", 
+                    "id": "image",
+                    "label": "Image"
+                }
+            ]
+        }
+    ],
+    "presets": [{
+		"name": "Image Grid Carousel",
+		"category": "Marketing"
+	}]
+}
+{% endschema %}
+
+<div class="px-container-mobile md:px-container-desktop my-6 md:my-10 overflow-hidden">
+    <div class="max-w-grid mx-auto">
+        <div class="flex flex-col md:flex-col-reverse gap-3 md:gap-6">
+            <div
+                data-component="imageGridCarousel"
+                class="keen-slider overflow-visible">
+                {% for block in section.blocks %}
+                    <div class="keen-slider__slide">
+                        <div
+                            data-component="image"
+                            class="image aspect-square">
+                            <picture class="blur-xl scale-110">
+                                <source
+                                    data-srcset="{{ block.settings.image | image_url: width: 1000 }}"
+                                    media="(min-width: 800px)">
+                                {% assign lqip = block.settings.image | image_url: width: 10 %}
+                                <img
+                                    src="{{ lqip }}"
+                                    data-src="{{ block.settings.image | image_url: width: 800 }}"
+                                    alt="{{ section.settings.background_image.alt }}"
+                                />
+                            </picture>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="flex flex-col gap-y-3 md:grid md:grid-cols-3">
+                <div class="flex flex-col gap-y-3">
+                    <div class="rich-text font-serif rich-text-bold-sans-regular text-24/24 md:text-36/36">
+                        {{ section.settings.title }}
+                    </div>
+
+                    {% if section.settings.url and section.settings.cta %}
+                        <div class="flex">
+                            <a 
+                                href="{{ section.settings.url }}"
+                                class="block button button-primary">
+                                {{ section.settings.cta }}
+                            </a>
+                        </div>
+                    {% endif %}
+                </div>
+
+                <div class="md:col-span-2">
+                    <div class="md:columns-2 md:gap-gutter-desktop">
+                        <div class="rich-text font-serif rich-text-regular">
+                            {{ section.settings.description }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

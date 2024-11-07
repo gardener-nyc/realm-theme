@@ -99,12 +99,47 @@
         "cta": "Our Story",
         "background_image": "shopify:\/\/shop_images\/background.jpg"
       }
+    },
+    "image_grid_carousel_AyVRfC": {
+      "type": "image-grid-carousel",
+      "blocks": {
+        "image_GXHPPH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_6.jpg"
+          }
+        },
+        "image_7cRqea": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_6.jpg"
+          }
+        },
+        "image_LyfPUX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_6.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_GXHPPH",
+        "image_7cRqea",
+        "image_LyfPUX"
+      ],
+      "settings": {
+        "title": "<p><strong>No<\/strong><br\/>Hidden Toxins<\/p>",
+        "description": "<p>In the US, the term “fragrance” on a product label can be used to hide up to 3,000 ingredients—including known carcinogens. We developed our products using only those ingredients that are proven safe, and list them all on our label. Because when it comes to odors and ingredients, we don’t cover anything up.<\/p>",
+        "url": "shopify:\/\/pages\/about",
+        "cta": "Learn more"
+      }
     }
   },
   "order": [
     "home_hero_RgQpwU",
     "home_product_benefits_pYxBCG",
     "featured_product_CVGqYk",
-    "bumper_image_ticker_TdwJqL"
+    "bumper_image_ticker_TdwJqL",
+    "image_grid_carousel_AyVRfC"
   ]
 }

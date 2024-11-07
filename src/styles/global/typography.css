@@ -4,7 +4,7 @@
 
 html,
 body {
-	@apply bg-off-white text-brown font-sans text-16/20 font-400;
+	@apply bg-off-white text-brown font-sans text-18/24 font-400;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

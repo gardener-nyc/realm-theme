@@ -57,7 +57,7 @@
 				<div class="table table-fixed">
 					{% for block in section.blocks %}
 						<div class="table-cell whitespace-nowrap pl-1">
-							<div class="rich-text font-serif rich-text-bold-sans-regular text-16/20">
+							<div class="rich-text font-serif rich-text-bold-sans-regular">
 								{{ block.settings.text }}
 							</div>
 						</div>
@@ -105,7 +105,7 @@
 				{% endunless %}
 
 				{% unless section.settings.description == blank %}
-					<div class="rich-text font-serif rich-text-regular text-16/20 md:text-24/30">
+					<div class="rich-text font-serif rich-text-regular text-18/24 md:text-24/30">
 						{{ section.settings.description }}
 					</div>
 				{% endunless %}
