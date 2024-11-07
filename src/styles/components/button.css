@@ -145,4 +145,12 @@ button,
 			}
 		}
 	}
+
+	.button.button-carousel {
+		@apply w-[15px] h-[15px] rounded-full border border-solid bg-green border-brown transition-colors duration-400 ease-appear;
+
+		&.active {
+			@apply bg-white;
+		}
+	}
 }

@@ -1,0 +1,97 @@
+{% schema %}
+{
+	"name": "Press Carousel",
+	"settings": [
+		{
+			"type": "image_picker",
+			"id": "background_image",
+			"label": "Background Image"
+		}
+	],
+	"blocks": [
+        {
+            "type": "quote",
+            "name": "Quote",
+            "settings": [
+				{
+					"type": "richtext",
+					"id": "quote",
+					"label": "Quote"
+				},
+				{
+					"type": "text",
+					"id": "author",
+					"label": "Author"
+				}
+            ]
+        }
+    ],
+    "presets": [{
+		"name": "Press Carousel",
+		"category": "Marketing"
+	}]
+}
+{% endschema %}
+
+{% assign ticker_repeat_count = 10 %}
+
+<div class="overflow-hidden relative">
+	<div
+        data-component="parallaxBackground"
+		class="absolute inset-x-0 inset-y-[-25vh]">
+        <div
+            data-component="image"
+            class="image absolute inset-0">
+            <picture class="blur-xl scale-110">
+                <source
+                    data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
+                    media="(min-width: 1200px)">
+                <source
+                    data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
+                    media="(min-width: 1000px)">
+                <source
+                    data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
+                    media="(min-width: 800px)">
+                
+                {% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
+                <img
+                    src="{{ lqip }}"
+                    data-src="{{ section.settings.background_image | image_url: width: 800 }}"
+                    alt="{{ section.settings.background_image.alt }}"
+                />
+            </picture>
+        </div>
+    </div>
+
+	<div class="px-gutter-mobile md:px-gutter-desktop text-white text-center relative">
+		<div
+            data-component="pressCarousel"
+            class="keen-slider overflow-visible">
+            {% for block in section.blocks %}
+                <div class="keen-slider__slide relative py-10 link-opacity {% if forloop.first %}active{% endif %} transition-opacity duration-400 ease-appear">
+                    <div class="flex flex-col gap-2 md:gap-3">
+                        <div class="rich-text font-serif text-18/24 md:text-24/30">
+                            {{ block.settings.quote }}
+                        </div>
+
+                        <button
+                            data-index="{{ forloop.index0 }}"
+                            class="font-sans text-16/16 md:text-18/18 link-cover">
+                            {{ block.settings.author }}
+                        </button>
+                    </div>
+                </div>
+            {% endfor %}
+
+            <div class="md:hidden absolute bottom-container-mobile inset-x-container-mobile flex gap-1 items-center justify-center">
+                {% for block in section.blocks %}
+                    <button
+                        data-index="{{ forloop.index0 }}"
+                        class="block button button-carousel {% if forloop.first %}active{% endif %}">
+                    </button>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+</div>

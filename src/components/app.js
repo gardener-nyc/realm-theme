@@ -9,7 +9,7 @@ import menu from './menu';
 import parallaxBackground from './parallaxBackground';
 import productFormQuickAdd from './productFormQuickAdd';
 import imageGridCarousel from './imageGridCarousel';
-
+import pressCarousel from './pressCarousel';
 let cart = {};
 
 // Hydrate from HTML
@@ -36,6 +36,7 @@ const components = {
 	parallaxBackground,
 	productFormQuickAdd,
 	imageGridCarousel,
+	pressCarousel,
 };
 
 const app = picoapp(components, state);

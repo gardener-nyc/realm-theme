@@ -179,6 +179,48 @@
       "settings": {
         "title": "As seen in"
       }
+    },
+    "press_carousel_tgfr44": {
+      "type": "press-carousel",
+      "blocks": {
+        "quote_YjepgV": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.<\/p>",
+            "author": "Quote Credit"
+          }
+        },
+        "quote_jKLiNM": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.<\/p>",
+            "author": "Quote Credit"
+          }
+        },
+        "quote_KzxPL4": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.<\/p>",
+            "author": "Quote Credit"
+          }
+        },
+        "quote_3wym7y": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.<\/p>",
+            "author": "Quote Credit"
+          }
+        }
+      },
+      "block_order": [
+        "quote_YjepgV",
+        "quote_jKLiNM",
+        "quote_KzxPL4",
+        "quote_3wym7y"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/background.jpg"
+      }
     }
   },
   "order": [
@@ -187,6 +229,7 @@
     "featured_product_CVGqYk",
     "bumper_image_ticker_TdwJqL",
     "image_grid_carousel_AyVRfC",
-    "press_ticker_9zAeHR"
+    "press_ticker_9zAeHR",
+    "press_carousel_tgfr44"
   ]
 }
