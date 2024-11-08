@@ -7,7 +7,7 @@
 			"id": "title",
 			"label": "Title"
 		},
-        {
+		{
 			"type": "richtext",
 			"id": "description",
 			"label": "Description"
@@ -18,7 +18,7 @@
 			"label": "Background Image"
 		}
 	],
-    "presets": [{
+	"presets": [{
 		"name": "Page Hero",
 		"category": "Page"
 	}]
@@ -29,54 +29,54 @@
 
 
 <div class="px-container-mobile md:px-container-desktop my-3 md:my-6">
-    <div class="text-center mx-auto flex flex-col items-center justify-center gap-2 md:gap-3">
-        {% unless section.settings.title == blank %}
-        <div class="rich-text font-serif rich-text-bold-sans-regular text-36/36 md:text-70/70">
-            {{ section.settings.title }}
-            </div>
-        {% endunless %}
+	<div class="text-center mx-auto flex flex-col items-center justify-center gap-2 md:gap-3">
+		{% unless section.settings.title == blank %}
+			<div class="rich-text font-serif rich-text-bold-sans-regular text-36/36 md:text-70/70">
+				{{ section.settings.title }}
+			</div>
+		{% endunless %}
 
-        {% unless section.settings.description == blank %}
-            <div class="max-w-65 rich-text font-serif text-18/24 md:text-24/30">
-                {{ section.settings.description }}
-            </div>
-        {% endunless %}
+		{% unless section.settings.description == blank %}
+			<div class="max-w-65 rich-text font-serif text-18/24 md:text-24/30">
+				{{ section.settings.description }}
+			</div>
+		{% endunless %}
 
-            {% if section.settings.url and section.settings.cta %}
-            <a 
-                href="{{ section.settings.url }}"
-                class="block button button-primary-violet">
-                {{ section.settings.cta }}
-            </a>
-        {% endif %}
-    </div>
+			{% if section.settings.url and section.settings.cta %}
+			<a 
+				href="{{ section.settings.url }}"
+				class="block button button-primary-violet">
+				{{ section.settings.cta }}
+			</a>
+		{% endif %}
+	</div>
 </div>
 
 <div class="overflow-hidden relative h-[60vw] md:h-42">
 	<div
-        data-component="parallaxBackground"
+		data-component="parallaxBackground"
 		class="absolute inset-x-0 inset-y-[-25vh]">
-        <div
-            data-component="image"
-            class="image absolute inset-0">
-            <picture class="blur-xl scale-110">
-                <source
-                    data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
-                    media="(min-width: 1200px)">
-                <source
-                    data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
-                    media="(min-width: 1000px)">
-                <source
-                    data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
-                    media="(min-width: 800px)">
-                
-                {% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
-                <img
-                    src="{{ lqip }}"
-                    data-src="{{ section.settings.background_image | image_url: width: 800 }}"
-                    alt="{{ section.settings.background_image.alt }}"
-                />
-            </picture>
-        </div>
-    </div>
+		<div
+			data-component="image"
+			class="image absolute inset-0">
+			<picture class="blur-xl scale-110">
+				<source
+					data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
+					media="(min-width: 1200px)">
+				<source
+					data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
+					media="(min-width: 1000px)">
+				<source
+					data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
+					media="(min-width: 800px)">
+				
+				{% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
+				<img
+					src="{{ lqip }}"
+					data-src="{{ section.settings.background_image | image_url: width: 800 }}"
+					alt="{{ section.settings.background_image.alt }}"
+				/>
+			</picture>
+		</div>
+	</div>
 </div>
