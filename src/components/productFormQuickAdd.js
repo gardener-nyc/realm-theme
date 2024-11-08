@@ -6,11 +6,11 @@ export default component((node, ctx) => {
 	const quantityInput = node.querySelector('input[name="quantity"]');
 	const submitButton = node.querySelector('button[type="submit"]');
 
-	const productId = productIdInput ? Number(productIdInput.value) : null;
-	const quantity = quantityInput ? Number(quantityInput.value) : 1;
-
 	const onSubmit = async event => {
 		event.preventDefault();
+
+		const productId = productIdInput ? Number(productIdInput.value) : null;
+		const quantity = quantityInput ? Number(quantityInput.value) : 1;
 
 		if (!productId) throw new Error('No product ID is set');
 

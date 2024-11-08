@@ -133,7 +133,7 @@ const CartItem = ({
 		<div className="flex gap-1">
 			<div className="w-10">
 				{image && (
-					<div className="image w-full aspect-square">
+					<div className="image w-full aspect-[6/7]">
 						<picture>
 							<img src={`${image}?w=400`} alt={title} />
 						</picture>
