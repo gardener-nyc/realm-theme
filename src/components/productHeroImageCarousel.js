@@ -1,5 +1,4 @@
 import {component} from 'picoapp';
-import 'keen-slider/keen-slider.min.css';
 import KeenSlider from 'keen-slider';
 import {forEach} from 'lodash';
 
