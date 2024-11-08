@@ -1,54 +1,56 @@
 {
   "src/entrypoints/theme.css": {
-    "file": "theme-32ce0960.css",
-    "src": "src/entrypoints/theme.css"
+    "file": "theme-D9BO7kXl.css",
+    "src": "src/entrypoints/theme.css",
+    "isEntry": true
   },
   "src/entrypoints/theme.js": {
-    "css": [
-      "theme-32ce0960.css"
-    ],
-    "file": "theme-4d81ce90.js",
+    "file": "theme-79l1SzVz.js",
+    "name": "theme",
+    "src": "src/entrypoints/theme.js",
     "isEntry": true,
-    "src": "src/entrypoints/theme.js"
+    "css": [
+      "theme-BWf4Yhr3.css"
+    ]
   },
   "src/fonts/bb-modern-regular-pro.woff": {
-    "file": "bb-modern-regular-pro-2ced39b7.woff",
+    "file": "bb-modern-regular-pro-BbpoF83H.woff",
     "src": "src/fonts/bb-modern-regular-pro.woff"
   },
   "src/fonts/bb-modern-regular-pro.woff2": {
-    "file": "bb-modern-regular-pro-be270829.woff2",
+    "file": "bb-modern-regular-pro-BdTKPG85.woff2",
     "src": "src/fonts/bb-modern-regular-pro.woff2"
   },
   "src/fonts/ft-polar-bold-italic.woff": {
-    "file": "ft-polar-bold-italic-d4efb0c7.woff",
+    "file": "ft-polar-bold-italic-3uvhd2iX.woff",
     "src": "src/fonts/ft-polar-bold-italic.woff"
   },
   "src/fonts/ft-polar-bold-italic.woff2": {
-    "file": "ft-polar-bold-italic-36b419fa.woff2",
+    "file": "ft-polar-bold-italic-CZS9-7rT.woff2",
     "src": "src/fonts/ft-polar-bold-italic.woff2"
   },
   "src/fonts/ft-polar-bold.woff": {
-    "file": "ft-polar-bold-2173fa7b.woff",
+    "file": "ft-polar-bold-By5-4E_L.woff",
     "src": "src/fonts/ft-polar-bold.woff"
   },
   "src/fonts/ft-polar-bold.woff2": {
-    "file": "ft-polar-bold-a7c2b0fa.woff2",
+    "file": "ft-polar-bold-BqVPLtRT.woff2",
     "src": "src/fonts/ft-polar-bold.woff2"
   },
   "src/fonts/ft-polar-medium-italic.woff": {
-    "file": "ft-polar-medium-italic-9711f46b.woff",
+    "file": "ft-polar-medium-italic-C7l5lNPI.woff",
     "src": "src/fonts/ft-polar-medium-italic.woff"
   },
   "src/fonts/ft-polar-medium-italic.woff2": {
-    "file": "ft-polar-medium-italic-af218177.woff2",
+    "file": "ft-polar-medium-italic-BmHcuBAD.woff2",
     "src": "src/fonts/ft-polar-medium-italic.woff2"
   },
   "src/fonts/ft-polar-medium.woff": {
-    "file": "ft-polar-medium-2cf78bdb.woff",
+    "file": "ft-polar-medium-BsMp79TN.woff",
     "src": "src/fonts/ft-polar-medium.woff"
   },
   "src/fonts/ft-polar-medium.woff2": {
-    "file": "ft-polar-medium-c80dbe3c.woff2",
+    "file": "ft-polar-medium-y5GtWCpG.woff2",
     "src": "src/fonts/ft-polar-medium.woff2"
   }
 }

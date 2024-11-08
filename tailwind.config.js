@@ -1,5 +1,3 @@
-const reduce = require('lodash/reduce');
-
 //
 // === Project Config ===
 //
@@ -193,7 +191,7 @@ const theme = {
 	extend: {},
 };
 
-module.exports = {
+export default {
 	content: [
 		'./assets/**/*.liquid',
 		'./config/**/*.liquid',

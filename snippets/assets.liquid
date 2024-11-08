@@ -3,7 +3,9 @@
   Do not attempt to modify this file directly, as any changes will be overwritten by the next build.
 {% endcomment %}
 {% assign path = assets | replace: '~/', '../' | replace: '@/', '../' %}
-{% if path == "/src/entrypoints/theme.js" or path == "theme.js" %}
-  <script src="{{ 'theme-4d81ce90.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
-  {{ 'theme-32ce0960.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload_stylesheet }}
+{% if path == "/src/entrypoints/theme.css" or path == "theme.css" %}
+  {{ 'theme-D9BO7kXl.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload_stylesheet }}
+{% elsif path == "/src/entrypoints/theme.js" or path == "theme.js" %}
+  <script src="{{ 'theme-79l1SzVz.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
+  {{ 'theme-BWf4Yhr3.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload_stylesheet }}
 {% endif %}

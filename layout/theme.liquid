@@ -20,7 +20,7 @@
 		<meta name="description" content="{{ page_description | escape }}">
 	{% endif %}
 
-	{% render 'assets' with 'theme.css'%}
+	{% render 'assets' with 'theme.css', preload_stylesheet: true%}
 
 	{{ content_for_header }}
 </head>
