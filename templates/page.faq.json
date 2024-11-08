@@ -1,0 +1,27 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "lander_xk3Nzj": {
+      "type": "lander",
+      "settings": {
+        "title": "<p><strong>A New Standard</strong><br/>of Air Care™</p>",
+        "description": "<p>Join the movement for better air care. Sign up to get the latest news from Realm™.</p>",
+        "klaviyo_list_id": "RmXajH",
+        "klaviyo_source_id": "website_lander",
+        "background_image": "shopify://shop_images/background.jpg",
+        "logo": "shopify://shop_images/icon-logo-invert.svg"
+      }
+    }
+  },
+  "order": [
+    "lander_xk3Nzj"
+  ]
+}
