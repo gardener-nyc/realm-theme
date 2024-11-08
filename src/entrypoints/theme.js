@@ -1,6 +1,6 @@
 import createApp from '../components/app';
 import captcha from '../components/captcha';
-
+import prefetchAllLinks from '../components/prefetchAllLinks';
 // Hydrate from HTML
 let initialCart = {};
 
@@ -20,6 +20,7 @@ window.app = app;
 
 // Side effects
 captcha();
+prefetchAllLinks();
 
 // Code credit
 console.groupCollapsed('Site Credits');

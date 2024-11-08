@@ -16,16 +16,88 @@
 {% endschema %}
 
 {% assign product = section.settings.product %}
+{% assign product_title_parts = product.title | split: "-" %}
+{% assign product_title = product_title_parts[0] | trim %}
+{% assign product_subtitle = product_title_parts[1] | trim %}
+{% assign product_description = product.metafields.custom.short_description |  metafield_tag %}
+{% assign product_size = product.metafields.custom.size %}
+{% assign product_benefits = product.metafields.custom.benefits.value %}
+
+{% capture product_header %}
+    <div class="flex flex-col gap-half">
+        <div class="flex justify-between gap-1 items-baseline">
+             <p>
+                <a
+                    aria-label="{{ product.title }}"
+                    href="{{ product.url }}"
+                    class="link-opacity-hover uppercase text-30/38 md:text-36/45">
+                    {{ product_title }}
+                </a>
+            </p>
+
+            <p class="text-18/24 md:text-24/30">
+                {{ product.price | money_without_trailing_zeros }}
+            </p>
+        </div>
+
+        <div class="flex justify-between gap-1 items-baseline">
+            <div>
+                {% if product_subtitle != blank %}
+                    <p class="font-serif text-18/24 md:text-24/30">
+                        {{ product_subtitle }}
+                    </p>
+                {% endif %}
+            </div>
+
+            <p class="text-16/20">
+                {{ product_size }}
+            </p>
+        </div>
+    </div>
+{% endcapture %}
+
+{% capture product_description %}
+    <div class="border-y border-solid border-green py-1 md:py-2 flex flex-col gap-1 md:gap-2">
+        <div class="rich-text line-break font-serif">
+            {{ product_description }}
+        </div>
+
+        <div class="flex justify-center gap-2 lg:gap-3">
+            {% for benefit in product_benefits %}
+                <div class="flex flex-col items-center gap-1">
+                    <div
+                        data-component="image"
+                        class="image aspect-square w-6 md:w-10">
+                        <picture class="blur-xl scale-110">
+                            {% assign lqip = benefit.image | format: 'jpg' | image_url: width: 10 %}
+                            <img
+                                src="{{ lqip }}"
+                                data-src="{{ benefit.image | image_url: width: 200, height: 200 }}"
+                                alt="{{ benefit.image.alt }}"
+                            />
+                        </picture>
+                    </div>
+
+                    <p class="text-12/16 md:text-16/20 max-w-7 text-center">
+                        {{ benefit.title }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endcapture %}
+
 
 <div class="px-container-mobile md:px-container-desktop my-6 md:my-10">
     <div class="mx-auto max-w-grid">
-        <div class="grid grid-cols-6 md:grid-cols-12 gap-y-4 gap-x-gutter-mobile md:gap-gutter-desktop">
+        <div class="grid grid-cols-6 md:grid-cols-12 gap-y-4 gap-x-gutter-mobile md:gap-gutter-desktop items-center">
             <div class="col-span-6 xl:col-span-5 xl:col-start-2">
                 {% render 'product-hero-image-carousel', images: product.images %}
             </div>
             <div class="col-span-6 xl:col-span-5">
-                <div class="xl:px-5">
-                    sup
+                <div class="xl:px-5 md:py-3 flex flex-col gap-1 md:gap-2">
+                    {{ product_header }}
+                    {{ product_description }}
                 </div>
             </div>
         </div>
