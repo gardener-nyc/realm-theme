@@ -55,7 +55,7 @@
                     <div class="border-t border-solid border-green">
                         {% for drawer in section.blocks %}
                             <div
-                                data-component="drawer"
+                                data-component="drawerWithout"
                                 class="border-b border-solid border-green text-rust">
                                 <button
                                     class="py-1 w-full flex justify-between items-center">
@@ -63,9 +63,9 @@
                                         {{ drawer.settings.title }}
                                     </div>
                                     <img
-                                        src="{{ 'icon-arrow-drawer.svg' | asset_url }}"
+                                        src="{{ 'icon-plus-without.svg' | asset_url }}"
                                         alt="Arrow"
-                                        class="block w-[17px] h-[9px] drawer-indicator"
+                                        class="block w-[25px] h-[25px] drawer-indicator"
                                     />
                                 </button>
                                 <div
