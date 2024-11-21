@@ -80,6 +80,13 @@
 		}
 	}
 
+	.rich-text.rich-text-italic-rust {
+		em {
+			@apply text-rust;
+			font-style: normal;
+		}
+	}
+
 	.rich-text.rich-text-link-hover {
 		a {
 			text-decoration: underline;

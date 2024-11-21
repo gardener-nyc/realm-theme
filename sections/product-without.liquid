@@ -1,0 +1,121 @@
+{% schema %}
+{
+	"name": "Product Without",
+	"settings": [
+        {
+            "type": "richtext", 
+            "id": "title",
+            "label": "Title"
+        },
+        {
+			"type": "image_picker",
+			"id": "image_1",
+			"label": "Image 1"
+		},
+        {
+			"type": "image_picker",
+			"id": "image_2",
+			"label": "Image 2"
+		}
+    ],
+    "blocks": [
+        {
+            "type": "drawer",
+            "name": "Drawer",
+            "settings": [
+                {
+                    "type": "text", 
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "richtext",
+                    "id": "description",
+                    "label": "Description"
+                }
+            ]
+        }
+    ],
+    "presets": [{
+		"name": "Product Without",
+		"category": "Product"
+	}]
+}
+{% endschema %}
+
+<div class="px-container-mobile md:px-container-desktop my-6 md:my-10">
+    <div class="max-w-grid mx-auto">
+        <div class="grid grid-cols-6 md:grid-cols-12 gap-x-gutter-mobile md:gap-x-gutter-desktop items-start">
+            <div class="col-span-6 md:col-span-4">
+                <div class="flex flex-col gap-3">
+                    <div class="rich-text font-serif rich-text-bold-sans-regular rich-text-italic-rust text-24/24 md:text-36/36">
+                        {{ section.settings.title }}
+                    </div>
+                    
+                    <div class="border-t border-solid border-green">
+                        {% for drawer in section.blocks %}
+                            <div
+                                data-component="drawer"
+                                class="border-b border-solid border-green text-rust">
+                                <button
+                                    class="py-1 w-full flex justify-between items-center">
+                                    <div class="font-serif text-18/24">
+                                        {{ drawer.settings.title }}
+                                    </div>
+                                    <img
+                                        src="{{ 'icon-arrow-drawer.svg' | asset_url }}"
+                                        alt="Arrow"
+                                        class="block w-[17px] h-[9px] drawer-indicator"
+                                    />
+                                </button>
+                                <div
+                                    style="display: none;"
+                                    class="drawer-content overflow-hidden">
+                                    <div class="font-serif rich-text line-break pb-2">
+                                        {{ drawer.settings.description }}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden md:block md:col-span-4 md:sticky top-[85px]">
+                <div
+                    data-component="image"
+                    class="image w-full h-[calc(100vh-105px)]">
+                    <picture class="blur-xl scale-110">
+                        <source
+                            data-srcset="{{ section.settings.image_1 | image_url: width: 1000 }}"
+                            media="(min-width: 800px)">
+                        {% assign lqip = section.settings.image_1 | image_url: width: 10 %}
+                        <img
+                            src="{{ lqip }}"
+                            data-src="{{ section.settings.image_1 | image_url: width: 800 }}"
+                            alt="{{ section.settings.image_1.alt }}"
+                        />
+                    </picture>
+                </div>
+            </div>
+
+            <div class="hidden md:block md:col-span-4 md:sticky top-[85px]">
+                <div
+                    data-component="image"
+                    class="image w-full h-[calc(100vh-105px)]">
+                    <picture class="blur-xl scale-110">
+                        <source
+                            data-srcset="{{ section.settings.image_2 | image_url: width: 1000 }}"
+                            media="(min-width: 800px)">
+                        {% assign lqip = section.settings.image_2 | image_url: width: 10 %}
+                        <img
+                            src="{{ lqip }}"
+                            data-src="{{ section.settings.image_2 | image_url: width: 800 }}"
+                            alt="{{ section.settings.image_2.alt }}"
+                        />
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
