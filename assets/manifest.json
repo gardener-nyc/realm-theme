@@ -1,17 +1,14 @@
 {
   "src/entrypoints/theme.css": {
-    "file": "theme-6ObaDqgw.css",
+    "file": "theme-DvqK6GZG.css",
     "src": "src/entrypoints/theme.css",
     "isEntry": true
   },
   "src/entrypoints/theme.js": {
-    "file": "theme-79l1SzVz.js",
+    "file": "theme-BXpBj4u6.js",
     "name": "theme",
     "src": "src/entrypoints/theme.js",
-    "isEntry": true,
-    "css": [
-      "theme-BWf4Yhr3.css"
-    ]
+    "isEntry": true
   },
   "src/fonts/bb-modern-regular-pro.woff": {
     "file": "bb-modern-regular-pro-BbpoF83H.woff",

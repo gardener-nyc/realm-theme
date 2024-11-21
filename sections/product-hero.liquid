@@ -1,0 +1,122 @@
+{% schema %}
+{
+	"name": "Product Hero",
+	"settings": [],
+    "presets": [{
+		"name": "Product Hero",
+		"category": "Product"
+	}]
+}
+{% endschema %}
+
+
+{% assign product_title_parts = product.title | split: "-" %}
+{% assign product_title = product_title_parts[0] | trim %}
+{% assign product_subtitle = product_title_parts[1] | trim %}
+{% assign product_size = product.metafields.custom.size %}
+{% assign product_drawers = product.metafields.custom.hero_drawers.value %}
+
+{% capture product_header %}
+    <div class="flex flex-col gap-half">
+        <div class="flex justify-between gap-1 items-baseline">
+            <h1 class="uppercase text-30/38 md:text-36/45">
+                {{ product_title }}
+            </h1>
+
+            <p class="text-18/24 md:text-24/30">
+                {{ product.price | money_without_trailing_zeros }}
+            </p>
+        </div>
+
+        <div class="flex justify-between gap-1 items-baseline">
+            <div>
+                {% if product_subtitle != blank %}
+                    <p class="font-serif">
+                        {{ product_subtitle }}
+                    </p>
+                {% endif %}
+            </div>
+
+            <p class="text-16/20">
+                {{ product_size }}
+            </p>
+        </div>
+    </div>
+{% endcapture %}
+
+{% capture product_description %}
+    <div class="border-y border-solid border-green py-2">
+        <div class="rich-text line-break font-serif">
+            {{ product.description }}
+        </div>
+    </div>
+{% endcapture %}
+
+{% capture product_form %}
+    {% form 'product', product, data-component: "productFormQuickAdd" %}
+        <input
+            type="hidden"
+            name="id"
+            value="{{ product.selected_or_first_available_variant.id }}"
+        />
+        <div class="w-full relative z-1">
+            <button
+                {% unless product.available %}disabled="true"{% endunless %}
+                type="submit"
+                class="block w-full button button-primary-brown">
+                {% if product.available %}
+                    Add to Cart
+                {% else %}
+                    Sold Out
+                {% endif %}
+            </button>
+        </div>
+    {% endform %}
+{% endcapture %}
+
+{% capture product_hero_drawers %}
+    <div class="border-t border-solid border-green">
+        {% for drawer in product_drawers %}
+            <div
+                data-component="drawer"
+                class="border-b border-solid border-green">
+                <button
+                    class="py-1 w-full flex justify-between items-center">
+                    <div class="font-serif text-18/24">
+                        {{ drawer.title }}
+                    </div>
+                    <img
+                        src="{{ 'icon-arrow-drawer.svg' | asset_url }}"
+                        alt="Arrow"
+                        class="block w-[17px] h-[9px] drawer-indicator"
+                    />
+                </button>
+                <div
+                    style="display: none;"
+                    class="drawer-content overflow-hidden">
+                    <div class="font-serif rich-text line-break pb-2">
+                        {{ drawer.description | metafield_tag }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endcapture %}
+
+<div class="px-container-mobile md:px-container-desktop my-2 md:my-4">
+    <div class="mx-auto max-w-grid">
+        <div class="grid grid-cols-6 md:grid-cols-12 gap-y-4 gap-x-gutter-mobile md:gap-gutter-desktop">
+            <div class="col-span-6 xl:col-span-5 xl:col-start-2">
+                {% render 'product-hero-image-carousel', images: product.images %}
+            </div>
+            <div class="col-span-6 xl:col-span-5">
+                <div class="xl:px-5 md:py-3 flex flex-col gap-2">
+                    {{ product_header }}
+                    {{ product_description }}
+                    {{ product_form }}
+                    {{ product_hero_drawers }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

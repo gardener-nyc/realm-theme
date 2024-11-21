@@ -1,0 +1,39 @@
+{% schema %}
+{
+	"name": "Product Benefits",
+	"settings": [],
+    "presets": [{
+		"name": "Product Benefits",
+		"category": "Product"
+	}]
+}
+{% endschema %}
+
+{% assign product_benefits = product.metafields.custom.benefits.value %}
+
+<div class="my-4 md:my-6 px-container-mobile md:px-container-desktop">
+    <div class="mx-auto max-w-grid">
+        <div class="flex gap-2 md:gap-3 lg:gap-8 xl:gap-12 justify-center">
+            {% for benefit in product_benefits %}
+                <div class="flex flex-col items-center gap-1 lg:gap-3 max-w-8 md:max-w-9 lg:max-w-17">
+                    <div
+                        data-component="image"
+                        class="image aspect-square w-5 lg:w-8 xl:w-10">
+                        <picture class="blur-xl scale-110">
+                            {% assign lqip = benefit.image | format: 'jpg' | image_url: width: 10 %}
+                            <img
+                                src="{{ lqip }}"
+                                data-src="{{ benefit.image | image_url: width: 200, height: 200 }}"
+                                alt="{{ benefit.image.alt }}"
+                            />
+                        </picture>
+                    </div>
+
+                    <p class="text-12/16 md:text-14/18 lg:text-24/30 text-center">
+                        {{ benefit.title }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

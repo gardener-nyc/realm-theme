@@ -1,0 +1,58 @@
+{
+  "sections": {
+    "product_hero": {
+      "type": "product-hero",
+      "settings": {}
+    },
+    "product_benefits": {
+      "type": "product-benefits",
+      "settings": {}
+    },
+    "fragrance_carousel_7KA6WL": {
+      "type": "fragrance-carousel",
+      "blocks": {
+        "slide_d9agKH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/background.jpg",
+            "background_color": "#c98c68",
+            "title": "Wild Lavender",
+            "description": "<p>Fields of lavender in every direction. Warm greens for sage and bright citrus yellows. Sweetgrass bends in a soft breeze underneath a tall tree, bark warmed by the sun.<\/p>"
+          }
+        },
+        "slide_QUnmF8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/background.jpg",
+            "background_color": "#a4b79f",
+            "title": "Wild Lavender",
+            "description": "<p>Fields of lavender in every direction. Warm greens for sage and bright citrus yellows. Sweetgrass bends in a soft breeze underneath a tall tree, bark warmed by the sun.<\/p>"
+          }
+        },
+        "slide_XYJxiK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/background.jpg",
+            "background_color": "#cac0db",
+            "title": "Wild Lavender",
+            "description": "<p>Fields of lavender in every direction. Warm greens for sage and bright citrus yellows. Sweetgrass bends in a soft breeze underneath a tall tree, bark warmed by the sun.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_d9agKH",
+        "slide_QUnmF8",
+        "slide_XYJxiK"
+      ],
+      "settings": {
+        "title": "What It Smells Like",
+        "background_image": "shopify:\/\/shop_images\/background.jpg"
+      }
+    }
+  },
+  "order": [
+    "product_hero",
+    "product_benefits",
+    "fragrance_carousel_7KA6WL"
+  ]
+}
