@@ -48,11 +48,38 @@
         "title": "What It Smells Like",
         "background_image": "shopify:\/\/shop_images\/background.jpg"
       }
+    },
+    "centered_rich_text_cNQdat": {
+      "type": "centered-rich-text",
+      "settings": {
+        "description": "<p>Realm uses a patent-pending formula that works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means clean air (and lungs), all without the chemicals.<\/p>",
+        "background_color": "#c98c68",
+        "invert_text_color": true
+      }
+    },
+    "bumper_image_ticker_QRmxD7": {
+      "type": "bumper-image-ticker",
+      "settings": {
+        "title": "<p>It’s Time to<br\/><strong>Clean Up Air Care <\/strong><\/p>",
+        "description": "<p>Our natural, patent-pending formula works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means cleaner air—and cleaner lungs.<\/p>",
+        "url": "shopify:\/\/pages\/about",
+        "cta": "Our Story",
+        "background_image": "shopify:\/\/shop_images\/background.jpg"
+      }
+    },
+    "product_reviews_tUb8iT": {
+      "type": "product-reviews",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_6.jpg"
+      }
     }
   },
   "order": [
     "product_hero",
     "product_benefits",
-    "fragrance_carousel_7KA6WL"
+    "fragrance_carousel_7KA6WL",
+    "centered_rich_text_cNQdat",
+    "bumper_image_ticker_QRmxD7",
+    "product_reviews_tUb8iT"
   ]
 }

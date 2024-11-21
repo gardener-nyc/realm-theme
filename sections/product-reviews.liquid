@@ -1,0 +1,59 @@
+{% schema %}
+{
+	"name": "Product Reviews",
+	"settings": [
+        {
+			"type": "image_picker",
+			"id": "image",
+			"label": "Image"
+		}
+    ],
+    "presets": [{
+		"name": "Product Reviews",
+		"category": "Product"
+	}]
+}
+{% endschema %}
+
+<div class="px-container-mobile md:px-container-desktop my-6 md:my-10">
+    <div class="mx-auto max-w-grid">
+        <div class="grid grid-cols-6 md:grid-cols-12 gap-y-4 gap-x-gutter-mobile md:gap-gutter-desktop items-start">
+            <div class="col-span-6 md:sticky top-8 md:top-[85px]">
+                <div
+                    data-component="image"
+                    class="image w-full h-[80vw] md:h-[calc(100vh-105px)]">
+                    <picture class="blur-xl scale-110">
+                        <source
+                            data-srcset="{{ section.settings.image | image_url: width: 1400 }}"
+                            media="(min-width: 1200px)">
+                        <source
+                            data-srcset="{{ section.settings.image | image_url: width: 1200 }}"
+                            media="(min-width: 1000px)">
+                        <source
+                            data-srcset="{{ section.settings.image | image_url: width: 1000 }}"
+                            media="(min-width: 800px)">
+                        {% assign lqip = section.settings.image | image_url: width: 10 %}
+                        <img
+                            src="{{ lqip }}"
+                            data-src="{{ section.settings.image | image_url: width: 800 }}"
+                            alt="{{ section.settings.image.alt }}"
+                        />
+                    </picture>
+                </div>
+            </div>
+            <div class="col-span-6">
+                <div
+                    class="yotpo-widget-instance"
+                    data-yotpo-instance-id="961415"
+                    data-yotpo-product-id="{{product.id}}"
+                    data-yotpo-name="{{ product.title | escape }}"
+                    data-yotpo-url="{{ shop.url }}{{ product.url }}"
+                    data-yotpo-image-url="{{ product.featured_image | product_img_url: "large" | prepend: "https:" | replace: '?', '%3F' | replace: '&','%26'}}"
+                    data-yotpo-price="{{ product.price | divided_by: 100.00 }}"
+                    data-yotpo-currency="{{ shop.currency }}"
+                    data-yotpo-description="{{ product.description | escape }}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

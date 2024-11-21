@@ -50,23 +50,26 @@
 
 {% assign ticker_repeat_count = 10 %}
 
-<div class="overflow-hidden bg-green text-white py-1">
-	<div class="table table-fixed ticker-container">
-		{% for i in (1..ticker_repeat_count) %}
-			<div class="table-cell ticker">
-				<div class="table table-fixed">
-					{% for block in section.blocks %}
-						<div class="table-cell whitespace-nowrap pl-1">
-							<div class="rich-text font-serif rich-text-bold-sans-regular">
-								{{ block.settings.text }}
+{% if section.blocks.size > 0 %}
+	<div class="overflow-hidden bg-green text-white py-1">
+		<div class="table table-fixed ticker-container">
+			{% for i in (1..ticker_repeat_count) %}
+				<div class="table-cell ticker">
+					<div class="table table-fixed">
+						{% for block in section.blocks %}
+							<div class="table-cell whitespace-nowrap pl-1">
+								<div class="rich-text font-serif rich-text-bold-sans-regular">
+									{{ block.settings.text }}
+								</div>
 							</div>
-						</div>
-					{% endfor %}
+						{% endfor %}
+					</div>
 				</div>
-			</div>
-		{% endfor %}
+			{% endfor %}
+		</div>
 	</div>
-</div>
+{% endif %}
+
 <div class="overflow-hidden relative">
 	<div
         data-component="parallaxBackground"
