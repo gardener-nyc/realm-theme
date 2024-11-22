@@ -6,6 +6,7 @@ export default {
 		minify: true,
 		sourcemap: true,
 		emptyOutDir: true,
+		manifest: 'manifest.json',
 	},
 
 	server: {
