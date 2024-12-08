@@ -1,0 +1,91 @@
+{% schema %}
+{
+	"name": "Text Ribbon",
+	"settings": [
+		{
+			"type": "image_picker",
+			"id": "background_image",
+			"label": "Background Image"
+		},
+		{
+			"type": "richtext",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "richtext",
+			"id": "description",
+			"label": "Description"
+		},
+        {
+			"type": "color",
+			"id": "background_color",
+			"label": "Background Color"
+		},
+		{
+			"type": "checkbox",
+			"id": "invert_text_color",
+			"label": "Invert Text Color",
+			"default": true
+		}
+	],
+    "presets": [{
+		"name": "Text Ribbon",
+		"category": "Marketing"
+	}]
+}
+{% endschema %}
+
+<div
+	{% if section.settings.background_color %}
+		style="background-color: {{ section.settings.background_color }};"
+	{% endif %}
+	class="relative overflow-hidden px-container-mobile md:px-container-desktop {% if section.settings.invert_text_color %}text-white{% else %}text-rust{% endif %}">
+	{% if section.settings.background_image != blank %}	
+		<div
+			data-component="parallaxBackground"
+			class="absolute inset-x-0 inset-y-[-25vh]">
+			<div
+				data-component="image"
+				class="image absolute inset-0">
+				<picture class="blur-xl scale-110">
+					<source
+						data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
+						media="(min-width: 1200px)">
+					<source
+						data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
+						media="(min-width: 1000px)">
+					<source
+						data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
+						media="(min-width: 800px)">
+					
+					{% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
+					<img
+						src="{{ lqip }}"
+						data-src="{{ section.settings.background_image | image_url: width: 800 }}"
+						alt="{{ section.settings.background_image.alt }}"
+					/>
+				</picture>
+			</div>
+		</div>
+	{% endif %}
+
+	<div class="relative z-1 py-6 {% if section.settings.background_image != blank %}md:py-18{% endif %}">
+		<div class="max-w-grid mx-auto">
+			<div class="grid grid-cols-6 md:grid-cols-12 gap-y-4 gap-x-gutter-mobile md:gap-gutter-desktop">
+				<div class="col-span-6 text-center {% if section.settings.description == blank %}md:col-span-8 md:col-start-3{% else %}md:text-left md:px-4{% endif %}">
+					<div class="rich-text font-serif rich-text-bold-sans-regular text-24/30 md:text-36/48">
+						{{ section.settings.title }}
+					</div>
+				</div>
+				{% if section.settings.description != blank %}
+					<div class="col-span-6">
+						<div class="rich-text font-serif text-20/24 md:text-24/30">
+							{{ section.settings.description }}
+						</div>
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
