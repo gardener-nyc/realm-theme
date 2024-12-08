@@ -1,0 +1,31 @@
+{% schema %}
+{
+	"name": "Small Rich Text",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+        }
+    ],
+    "presets": [{
+		"name": "Small Rich Text",
+		"category": "Marketing"
+	}]
+}
+{% endschema %}
+
+
+<div class="my-4 md:my-6 px-container-mobile md:px-container-desktop">
+    <div class="flex flex-col gap-1 md:gap-3">
+        <h2 class="text-24/30 md:text-36/48 font-serif">{{ section.settings.title }}</h2>
+        <div class="rich-text line-break text-16/24">
+            {{ section.settings.description }}
+        </div>
+    </div>
+</div>

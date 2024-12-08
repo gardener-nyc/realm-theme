@@ -1,0 +1,63 @@
+{% schema %}
+{
+	"name": "About Bio",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+        }
+    ],
+    "presets": [{
+		"name": "About Bio",
+		"category": "Marketing"
+	}]
+}
+{% endschema %}
+
+
+<div class="my-8 px-container-mobile md:px-container-desktop">
+    <div class="mx-auto max-w-grid">
+        <div class="grid md:grid-cols-12 gap-x-gutter-mobile md:gap-gutter-desktop gap-y-2">
+            <div class="md:col-span-7">
+                <div
+                    data-component="image"
+                    class="block w-full aspect-[4/3]">
+                    <picture class="blur-xl scale-110">
+                        <source
+                            data-srcset="{{ section.settings.image | image_url: width: 1400 }}"
+                            media="(min-width: 1000px)">
+                        <source
+                            data-srcset="{{ section.settings.image | image_url: width: 1200 }}"
+                            media="(min-width: 800px)">
+                        
+                        {% assign lqip = section.settings.image | format: 'jpg' | image_url: width: 10 %}
+                        <img
+                            src="{{ lqip }}"
+                            data-src="{{ section.settings.image | image_url: width: 800 }}"
+                            alt="{{ section.settings.image.alt }}"
+                        />
+                    </picture>
+                </div>
+            </div>
+            <div class="md:col-span-5">
+                <div class="flex flex-col gap-1 md:gap-3">
+                    <h2 class="text-24/30 md:text-36/48 font-serif">{{ section.settings.title }}</h2>
+                    <div class="rich-text line-break text-18/24 md:text-24/30">
+                        {{ section.settings.description }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
