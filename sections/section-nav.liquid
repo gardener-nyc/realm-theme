@@ -1,0 +1,44 @@
+{% schema %}
+{
+	"name": "Section Nav",
+    "blocks": [
+        {
+            "type": "section",
+            "name": "Section",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "url",
+                    "id": "url",
+                    "label": "URL"
+                }
+            ]
+        }
+    ],
+    "presets": [{
+		"name": "Section Nav",
+		"category": "Marketing"
+	}]
+}
+{% endschema %}
+
+<div class="p-[3px] w-full overflow-x-auto scroll-touch sticky">
+    <div class="min-w-60">
+        <div class="grid grid-cols-3 gap-[3px]">
+            {% for block in section.blocks %}
+                <a
+                    data-component="navAnchor"
+                    href="{{ block.settings.url }}"
+                    class="whitespace-nowrap uppercase text-center p-1 text-12/12 md:text-14/14 duration-300 ease-appear transition-colors hover:bg-brown hover:text-white {% if forloop.first %}bg-brown text-white{% endif %}">
+                    {{ block.settings.title }}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div id="{{ section.settings.id }}"></div>

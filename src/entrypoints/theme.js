@@ -1,6 +1,7 @@
 import createApp from '../components/app';
 import captcha from '../components/captcha';
 import prefetchAllLinks from '../components/prefetchAllLinks';
+
 // Hydrate from HTML
 let initialCart = {};
 

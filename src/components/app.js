@@ -17,6 +17,7 @@ import productHeroImageCarousel from './productHeroImageCarousel';
 import drawer from './drawer';
 import drawerWithout from './drawerWithout';
 import fragranceCarousel from './fragranceCarousel';
+import navAnchor from './navAnchor';
 
 const defaultState = {
 	cart: {},
@@ -43,6 +44,7 @@ const components = {
 	drawer,
 	drawerWithout,
 	fragranceCarousel,
+	navAnchor,
 };
 
 export default function createApp(initialState) {

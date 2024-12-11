@@ -1,0 +1,18 @@
+{% schema %}
+{
+	"name": "Section ID",
+    "settings": [
+        {
+            "type": "text",
+            "id": "id",
+            "label": "ID"
+        }
+    ],
+    "presets": [{
+		"name": "Section ID",
+		"category": "Marketing"
+	}]
+}
+{% endschema %}
+
+<div id="{{ section.settings.id }}"></div>
