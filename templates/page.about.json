@@ -265,13 +265,6 @@
         "description": "<p>I started researching the carcinogens that my doctor had asked me about, and was shocked to  learn that not only are they a common ingredient in anything in fragrance (and these days, that’s pretty much everything)—including the air care products I used every day. And because companies aren’t required to disclose them on the label, they’re pretty much impossible to avoid.</p><p>When I couldn’t find any alternative air care products that were safe, effective, and smelled great, I decided to create Realm: so everyone can care for their space without compromise. </p>"
       }
     },
-    "small_rich_text_gNy8f7": {
-      "type": "small-rich-text",
-      "settings": {
-        "title": "Sources",
-        "description": "<p>Food & Drug Admin., Prohibited & Restricted Ingredients<br/>https://www.fda.gov/cosmetics/guidanceregulation/ lawsregul ations/ucm127406.htm. </p><p>Food & Drug Admin., Prohibited & Restricted Ingredients<br/>https://www.fda.gov/cosmetics/guidanceregulation/ lawsregul ations/ucm127406.htm. </p>"
-      }
-    },
     "bumper_spray_Yzyjgz": {
       "type": "bumper-spray",
       "settings": {
@@ -279,6 +272,13 @@
         "description": "",
         "url": "shopify://products/wild-lavender",
         "cta": "Get spraying"
+      }
+    },
+    "small_rich_text_gNy8f7": {
+      "type": "small-rich-text",
+      "settings": {
+        "title": "Sources",
+        "description": "<p>Food & Drug Admin., Prohibited & Restricted Ingredients<br/>https://www.fda.gov/cosmetics/guidanceregulation/ lawsregul ations/ucm127406.htm. </p><p>Food & Drug Admin., Prohibited & Restricted Ingredients<br/>https://www.fda.gov/cosmetics/guidanceregulation/ lawsregul ations/ucm127406.htm. </p>"
       }
     }
   },
@@ -296,7 +296,7 @@
     "press_carousel_tgfr44",
     "section_id_R44daW",
     "about_bio_MFpRfy",
-    "small_rich_text_gNy8f7",
-    "bumper_spray_Yzyjgz"
+    "bumper_spray_Yzyjgz",
+    "small_rich_text_gNy8f7"
   ]
 }
