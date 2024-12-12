@@ -1,80 +1,89 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-	"current": {
-		"favicon": "shopify://shop_images/favicon.jpg",
-		"sections": {
-			"footer-instagram-carousel": {
-				"type": "footer-instagram-carousel",
-				"blocks": {
-					"slide_hkJqpj": {
-						"type": "slide",
-						"settings": {
-							"image": "shopify://shop_images/image_4.jpg"
-						}
-					},
-					"slide_WEeJiy": {
-						"type": "slide",
-						"settings": {
-							"image": "shopify://shop_images/image_6.jpg"
-						}
-					},
-					"slide_TzARPW": {
-						"type": "slide",
-						"settings": {
-							"image": "shopify://shop_images/image_12.jpg"
-						}
-					},
-					"slide_NknkhC": {
-						"type": "slide",
-						"settings": {
-							"image": "shopify://shop_images/image_1.jpg"
-						}
-					},
-					"slide_UTbAti": {
-						"type": "slide",
-						"settings": {
-							"image": "shopify://shop_images/image_7.jpg"
-						}
-					}
-				},
-				"block_order": [
-					"slide_hkJqpj",
-					"slide_WEeJiy",
-					"slide_TzARPW",
-					"slide_NknkhC",
-					"slide_UTbAti"
-				],
-				"settings": {
-					"title": "Welcome to our Realm™",
-					"description": "<a href=\"https://www.instagram.com/experiencetherealm\" target=\"_blank\" title=\"@experiencetherealm\">@experiencetherealm</a>"
-				}
-			},
-			"footer": {
-				"type": "footer",
-				"settings": {
-					"newsletter_title": "Join the movement for better air care. Sign up to get the latest news from Realm™.",
-					"klaviyo_list_id": "RmXajH",
-					"klaviyo_source_id": "website_footer",
-					"menu": "footer",
-					"legal_menu": "footer-legal",
-					"logo": "shopify://shop_images/icon-logo-footer.svg"
-				}
-			},
-			"header": {
-				"type": "header",
-				"settings": {
-					"menu": "main-menu",
-					"menu_mobile": "main-menu-mobile",
-					"menu_mobile_footer": "main-menu-mobile-footer",
-					"logo": "shopify://shop_images/icon-logo-footer.svg"
-				}
-			},
-			"cart": {
-				"type": "cart",
-				"settings": {
-					"free_shipping_threshold": 5000
-				}
-			}
-		},
-		"content_for_index": []
-	}
+  "current": {
+    "favicon": "shopify://shop_images/favicon.jpg",
+    "sections": {
+      "footer-instagram-carousel": {
+        "type": "footer-instagram-carousel",
+        "blocks": {
+          "slide_hkJqpj": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify://shop_images/image_4.jpg"
+            }
+          },
+          "slide_WEeJiy": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify://shop_images/image_6.jpg"
+            }
+          },
+          "slide_TzARPW": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify://shop_images/image_12.jpg"
+            }
+          },
+          "slide_NknkhC": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify://shop_images/image_1.jpg"
+            }
+          },
+          "slide_UTbAti": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify://shop_images/image_7.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "slide_hkJqpj",
+          "slide_WEeJiy",
+          "slide_TzARPW",
+          "slide_NknkhC",
+          "slide_UTbAti"
+        ],
+        "settings": {
+          "title": "Welcome to our Realm™",
+          "description": "<a href=\"https://www.instagram.com/experiencetherealm\" target=\"_blank\" title=\"@experiencetherealm\">@experiencetherealm</a>"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "newsletter_title": "Join the movement for better air care. Sign up to get the latest news from Realm™.",
+          "klaviyo_list_id": "RmXajH",
+          "klaviyo_source_id": "website_footer",
+          "menu": "footer",
+          "legal_menu": "footer-legal",
+          "logo": "shopify://shop_images/icon-logo-footer.svg"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "menu": "main-menu",
+          "menu_mobile": "main-menu-mobile",
+          "menu_mobile_footer": "main-menu-mobile-footer",
+          "logo": "shopify://shop_images/icon-logo-footer.svg"
+        }
+      },
+      "cart": {
+        "type": "cart",
+        "settings": {
+          "free_shipping_threshold": 5000
+        }
+      }
+    },
+    "content_for_index": []
+  }
 }
