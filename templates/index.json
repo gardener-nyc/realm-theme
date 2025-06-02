@@ -68,10 +68,10 @@
       "settings": {
         "title": "<p><strong>A Fresh Take</strong></p><p>on Air & Fabric Spray</p>",
         "description": "<p>Realm™ is formulated to be safe to use every day, and smell so good that you’ll actually want to.</p>",
-        "url": "shopify://products/lavender-bergamot",
+        "url": "shopify://products/lavender-bergamot-air-fabric-spray",
         "cta": "Get Fresh",
         "background_image": "shopify://shop_images/background.jpg",
-        "product": "lavender-bergamot"
+        "product": "lavender-bergamot-air-fabric-spray"
       }
     },
     "bumper_image_ticker_TdwJqL": {
@@ -112,7 +112,7 @@
     "featured_product_hero_feGHmb": {
       "type": "featured-product-hero",
       "settings": {
-        "product": "lavender-bergamot"
+        "product": "lavender-bergamot-air-fabric-spray"
       }
     },
     "image_grid_carousel_AyVRfC": {
@@ -242,7 +242,7 @@
       "settings": {
         "title": "<p><strong>A breath</strong><br/>of fresh air.</p>",
         "description": "",
-        "url": "shopify://products/lavender-bergamot",
+        "url": "shopify://products/lavender-bergamot-air-fabric-spray",
         "cta": "Get spraying"
       }
     }
