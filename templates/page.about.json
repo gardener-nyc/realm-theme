@@ -13,7 +13,7 @@
       "type": "hero-full-width-image",
       "settings": {
         "title": "<p><strong>Your home is your safe space.</strong></p><p>Our products help you keep it that way. </p>",
-        "background_image": "shopify://shop_images/background.jpg"
+        "background_image": "shopify://shop_images/Frame_2149.png"
       }
     },
     "section_nav_L4GYpk": {
@@ -66,7 +66,7 @@
     "text_ribbon_A9gp7T": {
       "type": "text-ribbon",
       "settings": {
-        "background_image": "shopify://shop_images/bubbles.png",
+        "background_image": "shopify://shop_images/Frame_2156-2.png",
         "title": "<p><strong>The EU has banned over 1,700 cosmetic ingredients. The US? Just 11.[1]</strong></p>",
         "description": "",
         "background_color": "#f2e5be",
@@ -134,7 +134,7 @@
         "slide_dVHj7R": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/image_1.jpg",
+            "image": "shopify://shop_images/Frame_2161.png",
             "title": "Effective",
             "description": "<p>We put in hundreds of hours of research, worked with multiple formulators, and tested dozens of iterations until we were satisfied that our products would work without covering anything up—odors or ingredients.</p>"
           }
@@ -142,7 +142,7 @@
         "slide_ReC6ew": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/image_1.jpg",
+            "image": "shopify://shop_images/Frame_2153.png",
             "title": "Safe",
             "description": "<p>Our products are certified Made Safe and formulated with non-toxic ingredients. They’re also Safe Scent-certified—a new standard for air care products that we’ve pioneered.</p>"
           }
@@ -150,7 +150,7 @@
         "slide_dabYLb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/image_1.jpg",
+            "image": "shopify://shop_images/Frame_2152.png",
             "title": "Enveloping",
             "description": "<p>We partnered with a Swiss fragrance house that has over 125 years of experience to craft scents that enhance your everyday routine.</p>"
           }
@@ -248,7 +248,7 @@
         "quote_3wym7y"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/background.jpg"
+        "background_image": "shopify://shop_images/Frame_2167.png"
       }
     },
     "section_id_R44daW": {
