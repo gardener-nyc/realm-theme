@@ -29,15 +29,6 @@
             "description": "<p>Fields of lavender in every direction. Warm greens for sage and bright citrus yellows. Sweetgrass bends in a soft breeze underneath a tall tree, bark warmed by the sun.</p>"
           }
         },
-        "slide_QUnmF8": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/background.jpg",
-            "background_color": "#a4b79f",
-            "title": "Wild Lavender",
-            "description": "<p>Fields of lavender in every direction. Warm greens for sage and bright citrus yellows. Sweetgrass bends in a soft breeze underneath a tall tree, bark warmed by the sun.</p>"
-          }
-        },
         "slide_XYJxiK": {
           "type": "slide",
           "settings": {
@@ -50,7 +41,6 @@
       },
       "block_order": [
         "slide_d9agKH",
-        "slide_QUnmF8",
         "slide_XYJxiK"
       ],
       "settings": {

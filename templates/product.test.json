@@ -29,6 +29,14 @@
             "description": "<p>Fields of lavender in every direction. Warm greens for sage and bright citrus yellows. Sweetgrass bends in a soft breeze underneath a tall tree, bark warmed by the sun.</p>"
           }
         },
+        "slide_N6gqwC": {
+          "type": "slide",
+          "settings": {
+            "background_color": "",
+            "title": "",
+            "description": ""
+          }
+        },
         "slide_QUnmF8": {
           "type": "slide",
           "settings": {
@@ -50,6 +58,7 @@
       },
       "block_order": [
         "slide_d9agKH",
+        "slide_N6gqwC",
         "slide_QUnmF8",
         "slide_XYJxiK"
       ],
