@@ -16,7 +16,7 @@
         "subtitle": "<p>of Air Care™</p>",
         "url": "shopify://collections/all",
         "cta": "Enter Realm",
-        "background_image": "shopify://shop_images/background.jpg"
+        "background_image": "shopify://shop_images/Group_480966367.png"
       }
     },
     "home_product_benefits_pYxBCG": {
@@ -66,12 +66,12 @@
     "featured_product_CVGqYk": {
       "type": "featured-product",
       "settings": {
-        "title": "<p><strong>A Fresh Take</strong></p><p>on Air & Fabric Spray</p>",
+        "title": "<p><strong>A Fresh Take</strong></p><p>on Air Fresheners</p>",
         "description": "<p>Realm™ is formulated to be safe to use every day, and smell so good that you’ll actually want to.</p>",
         "url": "shopify://products/lavender-bergamot-air-fabric-spray",
         "cta": "Get Fresh",
-        "background_image": "shopify://shop_images/background.jpg",
-        "product": "lavender-bergamot-air-fabric-spray"
+        "background_image": "shopify://shop_images/Frame_2166-2.png",
+        "product": "fresh-poplin-air-fabric-spray"
       }
     },
     "bumper_image_ticker_TdwJqL": {
@@ -106,7 +106,7 @@
         "description": "<p>Our natural, patent-pending formula works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means cleaner air—and cleaner lungs.</p>",
         "url": "shopify://pages/about",
         "cta": "Our Story",
-        "background_image": "shopify://shop_images/background.jpg"
+        "background_image": "shopify://shop_images/Clean_air_for_all.png"
       }
     },
     "featured_product_hero_feGHmb": {
