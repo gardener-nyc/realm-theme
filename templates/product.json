@@ -33,9 +33,32 @@
       "block_order": [
         "slide_XYJxiK"
       ],
+      "disabled": true,
       "settings": {
         "title": "What It Smells Like",
         "background_image": "shopify://shop_images/Frame_2137.png"
+      }
+    },
+    "fragrance_carousel_edT8CF": {
+      "type": "fragrance-carousel",
+      "blocks": {
+        "slide_DcFUKw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/SHOT09_240923REALM_1224_1.png",
+            "background_color": "",
+            "title": "Citrus Saffron",
+            "description": "<p>placeholder</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_DcFUKw"
+      ],
+      "name": "Fragrance Carousel",
+      "settings": {
+        "title": "",
+        "background_image": "shopify://shop_images/Citrus_Saffron.png"
       }
     },
     "centered_rich_text_cNQdat": {
@@ -119,6 +142,7 @@
     "product_hero",
     "product_benefits",
     "fragrance_carousel_7KA6WL",
+    "fragrance_carousel_edT8CF",
     "centered_rich_text_cNQdat",
     "product_without_KaAVta",
     "bumper_image_ticker_QRmxD7",
