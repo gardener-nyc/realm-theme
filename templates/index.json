@@ -13,11 +13,11 @@
       "type": "home-hero",
       "settings": {
         "disable_window": true,
-        "title": "<p><strong>A New Standard<\/strong><\/p>",
-        "subtitle": "<p>of Air Care™<\/p>",
-        "url": "shopify:\/\/collections\/all",
+        "title": "<p><strong>A New Standard</strong></p>",
+        "subtitle": "<h6>of Air Care™</h6>",
+        "url": "shopify://collections/all",
         "cta": "Enter Realm",
-        "background_image": "shopify:\/\/shop_images\/Group_480966367.png"
+        "background_image": "shopify://shop_images/Group_480966367.png"
       }
     },
     "home_product_benefits_pYxBCG": {
@@ -27,28 +27,28 @@
           "type": "benefit",
           "settings": {
             "title": "Works Instantly",
-            "image": "shopify:\/\/shop_images\/Realm_InstantDeodorizing_White_HighRes.svg"
+            "image": "shopify://shop_images/Realm_InstantDeodorizing_White_HighRes.svg"
           }
         },
         "benefit_6wqC97": {
           "type": "benefit",
           "settings": {
             "title": "Long Lasting Freshness",
-            "image": "shopify:\/\/shop_images\/Realm_LongLasting_White_HighRes_1.svg"
+            "image": "shopify://shop_images/Realm_LongLasting_White_HighRes_1.svg"
           }
         },
         "benefit_kBdEMh": {
           "type": "benefit",
           "settings": {
             "title": "Natural Deodorizer",
-            "image": "shopify:\/\/shop_images\/Realm_NaturalDeodorizer_White_HighRes_1.svg"
+            "image": "shopify://shop_images/Realm_NaturalDeodorizer_White_HighRes_1.svg"
           }
         },
         "benefit_NqYjBB": {
           "type": "benefit",
           "settings": {
             "title": "Certified Non-Toxic",
-            "image": "shopify:\/\/shop_images\/Realm_CertifiedNonToxic_White_HighRes.svg"
+            "image": "shopify://shop_images/Realm_CertifiedNonToxic_White_HighRes.svg"
           }
         }
       },
@@ -59,19 +59,19 @@
         "benefit_NqYjBB"
       ],
       "settings": {
-        "title": "<p><strong>An Air + Fabric Spray<\/strong><\/p><p>Designed with Life in Mind<\/p>",
-        "description": "<p>Your home is your safe space. Our products are both safe and effective, so you don’t have to compromise.<\/p>",
-        "background_image": "shopify:\/\/shop_images\/placeholder-home-product.jpg"
+        "title": "<p><strong>An Air + Fabric Spray</strong></p><p>Designed with Life in Mind</p>",
+        "description": "<p>Your home is your safe space. Our products are both safe and effective, so you don’t have to compromise.</p>",
+        "background_image": "shopify://shop_images/placeholder-home-product.jpg"
       }
     },
     "featured_product_CVGqYk": {
       "type": "featured-product",
       "settings": {
-        "title": "<p><strong>A Fresh Take<\/strong><\/p><p>on Air Fresheners<\/p>",
-        "description": "<p>Realm™ is formulated to be safe to use every day, and smell so good that you’ll actually want to.<\/p>",
-        "url": "shopify:\/\/products\/lavender-bergamot-air-fabric-spray",
+        "title": "<p><strong>A Fresh Take</strong></p><p>on Air Fresheners</p>",
+        "description": "<p>Realm™ is formulated to be safe to use every day, and smell so good that you’ll actually want to.</p>",
+        "url": "shopify://products/lavender-bergamot-air-fabric-spray",
         "cta": "Get Fresh",
-        "background_image": "shopify:\/\/shop_images\/Frame_2166-2.png",
+        "background_image": "shopify://shop_images/Frame_2166-2.png",
         "product": "fresh-poplin-air-fabric-spray"
       }
     },
@@ -81,19 +81,19 @@
         "ticker_item_WUza3h": {
           "type": "ticker_item",
           "settings": {
-            "text": "<strong>NO<\/strong> Benzene"
+            "text": "<strong>NO</strong> Benzene"
           }
         },
         "ticker_item_K8gFi4": {
           "type": "ticker_item",
           "settings": {
-            "text": "<strong>NO<\/strong> Phthalates"
+            "text": "<strong>NO</strong> Phthalates"
           }
         },
         "ticker_item_MyLi3z": {
           "type": "ticker_item",
           "settings": {
-            "text": "<strong>NO<\/strong> Formaldehyde"
+            "text": "<strong>NO</strong> Formaldehyde"
           }
         }
       },
@@ -103,11 +103,11 @@
         "ticker_item_MyLi3z"
       ],
       "settings": {
-        "title": "<p><strong>It’s Time to<\/strong><br\/>Clean Up Air Care<\/p>",
-        "description": "<p>Our natural, patent-pending formula works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means cleaner air—and cleaner lungs.<\/p>",
-        "url": "shopify:\/\/pages\/about",
+        "title": "<p><strong>It’s Time to</strong><br/>Clean Up Air Care</p>",
+        "description": "<p>Our natural, patent-pending formula works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means cleaner air—and cleaner lungs.</p>",
+        "url": "shopify://pages/about",
         "cta": "Our Story",
-        "background_image": "shopify:\/\/shop_images\/Clean_air_for_all.png"
+        "background_image": "shopify://shop_images/Clean_air_for_all.png"
       }
     },
     "featured_product_hero_feGHmb": {
@@ -122,19 +122,19 @@
         "image_GXHPPH": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_480966366.png"
+            "image": "shopify://shop_images/Group_480966366.png"
           }
         },
         "image_7cRqea": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_480966365.png"
+            "image": "shopify://shop_images/Group_480966365.png"
           }
         },
         "image_LyfPUX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_480966368_4d1aba61-6b8e-498c-91a4-2dd349acc550.png"
+            "image": "shopify://shop_images/Group_480966368_4d1aba61-6b8e-498c-91a4-2dd349acc550.png"
           }
         }
       },
@@ -144,9 +144,9 @@
         "image_LyfPUX"
       ],
       "settings": {
-        "title": "<p><strong>No<\/strong><br\/>Hidden Toxins<\/p>",
-        "description": "<p>In the US, the term “fragrance” on a product label can be used to hide up to 3,000 ingredients—including known carcinogens. We developed our products using only those ingredients that are proven safe, and list them all on our label. Because when it comes to odors and ingredients, we don’t cover anything up.<\/p>",
-        "url": "shopify:\/\/pages\/about",
+        "title": "<p><strong>No</strong><br/>Hidden Toxins</p>",
+        "description": "<p>In the US, the term “fragrance” on a product label can be used to hide up to 3,000 ingredients—including known carcinogens. We developed our products using only those ingredients that are proven safe, and list them all on our label. Because when it comes to odors and ingredients, we don’t cover anything up.</p>",
+        "url": "shopify://pages/about",
         "cta": "Learn more"
       }
     },
@@ -156,7 +156,7 @@
         "ticker_item_PEA88m": {
           "type": "ticker_item",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/placeholder-hypebeast.png",
+            "logo": "shopify://shop_images/placeholder-hypebeast.png",
             "url": "",
             "cta": "Hypebeast"
           }
@@ -164,7 +164,7 @@
         "ticker_item_Rdd6rC": {
           "type": "ticker_item",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/placeholder-hypebeast.png",
+            "logo": "shopify://shop_images/placeholder-hypebeast.png",
             "url": "",
             "cta": "Hypebeast"
           }
@@ -172,7 +172,7 @@
         "ticker_item_NU4ULF": {
           "type": "ticker_item",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/placeholder-hypebeast.png",
+            "logo": "shopify://shop_images/placeholder-hypebeast.png",
             "url": "",
             "cta": "Hypebeast"
           }
@@ -180,7 +180,7 @@
         "ticker_item_y6jA6h": {
           "type": "ticker_item",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/placeholder-hypebeast.png",
+            "logo": "shopify://shop_images/placeholder-hypebeast.png",
             "url": "",
             "cta": "Hypebeast"
           }
@@ -202,21 +202,21 @@
         "quote_jKLiNM": {
           "type": "quote",
           "settings": {
-            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.<\/p>",
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
             "author": "Quote Credit"
           }
         },
         "quote_KzxPL4": {
           "type": "quote",
           "settings": {
-            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.<\/p>",
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
             "author": "Quote Credit"
           }
         },
         "quote_3wym7y": {
           "type": "quote",
           "settings": {
-            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.<\/p>",
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
             "author": "Quote Credit"
           }
         }
@@ -227,15 +227,15 @@
         "quote_3wym7y"
       ],
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/Frame_2167.png"
+        "background_image": "shopify://shop_images/Frame_2167.png"
       }
     },
     "bumper_spray_Yzyjgz": {
       "type": "bumper-spray",
       "settings": {
-        "title": "<p><strong>A breath<\/strong><br\/>of fresh air.<\/p>",
+        "title": "<p><strong>A breath</strong><br/>of fresh air.</p>",
         "description": "",
-        "url": "shopify:\/\/products\/lavender-bergamot-air-fabric-spray",
+        "url": "shopify://products/lavender-bergamot-air-fabric-spray",
         "cta": "Get spraying"
       }
     }
