@@ -138,7 +138,7 @@
 	<div class="fixed left-0 right-0 bottom-0 px-2 pb-1 bg-gray-light">
 		<ul class="flex justify-between border-t border-solid border-green">
 			{% for link in section.settings.menu_mobile_footer.links %}
-				<li class="w-1/3 {% if forloop.first %}text-left{% elsif forloop.last %}text-right{% else %}text-center{% endif %}">
+				<li class="{% if forloop.first %}text-left{% elsif forloop.last %}text-right{% else %}text-center{% endif %}">
 					<a
 						href="{{ link.url }}"
 						class="py-1 block">
