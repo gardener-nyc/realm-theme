@@ -18,6 +18,11 @@
 			"label": "Menu (Mobile Footer)"
 		},
 		{
+			"type": "product",
+			"id": "featured_product",
+			"label": "Featured Product"
+		},
+		{
 			"type": "image_picker",
 			"id": "logo",
 			"label": "Logo"
@@ -30,27 +35,104 @@
 	data-component="menu"
 	data-menu="mobile-menu"
 	style="display: none;"
-	class="bg-gray-light fixed inset-0 z-4 pt-10 px-2 md:hidden overflow-y-auto scroll-touch flex flex-col justify-between pb-8">
-	<div class="flex flex-col gap-3 text-center">
-		{% for link in section.settings.menu_mobile.links %}
-			<div class="flex flex-col gap-1 text-center lg:text-left">
-				<div class="pb-1 border-b border-solid border-green">
-					<p class="font-serif text-32/38">{{ link.title }}</p>
-				</div>
+	class="bg-gray-light fixed inset-0 z-4 pt-8 px-2 md:hidden overflow-y-auto scroll-touch flex flex-col justify-between pb-8">
+	<div class="flex flex-col gap-2">
+		{% if section.settings.featured_product %}
+			{% assign featured_product = section.settings.featured_product %}
+			{% assign featured_product_title_parts = featured_product.title | split: "-" %}
+			{% assign featured_product_title = featured_product_title_parts[0] | trim %}
+			{% assign featured_product_subtitle = featured_product_title_parts[1] | downcase | trim %}
+			{% assign featured_product_description = featured_product.metafields.custom.tile_description %}
+			{% assign featured_product_color = featured_product.metafields.custom.color %}
+			{% assign featured_product_image = featured_product.featured_image %}
 
-				<ul>
-					{% for link in link.links %}
-						<li>
-							<a
-								href="{{ link.url }}"
-								class="py-1 block">
-								{{ link.title }}
-							</a>
-						</li>
-					{% endfor %}
-				</ul>
+			<div class="border border-solid rounded-10 overflow-hidden relative">
+				<div class="border-b border-solid px-1 py-half">
+					<p class="text-center text-12/16 uppercase tracking-wide">Featured Product</p>
+				</div>
+				<div class="py-1 px-2" style="background: {{ featured_product_color }}">
+					<div class="flex gap-2 items-center">
+						<div class="w-8">
+							<div
+								data-component="image"
+								class="image w-full aspect-square">
+								<picture class="blur-xl scale-110">
+									{% assign lqip = featured_product_image | format: 'jpg' | image_url: width: 10 %}
+									<img
+										src="{{ lqip }}"
+										data-src="{{ featured_product_image | image_url: width: 400 }}"
+										alt="{{ featured_product_image.alt }}"
+									/>
+								</picture>
+							</div>
+						</div>
+
+						<div class="flex flex-col gap-1">
+							<div class="text-center">
+								<p>
+									<a
+										aria-label="{{ featured_product_title }}"
+										href="{{ featured_product.url }}"
+										class="link-cover link-opacity-hover uppercase tracking-wide text-16/16">
+										{{ featured_product_title }}
+									</a>
+								</p>
+						
+								{% if featured_product_subtitle != blank %}
+									<p class="font-serif text-12/12">
+										{{ featured_product_subtitle }}
+									</p>
+								{% endif %}
+							</div>
+
+							<div class="relative z-1">
+								{% form 'product', featured_product, data-component: "productFormQuickAdd" %}
+									<input
+										type="hidden"
+										name="id"
+										value="{{ featured_product.selected_or_first_available_variant.id }}"
+									/>
+									<div class="w-full relative z-1">
+										<button
+											{% unless featured_product.available %}disabled="true"{% endunless %}
+											type="submit"
+											class="block w-full button button-size-small button-primary">
+											{% if featured_product.available %}
+												{{ featured_product.price | money_without_trailing_zeros }} | Add to Cart
+											{% else %}
+												Sold Out
+											{% endif %}
+										</button>
+									</div>
+								{% endform %}
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		{% endfor %}
+		{% endif %}
+
+		<div class="flex flex-col gap-3 text-center">
+			{% for link in section.settings.menu_mobile.links %}
+				<div class="flex flex-col gap-1 text-center lg:text-left">
+					<div class="pb-1 border-b border-solid border-green">
+						<p class="font-serif text-32/38">{{ link.title }}</p>
+					</div>
+
+					<ul>
+						{% for link in link.links %}
+							<li>
+								<a
+									href="{{ link.url }}"
+									class="py-1 block">
+									{{ link.title }}
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+			{% endfor %}
+		</div>
 	</div>
 
 	<div class="fixed left-0 right-0 bottom-0 px-2 pb-1 bg-gray-light">

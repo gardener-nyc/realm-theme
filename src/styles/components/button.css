@@ -79,6 +79,13 @@ button,
 				box-shadow: none;
 			}
 		}
+
+		&.button-size-small {
+			height: 32px;
+			border-radius: 32px;
+			font-size: 12px;
+			line-height: 32px;
+		}
 	}
 
 	.button.button-primary-gray {
@@ -98,6 +105,13 @@ button,
 			&.disabled {
 				box-shadow: none;
 			}
+		}
+
+		&.button-size-small {
+			height: 32px;
+			border-radius: 32px;
+			font-size: 12px;
+			line-height: 32px;
 		}
 	}
 
@@ -119,6 +133,13 @@ button,
 				box-shadow: none;
 			}
 		}
+
+		&.button-size-small {
+			height: 32px;
+			border-radius: 32px;
+			font-size: 12px;
+			line-height: 32px;
+		}
 	}
 
 	.button.button-primary-violet {
@@ -138,6 +159,13 @@ button,
 			&.disabled {
 				box-shadow: none;
 			}
+		}
+
+		&.button-size-small {
+			height: 32px;
+			border-radius: 32px;
+			font-size: 12px;
+			line-height: 32px;
 		}
 	}
 
