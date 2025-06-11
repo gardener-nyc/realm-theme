@@ -8,6 +8,15 @@
 		min-height: 100svh;
 	}
 
+	.h-hero-90 {
+		height: 90vh;
+		height: 90svh;
+	}
+	.min-h-hero-90 {
+		min-height: 90vh;
+		min-height: 90svh;
+	}
+
 	.hero-hole {
 		box-shadow: 0 0 0 100vw theme('colors.green');
 	}

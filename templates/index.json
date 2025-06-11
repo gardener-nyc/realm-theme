@@ -3,6 +3,7 @@
     "home_hero_RgQpwU": {
       "type": "home-hero",
       "settings": {
+        "disable_window": true,
         "title": "<p><strong>A New Standard<\/strong><\/p>",
         "subtitle": "<p>of Air Care™<\/p>",
         "url": "shopify:\/\/collections\/all",
