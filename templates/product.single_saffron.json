@@ -17,28 +17,6 @@
       "type": "product-benefits",
       "settings": {}
     },
-    "fragrance_carousel_7KA6WL": {
-      "type": "fragrance-carousel",
-      "blocks": {
-        "slide_XYJxiK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/image_196.png",
-            "background_color": "#c98c68",
-            "title": "Saffron Citrus",
-            "description": "<p>Fields of lavender in every direction. Warm greens for sage and bright citrus yellows. Sweetgrass bends in a soft breeze underneath a tall tree, bark warmed by the sun.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "slide_XYJxiK"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "What It Smells Like",
-        "background_image": "shopify://shop_images/Frame_2137.png"
-      }
-    },
     "fragrance_carousel_edT8CF": {
       "type": "fragrance-carousel",
       "blocks": {
@@ -116,8 +94,8 @@
       ],
       "settings": {
         "title": "<p><strong>Consciously</strong><br/>formulated <em>without :</em></p>",
-        "image_1": "shopify://shop_images/Frame_2147-2.png",
-        "image_2": "shopify://shop_images/Frame_2148-2.png"
+        "image_1": "shopify://shop_images/Frame_2147_3de914e6-f9ac-48ec-839b-a9ae90a7f3a3.png",
+        "image_2": "shopify://shop_images/Group_480966368_4d1aba61-6b8e-498c-91a4-2dd349acc550.png"
       }
     },
     "bumper_image_ticker_QRmxD7": {
@@ -140,7 +118,6 @@
   "order": [
     "product_hero",
     "product_benefits",
-    "fragrance_carousel_7KA6WL",
     "fragrance_carousel_edT8CF",
     "centered_rich_text_cNQdat",
     "product_without_KaAVta",
