@@ -25,16 +25,16 @@
           "settings": {
             "image": "shopify://shop_images/SHOT09_240923REALM_1224_1.png",
             "background_color": "#c98c68",
-            "title": "Citrus Saffron",
+            "title": "Saffron Citrus",
             "description": "<p>Fields of lavender in every direction. Warm greens for sage and bright citrus yellows. Sweetgrass bends in a soft breeze underneath a tall tree, bark warmed by the sun.</p>"
           }
         },
         "slide_XYJxiK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/image_195.png",
-            "background_color": "#cac0db",
-            "title": "Wild Lavender",
+            "image": "shopify://shop_images/image_196.png",
+            "background_color": "#a4b79f",
+            "title": "Verbena Santal",
             "description": "<p>Fields of lavender in every direction. Warm greens for sage and bright citrus yellows. Sweetgrass bends in a soft breeze underneath a tall tree, bark warmed by the sun.</p>"
           }
         }
@@ -45,7 +45,7 @@
       ],
       "settings": {
         "title": "What It Smells Like",
-        "background_image": "shopify://shop_images/Frame_2149.png"
+        "background_image": "shopify://shop_images/Citrus_Saffron.png"
       }
     },
     "centered_rich_text_cNQdat": {
@@ -104,8 +104,8 @@
       ],
       "settings": {
         "title": "<p><strong>Consciously</strong><br/>formulated <em>without :</em></p>",
-        "image_1": "shopify://shop_images/image_6.jpg",
-        "image_2": "shopify://shop_images/image_12.jpg"
+        "image_1": "shopify://shop_images/Verbena_Santal_Shelf.jpg",
+        "image_2": "shopify://shop_images/Saffron_Citrus_Window.jpg"
       }
     },
     "bumper_image_ticker_QRmxD7": {
