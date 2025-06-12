@@ -24,8 +24,8 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/image_196.png",
-            "background_color": "#cac0db",
-            "title": "Wild Lavender",
+            "background_color": "#c98c68",
+            "title": "Saffron Citrus",
             "description": "<p>Fields of lavender in every direction. Warm greens for sage and bright citrus yellows. Sweetgrass bends in a soft breeze underneath a tall tree, bark warmed by the sun.</p>"
           }
         }
@@ -55,7 +55,6 @@
       "block_order": [
         "slide_DcFUKw"
       ],
-      "name": "Fragrance Carousel",
       "settings": {
         "title": "",
         "background_image": "shopify://shop_images/Citrus_Saffron.png"
