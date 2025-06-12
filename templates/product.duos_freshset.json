@@ -23,18 +23,18 @@
         "slide_d9agKH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/SHOT09_240923REALM_1224_1.png",
-            "background_color": "#c98c68",
-            "title": "Saffron Citrus",
+            "image": "shopify://shop_images/image_195.png",
+            "background_color": "#cac0db",
+            "title": "Wild Lavender",
             "description": "<p>Fields of lavender in every direction. Warm greens for sage and bright citrus yellows. Sweetgrass bends in a soft breeze underneath a tall tree, bark warmed by the sun.</p>"
           }
         },
         "slide_XYJxiK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/image_196.png",
-            "background_color": "#a4b79f",
-            "title": "Verbena Santal",
+            "image": "shopify://shop_images/image_186.png",
+            "background_color": "#e0d9ca",
+            "title": "Fresh Poplin",
             "description": "<p>Fields of lavender in every direction. Warm greens for sage and bright citrus yellows. Sweetgrass bends in a soft breeze underneath a tall tree, bark warmed by the sun.</p>"
           }
         }
@@ -104,8 +104,8 @@
       ],
       "settings": {
         "title": "<p><strong>Consciously</strong><br/>formulated <em>without :</em></p>",
-        "image_1": "shopify://shop_images/Verbena_Santal_Shelf.jpg",
-        "image_2": "shopify://shop_images/Saffron_Citrus_Window.jpg"
+        "image_1": "shopify://shop_images/Lavender_Bergamot_Sheets_81325aeb-7555-426d-8d76-30b7bb7bd7be.jpg",
+        "image_2": "shopify://shop_images/Fresh_Poplin_Side_Table.jpg"
       }
     },
     "bumper_image_ticker_QRmxD7": {
