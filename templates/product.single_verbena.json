@@ -1,0 +1,127 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_hero": {
+      "type": "product-hero",
+      "settings": {}
+    },
+    "product_benefits": {
+      "type": "product-benefits",
+      "settings": {}
+    },
+    "fragrance_carousel_edT8CF": {
+      "type": "fragrance-carousel",
+      "blocks": {
+        "slide_DcFUKw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/image_195.png",
+            "background_color": "",
+            "title": "Verbena Santal",
+            "description": "<p>placeholder</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_DcFUKw"
+      ],
+      "settings": {
+        "title": "What it smells like",
+        "background_image": "shopify://shop_images/Frame_2139.png"
+      }
+    },
+    "centered_rich_text_cNQdat": {
+      "type": "centered-rich-text",
+      "settings": {
+        "description": "<p>Realm uses a patent-pending formula that works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means clean air (and lungs), all without the chemicals.</p>",
+        "background_color": "#c98c68",
+        "invert_text_color": true
+      }
+    },
+    "product_without_KaAVta": {
+      "type": "product-without",
+      "blocks": {
+        "drawer_dqpW8A": {
+          "type": "drawer",
+          "settings": {
+            "title": "Phthalates",
+            "description": "<p>Phthalates are a series of widely used chemicals that demonstrate to be endocrine disruptors and are detrimental to human health. Phthalates can be found in most products that have contact with plastics during producing, packaging, or delivering. Despite the short half-lives in tissues, chronic exposure to phthalates will adversely influence the endocrine system and functioning of multiple organs, which has negative long-term impacts on the success of pregnancy, child growth and development, and reproductive systems in both young children and adolescents.</p>"
+          }
+        },
+        "drawer_Nt8WHr": {
+          "type": "drawer",
+          "settings": {
+            "title": "Phthalates",
+            "description": "<p>Phthalates are a series of widely used chemicals that demonstrate to be endocrine disruptors and are detrimental to human health. Phthalates can be found in most products that have contact with plastics during producing, packaging, or delivering. Despite the short half-lives in tissues, chronic exposure to phthalates will adversely influence the endocrine system and functioning of multiple organs, which has negative long-term impacts on the success of pregnancy, child growth and development, and reproductive systems in both young children and adolescents.</p>"
+          }
+        },
+        "drawer_E7LiqK": {
+          "type": "drawer",
+          "settings": {
+            "title": "Phthalates",
+            "description": "<p>Phthalates are a series of widely used chemicals that demonstrate to be endocrine disruptors and are detrimental to human health. Phthalates can be found in most products that have contact with plastics during producing, packaging, or delivering. Despite the short half-lives in tissues, chronic exposure to phthalates will adversely influence the endocrine system and functioning of multiple organs, which has negative long-term impacts on the success of pregnancy, child growth and development, and reproductive systems in both young children and adolescents.</p>"
+          }
+        },
+        "drawer_Kxj7ng": {
+          "type": "drawer",
+          "settings": {
+            "title": "Phthalates",
+            "description": "<p>Phthalates are a series of widely used chemicals that demonstrate to be endocrine disruptors and are detrimental to human health. Phthalates can be found in most products that have contact with plastics during producing, packaging, or delivering. Despite the short half-lives in tissues, chronic exposure to phthalates will adversely influence the endocrine system and functioning of multiple organs, which has negative long-term impacts on the success of pregnancy, child growth and development, and reproductive systems in both young children and adolescents.</p>"
+          }
+        },
+        "drawer_3cTG7H": {
+          "type": "drawer",
+          "settings": {
+            "title": "Phthalates",
+            "description": "<p>Phthalates are a series of widely used chemicals that demonstrate to be endocrine disruptors and are detrimental to human health. Phthalates can be found in most products that have contact with plastics during producing, packaging, or delivering. Despite the short half-lives in tissues, chronic exposure to phthalates will adversely influence the endocrine system and functioning of multiple organs, which has negative long-term impacts on the success of pregnancy, child growth and development, and reproductive systems in both young children and adolescents.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "drawer_dqpW8A",
+        "drawer_Nt8WHr",
+        "drawer_E7LiqK",
+        "drawer_Kxj7ng",
+        "drawer_3cTG7H"
+      ],
+      "settings": {
+        "title": "<p><strong>Consciously</strong><br/>formulated <em>without :</em></p>",
+        "image_1": "shopify://shop_images/Frame_2147-2_dbbc762a-3d8c-4f76-9e55-236af2d80726.png",
+        "image_2": "shopify://shop_images/Group_480966365.png"
+      }
+    },
+    "bumper_image_ticker_QRmxD7": {
+      "type": "bumper-image-ticker",
+      "settings": {
+        "title": "<p>It’s Time to<br/><strong>Clean Up Air Care </strong></p>",
+        "description": "<p>Our natural, patent-pending formula works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means cleaner air—and cleaner lungs.</p>",
+        "url": "shopify://pages/about",
+        "cta": "Our Story",
+        "background_image": "shopify://shop_images/Clean_air_for_all.png"
+      }
+    },
+    "product_reviews_tUb8iT": {
+      "type": "product-reviews",
+      "settings": {
+        "image": "shopify://shop_images/image_6.jpg"
+      }
+    }
+  },
+  "order": [
+    "product_hero",
+    "product_benefits",
+    "fragrance_carousel_edT8CF",
+    "centered_rich_text_cNQdat",
+    "product_without_KaAVta",
+    "bumper_image_ticker_QRmxD7",
+    "product_reviews_tUb8iT"
+  ]
+}
