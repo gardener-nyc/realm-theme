@@ -15,6 +15,7 @@
 {% assign product_subtitle = product_title_parts[1] | trim %}
 {% assign product_size = product.metafields.custom.size %}
 {% assign product_drawers = product.metafields.custom.hero_drawers.value %}
+{% assign product_upsell_product = all_products[product.metafields.custom.upsell_product] %}
 
 {% capture product_header %}
     <div class="flex flex-col gap-half">
@@ -113,6 +114,83 @@
     </div>
 {% endcapture %}
 
+{% capture product_upsell_product_card %}
+    {% if product_upsell_product %}
+        {% assign featured_product = product_upsell_product %}
+        {% assign featured_product_title_parts = featured_product.title | split: "-" %}
+        {% assign featured_product_title = featured_product_title_parts[0] | trim %}
+        {% assign featured_product_subtitle = featured_product_title_parts[1] | downcase | trim %}
+        {% assign featured_product_description = featured_product.metafields.custom.tile_description %}
+        {% assign featured_product_color = featured_product.metafields.custom.color %}
+        {% assign featured_product_image = featured_product.featured_image %}
+
+        <div class="border border-solid rounded-10 overflow-hidden relative max-w-32">
+            <div class="border-b border-solid px-1 py-half bg-white">
+                <p class="text-center text-12/16 uppercase tracking-wide">Bundle & Save</p>
+            </div>
+            <div class="py-1 px-2 bg-gray-light">
+                <div class="flex gap-2 items-center">
+                    <div class="w-8">
+                        <div
+                            data-component="image"
+                            class="image w-full aspect-square">
+                            <picture class="blur-xl scale-110">
+                                {% assign lqip = featured_product_image | format: 'jpg' | image_url: width: 10 %}
+                                <img
+                                    src="{{ lqip }}"
+                                    data-src="{{ featured_product_image | image_url: width: 400 }}"
+                                    alt="{{ featured_product_image.alt }}"
+                                />
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-1 flex-grow">
+                        <div class="text-center">
+                            <p>
+                                <a
+                                    aria-label="{{ featured_product_title }}"
+                                    href="{{ featured_product.url }}"
+                                    class="link-cover link-opacity-hover uppercase tracking-wide text-16/16">
+                                    {{ featured_product_title }}
+                                </a>
+                            </p>
+                    
+                            {% if featured_product_subtitle != blank %}
+                                <p class="font-serif text-12/12">
+                                    {{ featured_product_subtitle }}
+                                </p>
+                            {% endif %}
+                        </div>
+
+                        <div class="relative z-1">
+                            {% form 'product', featured_product, data-component: "productFormQuickAdd" %}
+                                <input
+                                    type="hidden"
+                                    name="id"
+                                    value="{{ featured_product.selected_or_first_available_variant.id }}"
+                                />
+                                <div class="w-full relative z-1">
+                                    <button
+                                        {% unless featured_product.available %}disabled="true"{% endunless %}
+                                        type="submit"
+                                        class="block w-full button button-size-small button-primary">
+                                        {% if featured_product.available %}
+                                            {{ featured_product.price | money_without_trailing_zeros }} | Add to Cart
+                                        {% else %}
+                                            Sold Out
+                                        {% endif %}
+                                    </button>
+                                </div>
+                            {% endform %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endcapture %}
+
 <div class="px-container-mobile md:px-container-desktop my-2 md:my-4">
     <div class="mx-auto max-w-grid">
         <div class="grid grid-cols-6 md:grid-cols-12 gap-y-4 gap-x-gutter-mobile md:gap-gutter-desktop">
@@ -125,6 +203,7 @@
                     {{ product_description }}
                     {{ product_form }}
                     {{ product_hero_drawers }}
+                    {{ product_upsell_product_card }}
                 </div>
             </div>
         </div>
