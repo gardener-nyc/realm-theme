@@ -28,4 +28,4 @@ $ yarn start
 $ yarn build
 ```
 
-2. Make a new commit and push to master. The github integration will take care of the rest.
+2. Make a new commit and push to master. The Github integration will take care of the rest.
