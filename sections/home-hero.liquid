@@ -8,6 +8,17 @@
 			"label": "Disable Window",
 			"default": false
 		},
+        {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Text Alignment",
+            "options": [
+                { "value": "left", "label": "Left" },
+                { "value": "center", "label": "Center" },
+                { "value": "right", "label": "Right" }
+            ],
+            "default": "center"
+        },
 		{
 			"type": "richtext",
 			"id": "title",
@@ -40,6 +51,8 @@
 	}]
 }
 {% endschema %}
+
+{% assign text_alignment = section.settings.text_alignment | default: 'center' %}
 
 <div class="relative overflow-hidden mt-[-60px] md:mt-[-65px]">
     <div
@@ -74,7 +87,14 @@
             <div class="px-container-mobile md:px-container-desktop py-4 min-h-hero-90 flex flex-col justify-center items-center">
                 <div class="max-w-grid mx-auto">
                     <div class="grid grid-cols-6 md:grid-cols-12 gap-x-gutter-mobile md:gap-x-gutter-desktop">
-                        <div class="col-span-6 md:col-span-8 md:col-start-3 lg:col-span-6 lg:col-start-4 px-1 md:px-0">
+                        <div class="
+                            col-span-6 md:col-span-8 lg:col-span-6 px-1 md:px-0
+                            {% if text_alignment == 'center' %}
+                                md:col-start-3 lg:col-start-4
+                            {% elsif text_alignment == 'right' %}
+                                md:col-start-5 lg:col-start-7
+                            {% endif %}
+                            ">
                             {% comment %} header height {% endcomment %}
                             <div class="h-6 md:h-[65px]"></div>
 
@@ -103,30 +123,8 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="absolute -left-1 -right-1 -bottom-1 hidden md:block">
-                <svg
-                    width="1512"
-                    height="58"
-                    viewBox="0 0 1512 58"
-                    preserveAspectRatio="none"
-                    class="w-full h-[58px]">
-                    <path d="M0 58L1512 48.9999C1454.31 30.4086 1322.54 11.5659 1239.38 2.99907C1135.43 -7.70951 1039.18 13.0622 969.371 21.4123C820.161 39.2599 695.818 40.1523 563.518 30.7823C468.816 24.0751 403.389 10.4994 287.028 10.4994C192.152 10.4994 55.3737 44.8355 0 48.9999V58Z" fill="#FFFAEF"/>
-                </svg>
-            </div>
         </div>
     {% else %}
-        <div class="absolute -left-1 -right-1 -bottom-1 hidden md:block">
-            <svg
-                width="1512"
-                height="58"
-                viewBox="0 0 1512 58"
-                preserveAspectRatio="none"
-                class="w-full h-[58px]">
-                <path d="M0 58L1512 48.9999C1454.31 30.4086 1322.54 11.5659 1239.38 2.99907C1135.43 -7.70951 1039.18 13.0622 969.371 21.4123C820.161 39.2599 695.818 40.1523 563.518 30.7823C468.816 24.0751 403.389 10.4994 287.028 10.4994C192.152 10.4994 55.3737 44.8355 0 48.9999V58Z" fill="#FFFAEF"/>
-            </svg>
-        </div>
-
         <div class="relative z-1">
             <div class="px-container-mobile md:px-container-desktop pt-12 md:pt-14">
                 <div class="max-w-grid mx-auto">
@@ -149,6 +147,8 @@
                                 <div class="text-center rich-text font-serif rich-text-bold-sans-regular text-36/36 md:text-70/70">
                                     {{ section.settings.subtitle }}
                                 </div>
+
+                                
                                 
                                 {% if section.settings.url and section.settings.cta %}
                                     <hr />
