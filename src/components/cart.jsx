@@ -163,7 +163,7 @@ const Cart = ({cart, freeShippingThreshold = 0, onUpdateCart = () => {}}) => {
 	return (
 		<div className="flex-grow flex flex-col max-h-full">
 			{freeShippingIndicator}
-			<div className="flex-grow overflow-y-auto scroll-touch gap-y-container-mobile md:gap-y-container-desktop pb-2">
+			<div className="flex-grow flex flex-col gap-2 overflow-y-auto scroll-touch gap-y-container-mobile md:gap-y-container-desktop pb-2">
 				{items.map(item => (
 					<CartItem {...item} onUpdateCart={onUpdateCart} />
 				))}

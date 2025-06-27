@@ -42,36 +42,38 @@
 						{{ section.settings.title }}
 					</h2>
 				{% endif %}
-				
-				{% for block in section.blocks %}
-					<div
-						data-component="drawer"
-						class="border-b border-solid border-green">
-						<button
-							class="py-2 w-full flex justify-between items-center">
-							<div class="text-20/20 md:text-24/24 font-serif">
-								{{ block.settings.title }}
-							</div>
-							<img
-								src="{{ 'icon-arrow-drawer.svg' | asset_url }}"
-								alt="Arrow"
-								class="block w-[17px] h-[9px] drawer-indicator"
-								{% if forloop.first %}
-									style="transform: rotate(180deg);"
-								{% endif %}
-							/>
-						</button>
+
+				<div>
+					{% for block in section.blocks %}
 						<div
-							{% unless forloop.first %}
-								style="display: none;"
-							{% endunless %}
-							class="drawer-content overflow-hidden">
-							<div class="rich-text line-break pb-2">
-								{{ block.settings.question }}
+							data-component="drawer"
+							class="border-b border-solid border-green">
+							<button
+								class="py-2 w-full flex justify-between items-center">
+								<div>
+									{{ block.settings.title }}
+								</div>
+								<img
+									src="{{ 'icon-arrow-drawer.svg' | asset_url }}"
+									alt="Arrow"
+									class="block w-[17px] h-[9px] drawer-indicator"
+									{% if forloop.first %}
+										style="transform: rotate(180deg);"
+									{% endif %}
+								/>
+							</button>
+							<div
+								{% unless forloop.first %}
+									style="display: none;"
+								{% endunless %}
+								class="drawer-content overflow-hidden">
+								<div class="rich-text line-break pb-2">
+									{{ block.settings.question }}
+								</div>
 							</div>
 						</div>
-					</div>
-				{% endfor %}
+					{% endfor %}
+				</div>
 			</div>
 		</div>
 	</div>
