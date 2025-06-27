@@ -7,6 +7,10 @@
 		animation: ticker 10s linear infinite;
 	}
 
+	.ticker.ticker-extra-slow {
+		animation: ticker 30s linear infinite;
+	}
+
 	.ticker-container:hover .ticker {
 		animation-play-state: paused;
 	}
