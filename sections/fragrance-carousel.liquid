@@ -127,8 +127,9 @@
                 {% endfor %}
             </div>
 
-             <div class="absolute inset-x-0 bottom-2 md:bottom-4 flex justify-center items-center">
-                <button
+            {% if section.blocks.size > 1 %}
+                <div class="absolute inset-x-0 bottom-2 md:bottom-4 flex justify-center items-center">
+                    <button
                     data-nav="previous"
                     class="block p-1 link-opacity-hover">
                     <img
@@ -145,8 +146,9 @@
                         alt="Previous"
                         class="block w-[21px] h-[8px]"
                     />
-                </button>
-            </div>
+                    </button>
+                </div>
+            {% endif %}
         </div>
     </div>
 </div>

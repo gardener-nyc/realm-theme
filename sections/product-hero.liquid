@@ -115,7 +115,7 @@
 {% endcapture %}
 
 {% capture product_upsell_product_card %}
-    {% if product_upsell_product %}
+    {% if product_upsell_product != blank %}
         {% assign featured_product = product_upsell_product %}
         {% assign featured_product_title_parts = featured_product.title | split: "-" %}
         {% assign featured_product_title = featured_product_title_parts[0] | trim %}
