@@ -30,7 +30,7 @@
 	{% if section.settings.background_color %}
 		style="background-color: {{ section.settings.background_color }};"
 	{% endif %}
-	class="px-container-mobile md:px-container-desktop my-6 md:my-10 {% if section.settings.invert_text_color %}text-white{% endif %}">
+	class="px-container-mobile md:px-container-desktop {% if section.settings.invert_text_color %}text-white{% endif %}">
 	<div class="max-w-65 mx-auto py-6 md:py-12">
 		<div class="text-center rich-text font-serif text-18/24 md:text-24/30">
 			{{ section.settings.description }}
