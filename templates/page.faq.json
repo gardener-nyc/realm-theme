@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
 	"sections": {
 		"page_hero_eLxRWM": {
@@ -58,38 +67,38 @@
 				"title": "Product"
 			}
 		},
-		"faq_list_y9iMic2": {
+		"faq_list_hamygN": {
 			"type": "faq-list",
 			"blocks": {
-				"question_rqYtf9": {
+				"question_D4QzNg": {
 					"type": "question",
 					"settings": {
 						"title": "Lorem ipsum dolor sit amet?",
 						"question": "<p><a href=\"/\" title=\"/\">Lorem ipsum dolor sit amet, </a>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis</strong> <em>nostrud </em>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><ul><li>testing</li><li>lists</li></ul><ol><li>another one</li><li>or two</li></ol>"
 					}
 				},
-				"question_Bhr9x3": {
+				"question_F4HqxE": {
 					"type": "question",
 					"settings": {
 						"title": "Lorem ipsum dolor sit amet?",
 						"question": "<p><a href=\"/\" title=\"/\">Lorem ipsum dolor sit amet, </a>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis</strong> <em>nostrud </em>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><ul><li>testing</li><li>lists</li></ul><ol><li>another one</li><li>or two</li></ol>"
 					}
 				},
-				"question_fw7zXa": {
+				"question_pAeCNW": {
 					"type": "question",
 					"settings": {
 						"title": "Lorem ipsum dolor sit amet?",
 						"question": "<p><a href=\"/\" title=\"/\">Lorem ipsum dolor sit amet, </a>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis</strong> <em>nostrud </em>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><ul><li>testing</li><li>lists</li></ul><ol><li>another one</li><li>or two</li></ol>"
 					}
 				},
-				"question_R6KYXq": {
+				"question_3mC9hX": {
 					"type": "question",
 					"settings": {
 						"title": "Lorem ipsum dolor sit amet?",
 						"question": "<p><a href=\"/\" title=\"/\">Lorem ipsum dolor sit amet, </a>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis</strong> <em>nostrud </em>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><ul><li>testing</li><li>lists</li></ul><ol><li>another one</li><li>or two</li></ol>"
 					}
 				},
-				"question_JzRHM4": {
+				"question_PQBgCf": {
 					"type": "question",
 					"settings": {
 						"title": "Lorem ipsum dolor sit amet?",
@@ -98,16 +107,16 @@
 				}
 			},
 			"block_order": [
-				"question_rqYtf9",
-				"question_Bhr9x3",
-				"question_fw7zXa",
-				"question_R6KYXq",
-				"question_JzRHM4"
+				"question_D4QzNg",
+				"question_F4HqxE",
+				"question_pAeCNW",
+				"question_3mC9hX",
+				"question_PQBgCf"
 			],
 			"settings": {
 				"title": "Product"
 			}
 		}
 	},
-	"order": ["page_hero_eLxRWM", "faq_list_y9iMic", "faq_list_y9iMic2"]
+	"order": ["page_hero_eLxRWM", "faq_list_y9iMic", "faq_list_hamygN"]
 }
