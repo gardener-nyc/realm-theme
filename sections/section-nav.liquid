@@ -27,13 +27,13 @@
 {% endschema %}
 
 <div class="p-[3px] w-full overflow-x-auto scroll-touch sticky">
-    <div class="min-w-60">
+    <div class="min-w-70">
         <div class="grid grid-cols-3 gap-[3px]">
             {% for block in section.blocks %}
                 <a
                     data-component="navAnchor"
                     href="{{ block.settings.url }}"
-                    class="whitespace-nowrap uppercase text-center p-1 text-12/12 md:text-14/14 duration-300 ease-appear transition-colors hover:bg-brown hover:text-white {% if forloop.first %}bg-brown text-white{% endif %}">
+                    class="whitespace-nowrap uppercase text-center p-1 px-2 text-12/12 md:text-14/14 duration-300 ease-appear transition-colors hover:bg-brown hover:text-white rounded-20 overflow-hidden {% if forloop.first %}bg-brown text-white{% endif %}">
                     {{ block.settings.title }}
                 </a>
             {% endfor %}
