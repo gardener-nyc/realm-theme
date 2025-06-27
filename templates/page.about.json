@@ -1,10 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_full_width_image_xBVAw8": {
       "type": "hero-full-width-image",
       "settings": {
-        "title": "<p><strong>Your home is your safe space.<\/strong><\/p><p>Our products help you keep it that way. <\/p>",
-        "background_image": "shopify:\/\/shop_images\/Frame_2149.png"
+        "title": "<p><strong>Your home is your safe space.</strong></p><p>Our products help you keep it that way. </p>",
+        "background_image": "shopify://shop_images/Frame_2149.png"
       }
     },
     "section_nav_L4GYpk": {
@@ -48,8 +57,8 @@
     "text_ribbon_eaLJ6F": {
       "type": "text-ribbon",
       "settings": {
-        "title": "<p><strong>Just because something smells good<\/strong> doesn’t mean it isn’t bad.<\/p>",
-        "description": "<p>In the US, companies aren’t required to disclose the ingredients they use in fragrance formulas. That means that potentially harmful chemicals are often hiding in plain sight—like these common air care ingredients:<\/p>",
+        "title": "<p><strong>Just because something smells good</strong> doesn’t mean it isn’t bad.</p>",
+        "description": "<p>In the US, companies aren’t required to disclose the ingredients they use in fragrance formulas. That means that potentially harmful chemicals are often hiding in plain sight—like these common air care ingredients:</p>",
         "background_color": "#c98c68",
         "invert_text_color": true
       }
@@ -57,11 +66,11 @@
     "text_ribbon_A9gp7T": {
       "type": "text-ribbon",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/Frame_2156-2.png",
-        "title": "<p><strong>The EU has banned over 1,700 cosmetic ingredients. The US? Just 11.[1]<\/strong><\/p>",
+        "background_image": "shopify://shop_images/Frame_2156-2.png",
+        "title": "<p><strong>The EU has banned over 1,700 cosmetic ingredients. The US? Just 11.</strong>⁽¹⁾</p>",
         "description": "",
         "background_color": "#f2e5be",
-        "invert_text_color": false
+        "invert_text_color": true
       }
     },
     "section_id_GwC3Mq": {
@@ -73,7 +82,7 @@
     "text_ribbon_eAYFGN": {
       "type": "text-ribbon",
       "settings": {
-        "title": "<p><strong>We’re raising the standards for air care, so you never have to compromise yours.<\/strong><\/p>",
+        "title": "<p><strong>We’re raising the standards for air care, so you never have to compromise yours.</strong></p>",
         "description": "",
         "background_color": "#a4b79f",
         "invert_text_color": true
@@ -85,28 +94,28 @@
         "slide_HTwBk9": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Realm_InstantDeodorizing_White_HighRes.png",
+            "image": "shopify://shop_images/Realm_InstantDeodorizing_White_HighRes.png",
             "title": "Works Instantly"
           }
         },
         "slide_a6i4fR": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Realm_LongLasting_White_HighRes_1.png",
+            "image": "shopify://shop_images/Realm_LongLasting_White_HighRes_1.png",
             "title": "Long Lasting Freshness"
           }
         },
         "slide_AxPfiE": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Realm_NaturalDeodorizer_White_HighRes_1.png",
+            "image": "shopify://shop_images/Realm_NaturalDeodorizer_White_HighRes_1.png",
             "title": "Natural Deodorizer"
           }
         },
         "slide_f7pk4D": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Realm_CertifiedNonToxic_White_HighRes.png",
+            "image": "shopify://shop_images/Realm_CertifiedNonToxic_White_HighRes.png",
             "title": "Certified Non-toxic"
           }
         }
@@ -125,25 +134,25 @@
         "slide_dVHj7R": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_2161.png",
+            "image": "shopify://shop_images/Frame_2161.png",
             "title": "Effective",
-            "description": "<p>We put in hundreds of hours of research, worked with multiple formulators, and tested dozens of iterations until we were satisfied that our products would work without covering anything up—odors or ingredients.<\/p>"
+            "description": "<p>We put in hundreds of hours of research, worked with multiple formulators, and tested dozens of iterations until we were satisfied that our products would work without covering anything up—odors or ingredients.</p>"
           }
         },
         "slide_ReC6ew": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_2153.png",
+            "image": "shopify://shop_images/Frame_2153.png",
             "title": "Safe",
-            "description": "<p>Our products are certified Made Safe and formulated with non-toxic ingredients. They’re also Safe Scent-certified—a new standard for air care products that we’ve pioneered.<\/p>"
+            "description": "<p>Our products are certified Made Safe and formulated with non-toxic ingredients. They’re also Safe Scent-certified—a new standard for air care products that we’ve pioneered.</p>"
           }
         },
         "slide_dabYLb": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_2152.png",
+            "image": "shopify://shop_images/Frame_2152.png",
             "title": "Enveloping",
-            "description": "<p>We partnered with a Swiss fragrance house that has over 125 years of experience to craft scents that enhance your everyday routine.<\/p>"
+            "description": "<p>We partnered with a Swiss fragrance house that has over 125 years of experience to craft scents that enhance your everyday routine.</p>"
           }
         }
       },
@@ -160,7 +169,7 @@
         "ticker_item_PEA88m": {
           "type": "ticker_item",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/placeholder-hypebeast.png",
+            "logo": "shopify://shop_images/placeholder-hypebeast.png",
             "url": "",
             "cta": "Hypebeast"
           }
@@ -168,7 +177,7 @@
         "ticker_item_Rdd6rC": {
           "type": "ticker_item",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/placeholder-hypebeast.png",
+            "logo": "shopify://shop_images/placeholder-hypebeast.png",
             "url": "",
             "cta": "Hypebeast"
           }
@@ -176,7 +185,7 @@
         "ticker_item_NU4ULF": {
           "type": "ticker_item",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/placeholder-hypebeast.png",
+            "logo": "shopify://shop_images/placeholder-hypebeast.png",
             "url": "",
             "cta": "Hypebeast"
           }
@@ -184,7 +193,7 @@
         "ticker_item_y6jA6h": {
           "type": "ticker_item",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/placeholder-hypebeast.png",
+            "logo": "shopify://shop_images/placeholder-hypebeast.png",
             "url": "",
             "cta": "Hypebeast"
           }
@@ -206,28 +215,28 @@
         "quote_YjepgV": {
           "type": "quote",
           "settings": {
-            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.<\/p>",
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
             "author": "Quote Credit"
           }
         },
         "quote_jKLiNM": {
           "type": "quote",
           "settings": {
-            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.<\/p>",
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
             "author": "Quote Credit"
           }
         },
         "quote_KzxPL4": {
           "type": "quote",
           "settings": {
-            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.<\/p>",
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
             "author": "Quote Credit"
           }
         },
         "quote_3wym7y": {
           "type": "quote",
           "settings": {
-            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.<\/p>",
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
             "author": "Quote Credit"
           }
         }
@@ -239,7 +248,7 @@
         "quote_3wym7y"
       ],
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/Frame_2167.png"
+        "background_image": "shopify://shop_images/Frame_2167.png"
       }
     },
     "section_id_R44daW": {
@@ -251,17 +260,17 @@
     "about_bio_MFpRfy": {
       "type": "about-bio",
       "settings": {
-        "image": "shopify:\/\/shop_images\/bio.png",
+        "image": "shopify://shop_images/bio.png",
         "title": "It started when I found a lump in my breast.",
-        "description": "<p>I started researching the carcinogens that my doctor had asked me about, and was shocked to  learn that not only are they a common ingredient in anything in fragrance (and these days, that’s pretty much everything)—including the air care products I used every day. And because companies aren’t required to disclose them on the label, they’re pretty much impossible to avoid.<\/p><p>When I couldn’t find any alternative air care products that were safe, effective, and smelled great, I decided to create Realm: so everyone can care for their space without compromise. <\/p>"
+        "description": "<p>I started researching the carcinogens that my doctor had asked me about, and was shocked to  learn that not only are they a common ingredient in anything in fragrance (and these days, that’s pretty much everything)—including the air care products I used every day. And because companies aren’t required to disclose them on the label, they’re pretty much impossible to avoid.</p><p>When I couldn’t find any alternative air care products that were safe, effective, and smelled great, I decided to create Realm: so everyone can care for their space without compromise. </p>"
       }
     },
     "bumper_spray_Yzyjgz": {
       "type": "bumper-spray",
       "settings": {
-        "title": "<p><strong>A breath<\/strong><br\/>of fresh air.<\/p>",
+        "title": "<p><strong>A breath</strong><br/>of fresh air.</p>",
         "description": "",
-        "url": "shopify:\/\/products\/lavender-bergamot-air-fabric-spray",
+        "url": "shopify://products/lavender-bergamot-air-fabric-spray",
         "cta": "Get spraying"
       }
     },
@@ -269,7 +278,7 @@
       "type": "small-rich-text",
       "settings": {
         "title": "Sources",
-        "description": "<p>Food & Drug Admin., Prohibited & Restricted Ingredients<br\/>https:\/\/www.fda.gov\/cosmetics\/guidanceregulation\/ lawsregul ations\/ucm127406.htm. <\/p><p>Food & Drug Admin., Prohibited & Restricted Ingredients<br\/>https:\/\/www.fda.gov\/cosmetics\/guidanceregulation\/ lawsregul ations\/ucm127406.htm. <\/p>"
+        "description": "<p>Food & Drug Admin., Prohibited & Restricted Ingredients<br/>https://www.fda.gov/cosmetics/guidanceregulation/ lawsregul ations/ucm127406.htm. </p><p>Food & Drug Admin., Prohibited & Restricted Ingredients<br/>https://www.fda.gov/cosmetics/guidanceregulation/ lawsregul ations/ucm127406.htm. </p>"
       }
     }
   },
