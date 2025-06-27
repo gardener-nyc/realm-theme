@@ -31,24 +31,30 @@
     </div>
 
     <div class="absolute inset-x-0 bottom-[-25px] md:top-3 md:bottom-0 md:right-auto md:left-[-35px]">
-        <div class="flex gap-[15px] items-center justify-center md:flex-col md:justify-around">
-            {% for image in images %}
-                <button
-                    data-index="{{ forloop.index0 }}"
-                    class="block button button-image-carousel {% if forloop.first %}active{% endif %}">
-                    <div
-                        data-component="image"
-                        class="image aspect-square">
-                        <picture class="blur-xl scale-110">
-                            <img
-                                src="{{ lqip }}"
-                                data-src="{{ image | image_url: width: 150 }}"
-                                alt="{{ image.alt }}"
-                            />
-                        </picture>
-                    </div>
-                </button>
-            {% endfor %}
+        <div class="grid-container-reset-mobile md:mx-0">
+            <div class="px-container-mobile md:px-0 overflow-x-auto scroll-touch">
+                <div class="table md:flex md:flex-col md:justify-around md:gap-[15px]">
+                    {% for image in images %}
+                        <div class="table-cell flex-shrink-0 pr-[15px] md:pr-0">
+                            <button
+                                data-index="{{ forloop.index0 }}"
+                                class="block button button-image-carousel {% if forloop.first %}active{% endif %}">
+                                <div
+                                    data-component="image"
+                                    class="image aspect-square">
+                                    <picture class="blur-xl scale-110">
+                                        <img
+                                            src="{{ lqip }}"
+                                            data-src="{{ image | image_url: width: 150 }}"
+                                            alt="{{ image.alt }}"
+                                        />
+                                    </picture>
+                                </div>
+                            </button>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </div>
 </div>
