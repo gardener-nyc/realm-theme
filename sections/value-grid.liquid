@@ -34,7 +34,7 @@
 
 <div class="my-4 md:my-6 px-container-mobile md:px-container-desktop">
     <div class="mx-auto max-w-grid">
-        <div class="grid md:grid-cols-3 gap-x-gutter-mobile md:gap-gutter-desktop gap-y-3">
+        <div class="grid gap-4 md:grid-cols-3 gap-x-gutter-mobile md:gap-gutter-desktop">
             {% for value in section.blocks %}
                 <div class="flex flex-col gap-1 md:gap-2 justify-between">
                     <div class="flex flex-col gap-1 md:gap-2">
@@ -50,7 +50,7 @@
 
                     <div
                         data-component="image"
-                        class="block w-full aspect-[3/4]">
+                        class="image block w-full aspect-[3/4]">
                         <picture class="blur-xl scale-110">
                             <source
                                 data-srcset="{{ value.settings.image | image_url: width: 1200 }}"
