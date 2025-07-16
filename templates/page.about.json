@@ -91,11 +91,18 @@
     "benefits_mfWP4M": {
       "type": "benefits",
       "blocks": {
+        "slide_AxPfiE": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Realm_NaturalDeodorizer_White_HighRes_1.png",
+            "title": "Natural Deodorizer"
+          }
+        },
         "slide_HTwBk9": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Realm_InstantDeodorizing_White_HighRes.png",
-            "title": "Works Instantly"
+            "title": "No Phthalates"
           }
         },
         "slide_a6i4fR": {
@@ -105,25 +112,18 @@
             "title": "Long Lasting Freshness"
           }
         },
-        "slide_AxPfiE": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Realm_NaturalDeodorizer_White_HighRes_1.png",
-            "title": "Natural Deodorizer"
-          }
-        },
         "slide_f7pk4D": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Realm_CertifiedNonToxic_White_HighRes.png",
-            "title": "Certified Non-toxic"
+            "title": "Safe Scent Certified"
           }
         }
       },
       "block_order": [
+        "slide_AxPfiE",
         "slide_HTwBk9",
         "slide_a6i4fR",
-        "slide_AxPfiE",
         "slide_f7pk4D"
       ],
       "settings": {}
