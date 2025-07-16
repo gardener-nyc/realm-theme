@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "product_hero": {
@@ -36,13 +45,40 @@
           "type": "slide",
           "settings": {
             "background_color": "",
-            "title": "Citrus Saffron",
-            "description": "<p>placeholder</p>"
+            "title": "Saffron Citrus",
+            "description": "<p>A radiant contrast of golden spice and zesty peel—warm, luminous, and lightly exotic, like sun-warmed skin after a late summer stroll.</p>"
+          }
+        },
+        "slide_KyVrDt": {
+          "type": "slide",
+          "settings": {
+            "background_color": "",
+            "title": "Verbena Santal",
+            "description": "<p>A blend of the bright snap of lemon verbena with the creamy depth of sandalwood—fresh and grounding, like a walk through dew-covered woods at dawn.</p>"
+          }
+        },
+        "slide_jPRjXG": {
+          "type": "slide",
+          "settings": {
+            "background_color": "",
+            "title": "Fresh Poplin",
+            "description": "<p>A crisp, weightless blend of sun-dried linens and cool morning air—clean, airy, and effortlessly elegant, like slipping into a freshly pressed shirt on a bright, quiet morning.</p>"
+          }
+        },
+        "slide_WcXNME": {
+          "type": "slide",
+          "settings": {
+            "background_color": "",
+            "title": "Lavender Bergamot",
+            "description": "<p>A crisp, herbaceous blend where soothing lavender meets the bright, citrusy snap of bergamot. Like a sunlit breeze through a  garden—calming yet quietly invigorating.</p>"
           }
         }
       },
       "block_order": [
-        "slide_DcFUKw"
+        "slide_DcFUKw",
+        "slide_KyVrDt",
+        "slide_jPRjXG",
+        "slide_WcXNME"
       ],
       "name": "Fragrance Carousel",
       "settings": {
