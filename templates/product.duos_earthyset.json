@@ -35,11 +35,29 @@
             "title": "Verbena Santal",
             "description": "<p>A blend of the bright snap of lemon verbena with the creamy depth of sandalwood—fresh and grounding, like a walk through dew-covered woods at dawn.</p>"
           }
+        },
+        "slide_paY7be": {
+          "type": "slide",
+          "settings": {
+            "background_color": "",
+            "title": "Lavender Bergamot",
+            "description": "<p>A crisp, herbaceous blend where soothing lavender meets the bright, citrusy snap of bergamot. Like a sunlit breeze through a  garden—calming yet quietly invigorating.</p>"
+          }
+        },
+        "slide_mAa7z7": {
+          "type": "slide",
+          "settings": {
+            "background_color": "",
+            "title": "",
+            "description": ""
+          }
         }
       },
       "block_order": [
         "slide_d9agKH",
-        "slide_XYJxiK"
+        "slide_XYJxiK",
+        "slide_paY7be",
+        "slide_mAa7z7"
       ],
       "settings": {
         "title": "What it smells like",
