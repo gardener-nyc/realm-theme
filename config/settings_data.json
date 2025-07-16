@@ -16,30 +16,35 @@
         "blocks": {
           "slide_hkJqpj": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/image_4.jpg"
             }
           },
           "slide_WEeJiy": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/image_6.jpg"
             }
           },
           "slide_TzARPW": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/image_12.jpg"
             }
           },
           "slide_NknkhC": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/image_1.jpg"
             }
           },
           "slide_UTbAti": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/image_7.jpg"
             }
