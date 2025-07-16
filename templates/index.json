@@ -24,10 +24,17 @@
     "home_product_benefits_pYxBCG": {
       "type": "home-product-benefits",
       "blocks": {
+        "benefit_kBdEMh": {
+          "type": "benefit",
+          "settings": {
+            "title": "Natural Deodorizer",
+            "image": "shopify://shop_images/Realm_NaturalDeodorizer_White_HighRes_1.svg"
+          }
+        },
         "benefit_bfzWtE": {
           "type": "benefit",
           "settings": {
-            "title": "Works Instantly",
+            "title": "No Phthalates",
             "image": "shopify://shop_images/Realm_InstantDeodorizing_White_HighRes.svg"
           }
         },
@@ -38,25 +45,18 @@
             "image": "shopify://shop_images/Realm_LongLasting_White_HighRes_1.svg"
           }
         },
-        "benefit_kBdEMh": {
-          "type": "benefit",
-          "settings": {
-            "title": "Natural Deodorizer",
-            "image": "shopify://shop_images/Realm_NaturalDeodorizer_White_HighRes_1.svg"
-          }
-        },
         "benefit_NqYjBB": {
           "type": "benefit",
           "settings": {
-            "title": "Certified Non-Toxic",
+            "title": "Safe Scent Certified",
             "image": "shopify://shop_images/Realm_CertifiedNonToxic_White_HighRes.svg"
           }
         }
       },
       "block_order": [
+        "benefit_kBdEMh",
         "benefit_bfzWtE",
         "benefit_6wqC97",
-        "benefit_kBdEMh",
         "benefit_NqYjBB"
       ],
       "settings": {
@@ -68,12 +68,12 @@
     "featured_product_CVGqYk": {
       "type": "featured-product",
       "settings": {
-        "title": "<p><strong>A Fresh Take</strong></p><p>on Air Fresheners</p>",
-        "description": "<p>Realm™ is formulated to be safe to use every day, and smell so good that you’ll actually want to.</p>",
+        "title": "<p><strong>Breathe Clean</strong></p>",
+        "description": "<p>Realm is formulated to be safe to use every day, and smell so good that you’ll actually want to.</p>",
         "url": "shopify://products/lavender-bergamot-air-fabric-spray",
         "cta": "Get Fresh",
-        "background_image": "shopify://shop_images/Frame_2166-2.png",
-        "product": "fresh-poplin-air-fabric-spray"
+        "background_image": "shopify://shop_images/DTS_HI-TREK_Fanette_Guilloud_Photo_ID11203.jpg",
+        "product": "the-discovery-collection"
       }
     },
     "bumper_image_ticker_TdwJqL": {
@@ -105,7 +105,7 @@
       ],
       "settings": {
         "title": "<p><strong>It’s Time to</strong><br/>Clean Up Air Care</p>",
-        "description": "<p>Our natural, patent-pending formula works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means cleaner air—and cleaner lungs.</p>",
+        "description": "<p>Our patent-pending formula works instantly to neutralize odors and freshen your space with premium Safe Scent Certified scents without harmful VOC’s, masking, or compromise leaving you with cleaner air and cleaner lungs.</p>",
         "url": "shopify://pages/about",
         "cta": "Our Story",
         "background_image": "shopify://shop_images/Clean_air_for_all.png"
