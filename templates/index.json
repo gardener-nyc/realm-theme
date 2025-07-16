@@ -13,9 +13,9 @@
       "type": "home-hero",
       "settings": {
         "disable_window": true,
-        "text_alignment": "right",
-        "title": "<p><strong>A New Standard</strong></p>",
-        "subtitle": "<p>of Air Care™</p>",
+        "text_alignment": "left",
+        "title": "<h1><strong>The New Standard </strong>of Air Care</h1>",
+        "subtitle": "<h1>(Without the Toxic Chemicals)</h1>",
         "url": "shopify://collections/all",
         "cta": "Enter Realm",
         "background_image": "shopify://shop_images/Group_480966367.png"
@@ -60,7 +60,7 @@
         "benefit_NqYjBB"
       ],
       "settings": {
-        "title": "<p><strong>An Air + Fabric Spray</strong></p><p>Designed with Life in Mind</p>",
+        "title": "<p><strong>Air Refresher Without The Toxic Chemicals.</strong></p><p>We know, it's about time.</p>",
         "description": "<p>Your home is your safe space. Our products are both safe and effective, so you don’t have to compromise.</p>",
         "background_image": "shopify://shop_images/placeholder-home-product.jpg"
       }
