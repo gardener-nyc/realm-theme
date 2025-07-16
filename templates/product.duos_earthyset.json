@@ -39,17 +39,17 @@
         "slide_paY7be": {
           "type": "slide",
           "settings": {
-            "background_color": "",
+            "background_color": "#cac0db",
             "title": "Lavender Bergamot",
             "description": "<p>A crisp, herbaceous blend where soothing lavender meets the bright, citrusy snap of bergamot. Like a sunlit breeze through a  garden—calming yet quietly invigorating.</p>"
           }
         },
-        "slide_mAa7z7": {
+        "slide_rMTPJ9": {
           "type": "slide",
           "settings": {
-            "background_color": "",
-            "title": "",
-            "description": ""
+            "background_color": "#fffaef",
+            "title": "Fresh Poplin",
+            "description": "<p>A crisp, weightless blend of sun-dried linens and cool morning air—clean, airy, and effortlessly elegant, like slipping into a freshly pressed shirt on a bright, quiet morning.</p>"
           }
         }
       },
@@ -57,7 +57,7 @@
         "slide_d9agKH",
         "slide_XYJxiK",
         "slide_paY7be",
-        "slide_mAa7z7"
+        "slide_rMTPJ9"
       ],
       "settings": {
         "title": "What it smells like",
