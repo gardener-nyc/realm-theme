@@ -23,45 +23,41 @@
         "slide_DcFUKw": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/SHOT09_240923REALM_1224_1.png",
             "background_color": "",
             "title": "Saffron Citrus",
-            "description": "<p>placeholder</p>"
-          }
-        },
-        "slide_pGtmYy": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/image_195.png",
-            "background_color": "",
-            "title": "Lavender Bergamot",
-            "description": ""
-          }
-        },
-        "slide_LByAYW": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/image_186.png",
-            "background_color": "",
-            "title": "Fresh Poplin",
-            "description": ""
+            "description": "<p>A radiant contrast of golden spice and zesty peel—warm, luminous, and lightly exotic, like sun-warmed skin after a late summer stroll.</p>"
           }
         },
         "slide_7Ekezq": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/image_196.png",
             "background_color": "",
             "title": "Verbena Santal",
-            "description": ""
+            "description": "<p>A blend of the bright snap of lemon verbena with the creamy depth of sandalwood—fresh and grounding, like a walk through dew-covered woods at dawn.</p>"
+          }
+        },
+        "slide_pGtmYy": {
+          "type": "slide",
+          "settings": {
+            "background_color": "",
+            "title": "Lavender Bergamot",
+            "description": "<p>A crisp, herbaceous blend where soothing lavender meets the bright, citrusy snap of bergamot. Like a sunlit breeze through a  garden—calming yet quietly invigorating.</p>"
+          }
+        },
+        "slide_LByAYW": {
+          "type": "slide",
+          "settings": {
+            "background_color": "",
+            "title": "Fresh Poplin",
+            "description": "<p>A crisp, weightless blend of sun-dried linens and cool morning air—clean, airy, and effortlessly elegant, like slipping into a freshly pressed shirt on a bright, quiet morning.</p>"
           }
         }
       },
       "block_order": [
         "slide_DcFUKw",
+        "slide_7Ekezq",
         "slide_pGtmYy",
-        "slide_LByAYW",
-        "slide_7Ekezq"
+        "slide_LByAYW"
       ],
       "settings": {
         "title": "What it smells like",

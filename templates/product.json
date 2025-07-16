@@ -17,27 +17,6 @@
       "type": "product-benefits",
       "settings": {}
     },
-    "fragrance_carousel_7KA6WL": {
-      "type": "fragrance-carousel",
-      "blocks": {
-        "slide_XYJxiK": {
-          "type": "slide",
-          "settings": {
-            "background_color": "#cac0db",
-            "title": "Wild Lavender",
-            "description": "<p>Fields of lavender in every direction. Warm greens for sage and bright citrus yellows. Sweetgrass bends in a soft breeze underneath a tall tree, bark warmed by the sun.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "slide_XYJxiK"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "What It Smells Like",
-        "background_image": "shopify://shop_images/Frame_2137.png"
-      }
-    },
     "fragrance_carousel_edT8CF": {
       "type": "fragrance-carousel",
       "blocks": {
@@ -190,7 +169,6 @@
   "order": [
     "product_hero",
     "product_benefits",
-    "fragrance_carousel_7KA6WL",
     "fragrance_carousel_edT8CF",
     "centered_rich_text_cNQdat",
     "product_without_KaAVta",
