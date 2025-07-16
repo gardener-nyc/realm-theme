@@ -169,9 +169,8 @@
         "ticker_item_PEA88m": {
           "type": "ticker_item",
           "settings": {
-            "logo": "shopify://shop_images/placeholder-hypebeast.png",
             "url": "",
-            "cta": "Hypebeast"
+            "cta": ""
           }
         },
         "ticker_item_Rdd6rC": {
@@ -206,7 +205,7 @@
         "ticker_item_y6jA6h"
       ],
       "settings": {
-        "title": "Our certifications"
+        "title": "MADE WITHOUT"
       }
     },
     "press_carousel_tgfr44": {
@@ -247,6 +246,7 @@
         "quote_KzxPL4",
         "quote_3wym7y"
       ],
+      "disabled": true,
       "settings": {
         "background_image": "shopify://shop_images/Frame_2167.png"
       }
