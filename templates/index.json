@@ -18,7 +18,7 @@
         "subtitle": "<h1>(Without the Toxic Chemicals)</h1>",
         "url": "shopify://collections/all",
         "cta": "Enter Realm",
-        "background_image": "shopify://shop_images/Group_480966367.png"
+        "background_image": "shopify://shop_images/Untitled_design.png"
       }
     },
     "home_product_benefits_pYxBCG": {
@@ -61,8 +61,7 @@
       ],
       "settings": {
         "title": "<p><strong>Air Refresher Without The Toxic Chemicals.</strong></p><p>We know, it's about time.</p>",
-        "description": "<p>Your home is your safe space. Our products are both safe and effective, so you don’t have to compromise.</p>",
-        "background_image": "shopify://shop_images/placeholder-home-product.jpg"
+        "description": "<p>Your home is your safe space. Our products are both safe and effective, so you don’t have to compromise.</p>"
       }
     },
     "featured_product_CVGqYk": {
@@ -72,7 +71,7 @@
         "description": "<p>Realm is formulated to be safe to use every day, and smell so good that you’ll actually want to.</p>",
         "url": "shopify://products/lavender-bergamot-air-fabric-spray",
         "cta": "Get Fresh",
-        "background_image": "shopify://shop_images/DTS_HI-TREK_Fanette_Guilloud_Photo_ID11203.jpg",
+        "background_image": "shopify://shop_images/DTS_HI-TREK_Fanette_Guilloud_Photo_ID11203_copy.png",
         "product": "the-discovery-collection"
       }
     },
@@ -108,7 +107,7 @@
         "description": "<p>Our patent-pending formula works instantly to neutralize odors and freshen your space with premium Safe Scent Certified scents without harmful VOC’s, masking, or compromise leaving you with cleaner air and cleaner lungs.</p>",
         "url": "shopify://pages/about",
         "cta": "Our Story",
-        "background_image": "shopify://shop_images/Clean_air_for_all.png"
+        "background_image": "shopify://shop_images/SHOT09_240923REALM_1224_copy.png"
       }
     },
     "featured_product_hero_feGHmb": {
@@ -123,19 +122,19 @@
         "image_GXHPPH": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Group_480966366.png"
+            "image": "shopify://shop_images/DTS_Caldo_Daniel_Faro_Photo_ID3951.jpg"
           }
         },
         "image_7cRqea": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Group_480966365.png"
+            "image": "shopify://shop_images/stills_144592_megan-rogers.jpg"
           }
         },
         "image_LyfPUX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Group_480966368_4d1aba61-6b8e-498c-91a4-2dd349acc550.png"
+            "image": "shopify://shop_images/DTS_Caldo_Daniel_Faro_Photo_ID3942.jpg"
           }
         }
       },
@@ -193,6 +192,7 @@
         "ticker_item_NU4ULF",
         "ticker_item_y6jA6h"
       ],
+      "disabled": true,
       "settings": {
         "title": "As seen in"
       }
@@ -227,8 +227,9 @@
         "quote_KzxPL4",
         "quote_3wym7y"
       ],
+      "disabled": true,
       "settings": {
-        "background_image": "shopify://shop_images/Frame_2167.png"
+        "background_image": "shopify://shop_images/Screenshot_2025-07-15_at_8.58.02_PM.png"
       }
     },
     "bumper_spray_Yzyjgz": {
