@@ -23,10 +23,9 @@
         "slide_DcFUKw": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/image_186.png",
             "background_color": "#e0d9ca",
             "title": "Fresh Poplin",
-            "description": "<p>placeholder</p>"
+            "description": "<p>A crisp, weightless blend of sun-dried linens and cool morning air—clean, airy, and effortlessly elegant, like slipping into a freshly pressed shirt on a bright, quiet morning.</p>"
           }
         }
       },
@@ -94,8 +93,8 @@
       ],
       "settings": {
         "title": "<p><strong>Consciously</strong><br/>formulated <em>without :</em></p>",
-        "image_1": "shopify://shop_images/Frame_2147.png",
-        "image_2": "shopify://shop_images/Frame_2148.png"
+        "image_1": "shopify://shop_images/stills_383424_charlotte-jane.jpg",
+        "image_2": "shopify://shop_images/DTS_AWAY_Daniel_Faro_Photo_ID7513.jpg"
       }
     },
     "bumper_image_ticker_QRmxD7": {
