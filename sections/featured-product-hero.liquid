@@ -98,30 +98,126 @@
 {% endcapture %}
 
 {% capture product_form %}
-    {% form 'product', product, data-component: "productFormQuickAdd" %}
-        <input
-            type="hidden"
-            name="id"
-            value="{{ product.selected_or_first_available_variant.id }}"
-        />
-        <div class="w-full relative z-1">
-            <button
-                {% unless product.available %}disabled="true"{% endunless %}
-                type="submit"
-                class="block w-full button button-primary-brown">
-                {% if product.available %}
-                    Add to Cart
-                {% else %}
-                    Sold Out
-                {% endif %}
-            </button>
+    {% assign is_subscription = false %}
+
+    {% if product.selected_or_first_available_selling_plan_allocation %}
+        {% assign is_subscription = true %}
+    {% endif %}
+
+    {% form 'product', product, data-component: "productFormSubscription" %}
+        <div class="flex flex-col gap-1">
+            {% if is_subscription %}
+                <input
+                    type="hidden"
+                    name="id"
+                    value="{{ product.selected_or_first_available_variant.id }}"
+                />
+                
+                <input
+                    type="hidden"
+                    name="selling_plan_id"
+                    value="{{ product.selling_plan_groups[0].selling_plans[0].id }}"
+                    type="hidden"
+                />
+    
+                <div class="flex flex-col gap-1">
+                    <label class="text-12/12 uppercase tracking-wide">Frequency:</label>
+    
+                    <label class="input-subscription-option">
+                        <input 
+                            type="radio"
+                            name="purchase_type"
+                            value="one-time"
+                            class="input-subscription-option__input"
+                        />
+    
+                        <div class="input-subscription-option__indicator-container py-1 px-2 border border-solid rounded-20">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1">
+                                    <div class="input-subscription-option__indicator"></div>
+                                    <span class="text-18/18 font-serif input-subscription-option__label">One-time Purchase</span>
+                                </div>
+    
+                                <span class="text-14/14 input-subscription-option__label">{{ product.price | money_without_trailing_zeros }}</span>
+                            </div>
+                        </div>
+                    </label>
+                    
+                    <label class="input-subscription-option">
+                        <input 
+                            type="radio"
+                            name="purchase_type"
+                            value="subscription"
+                            class="input-subscription-option__input"
+                            checked
+                        />
+    
+                        <div class="input-subscription-option__indicator-container py-1 px-2 border border-solid rounded-20">
+                            <div class="flex flex-col gap-1">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-1">
+                                        <div class="input-subscription-option__indicator"></div>
+                                        <span class="text-18/18 font-serif input-subscription-option__label">Subscribe & Save</span>
+                                    </div>
+    
+                                    <span class="text-14/14 input-subscription-option__label flex gap-half">
+                                        <span class="line-through opacity-50">
+                                            {{ product.price | money_without_trailing_zeros }}
+                                        </span>
+                                        <span>
+                                            {{ product.selected_or_first_available_selling_plan_allocation.price | money_without_trailing_zeros }}
+                                        </span>
+                                    </span>
+                                </div>
+    
+                                <div class="relative z-2 pl-[28px] input-subscription-option__details">
+                                    <div class="relative">
+                                        <select
+                                            name="selling-plan-select"
+                                            class="input-select block w-full">
+                                            {% for allocation in product.variants[0].selling_plan_allocations %}
+                                                <option value="{{ allocation.selling_plan.id }}">
+                                                    {{ allocation.selling_plan.name }}
+                                                </option>
+                                            {% endfor %}
+                                        </select>
+
+                                        <img
+                                            src="{{ 'icon-arrow-drawer.svg' | asset_url }}"
+                                            alt="Arrow"
+                                            class="block w-[12px] absolute top-1 right-[12px]"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            {% endif %}
+    
+            <div class="w-full relative z-1">
+                <button
+                    {% unless product.available %}disabled="true"{% endunless %}
+                    type="submit"
+                    class="block w-full button button-primary-brown">
+                    {% if product.available %}
+                        {% if is_subscription %}
+                            Add to Cart
+                        {% else %}
+                            Add to Cart
+                        {% endif %}
+                    {% else %}
+                        Sold Out
+                    {% endif %}
+                </button>
+            </div>
         </div>
     {% endform %}
 {% endcapture %}
 
 <div class="px-container-mobile md:px-container-desktop my-6 md:my-10">
     <div class="mx-auto max-w-grid">
-        <div class="grid grid-cols-6 md:grid-cols-12 gap-y-4 gap-x-gutter-mobile md:gap-gutter-desktop items-center">
+        <div class="grid grid-cols-6 md:grid-cols-12 gap-y-4 gap-x-gutter-mobile md:gap-gutter-desktop">
             <div class="col-span-6 xl:col-span-5 xl:col-start-2">
                 {% render 'product-hero-image-carousel', images: product.images %}
             </div>

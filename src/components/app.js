@@ -8,6 +8,7 @@ import menuTrigger from './menuTrigger';
 import menu from './menu';
 import parallaxBackground from './parallaxBackground';
 import productFormQuickAdd from './productFormQuickAdd';
+import productFormSubscription from './productFormSubscription';
 import imageGridCarousel from './imageGridCarousel';
 import pressCarousel from './pressCarousel';
 import menuDrawer from './menuDrawer';
@@ -35,6 +36,7 @@ const components = {
 	menu,
 	parallaxBackground,
 	productFormQuickAdd,
+	productFormSubscription,
 	imageGridCarousel,
 	pressCarousel,
 	menuDrawer,

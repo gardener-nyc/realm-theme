@@ -48,6 +48,7 @@ const CartItem = ({
 	quantity,
 	line_price = 0,
 	image,
+	selling_plan_allocation,
 	onUpdateCart,
 }) => {
 	const [isUpdating, setUpdating] = useState(false);
@@ -100,6 +101,12 @@ const CartItem = ({
 					{centsToPriceNoTrailingZeros(line_price)}
 				</p>
 			</div>
+
+			{selling_plan_allocation && (
+				<div className="text-14/18 font-serif">
+					{selling_plan_allocation.selling_plan.name}
+				</div>
+			)}
 		</div>
 	);
 
