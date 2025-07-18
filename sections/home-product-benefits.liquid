@@ -16,6 +16,12 @@
 			"type": "image_picker",
 			"id": "background_image",
 			"label": "Background Image"
+		},
+        {
+			"type": "checkbox",
+			"id": "invert_text_color",
+			"label": "Invert Text Color",
+			"default": true
 		}
 	],
     "blocks": [
@@ -85,7 +91,7 @@
     
                             <div class="grid grid-cols-2 md:grid-cols-4 gap-[1px]">
                                 {% for block in section.blocks %}
-                                    <div class="relative z-1 aspect-square w-full outline-1 outline-white outline flex flex-col text-white justify-center items-center gap-1 md:gap-3 p-1">
+                                    <div class="relative z-1 aspect-square w-full outline-1 outline-white outline flex flex-col {% if section.settings.invert_text_color %}text-white{% endif %} justify-center items-center gap-1 md:gap-3 p-1">
                                         <div
                                             data-component="image"
                                             class="image aspect-square w-6 md:w-10">
