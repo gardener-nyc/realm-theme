@@ -50,31 +50,27 @@
 
 <div class="overflow-hidden relative pt-3 md:pt-6 px-container-mobile md:px-container-desktop mt-4 md:mt-8">
 	<div
-		data-component="parallaxBackground"
-		class="absolute inset-x-0 inset-y-[-25vh]">
-		<div
-			data-component="image"
-			class="image absolute inset-0">
-			<picture class="blur-xl scale-110">
-				<source
-					data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
-					media="(min-width: 1200px)">
-				<source
-					data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
-					media="(min-width: 1000px)">
-				<source
-					data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
-					media="(min-width: 800px)">
-				
-				{% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
-				<img
-					src="{{ lqip }}"
-					data-src="{{ section.settings.background_image | image_url: width: 800 }}"
-					alt="{{ section.settings.background_image.alt }}"
-				/>
-			</picture>
-		</div>
-	</div>
+        data-component="image"
+        class="image absolute inset-0">
+        <picture class="blur-xl scale-110">
+            <source
+                data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
+                media="(min-width: 1200px)">
+            <source
+                data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
+                media="(min-width: 1000px)">
+            <source
+                data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
+                media="(min-width: 800px)">
+            
+            {% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
+            <img
+                src="{{ lqip }}"
+                data-src="{{ section.settings.background_image | image_url: width: 800 }}"
+                alt="{{ section.settings.background_image.alt }}"
+            />
+        </picture>
+    </div>
 
     <div class="flex flex-col gap-3 md:gap-6 z-1 relative">
         <p class="text-white text-30/38 md:text-36/45 text-center">

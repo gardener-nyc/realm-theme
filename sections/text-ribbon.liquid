@@ -43,30 +43,26 @@
 	class="relative overflow-hidden px-container-mobile md:px-container-desktop {% if section.settings.invert_text_color %}text-white{% else %}text-rust{% endif %}">
 	{% if section.settings.background_image != blank %}	
 		<div
-			data-component="parallaxBackground"
-			class="absolute inset-x-0 inset-y-[-25vh]">
-			<div
-				data-component="image"
-				class="image absolute inset-0">
-				<picture class="blur-xl scale-110">
-					<source
-						data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
-						media="(min-width: 1200px)">
-					<source
-						data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
-						media="(min-width: 1000px)">
-					<source
-						data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
-						media="(min-width: 800px)">
-					
-					{% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
-					<img
-						src="{{ lqip }}"
-						data-src="{{ section.settings.background_image | image_url: width: 800 }}"
-						alt="{{ section.settings.background_image.alt }}"
-					/>
-				</picture>
-			</div>
+			data-component="image"
+			class="image absolute inset-0">
+			<picture class="blur-xl scale-110">
+				<source
+					data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
+					media="(min-width: 1200px)">
+				<source
+					data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
+					media="(min-width: 1000px)">
+				<source
+					data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
+					media="(min-width: 800px)">
+				
+				{% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
+				<img
+					src="{{ lqip }}"
+					data-src="{{ section.settings.background_image | image_url: width: 800 }}"
+					alt="{{ section.settings.background_image.alt }}"
+				/>
+			</picture>
 		</div>
 	{% endif %}
 

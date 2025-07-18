@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "product_hero": {
@@ -23,10 +14,9 @@
         "slide_DcFUKw": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/image_186.png",
             "background_color": "#e0d9ca",
             "title": "Fresh Poplin",
-            "description": "<p>placeholder</p>"
+            "description": "<p>A crisp, weightless blend of sun-dried linens and cool morning air—clean, airy, and effortlessly elegant, like slipping into a freshly pressed shirt on a bright, quiet morning.<\/p>"
           }
         }
       },
@@ -35,13 +25,13 @@
       ],
       "settings": {
         "title": "What it smells like",
-        "background_image": "shopify://shop_images/Frame_2142.png"
+        "background_image": "shopify:\/\/shop_images\/stills_250105_anna-letson.jpg"
       }
     },
     "centered_rich_text_cNQdat": {
       "type": "centered-rich-text",
       "settings": {
-        "description": "<p>Realm uses a patent-pending formula that works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means clean air (and lungs), all without the chemicals.</p>",
+        "description": "<p>Realm uses a patent-pending formula that works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means clean air (and lungs), all without the chemicals.<\/p>",
         "background_color": "#c98c68",
         "invert_text_color": true
       }
@@ -53,35 +43,56 @@
           "type": "drawer",
           "settings": {
             "title": "Phthalates",
-            "description": "<p>Phthalates are a series of widely used chemicals that demonstrate to be endocrine disruptors and are detrimental to human health. Phthalates can be found in most products that have contact with plastics during producing, packaging, or delivering. Despite the short half-lives in tissues, chronic exposure to phthalates will adversely influence the endocrine system and functioning of multiple organs, which has negative long-term impacts on the success of pregnancy, child growth and development, and reproductive systems in both young children and adolescents.</p>"
+            "description": "<p>Phthalates are a series of widely used chemicals that demonstrate to be endocrine disruptors and are detrimental to human health. Phthalates can be found in most products that have contact with plastics during producing, packaging, or delivering. Despite the short half-lives in tissues, chronic exposure to phthalates will adversely influence the endocrine system and functioning of multiple organs, which has negative long-term impacts on the success of pregnancy, child growth and development, and reproductive systems in both young children and adolescents.<\/p>"
           }
         },
         "drawer_Nt8WHr": {
           "type": "drawer",
           "settings": {
-            "title": "Phthalates",
-            "description": "<p>Phthalates are a series of widely used chemicals that demonstrate to be endocrine disruptors and are detrimental to human health. Phthalates can be found in most products that have contact with plastics during producing, packaging, or delivering. Despite the short half-lives in tissues, chronic exposure to phthalates will adversely influence the endocrine system and functioning of multiple organs, which has negative long-term impacts on the success of pregnancy, child growth and development, and reproductive systems in both young children and adolescents.</p>"
+            "title": "Parabens",
+            "description": "<p>Parabens are synthetic preservatives commonly used to extend shelf life, but they’ve been linked to potential endocrine disruption due to their estrogen-mimicking properties. Our formulations are paraben-free to support safer, low-risk air environments.<\/p>"
           }
         },
         "drawer_E7LiqK": {
           "type": "drawer",
           "settings": {
-            "title": "Phthalates",
-            "description": "<p>Phthalates are a series of widely used chemicals that demonstrate to be endocrine disruptors and are detrimental to human health. Phthalates can be found in most products that have contact with plastics during producing, packaging, or delivering. Despite the short half-lives in tissues, chronic exposure to phthalates will adversely influence the endocrine system and functioning of multiple organs, which has negative long-term impacts on the success of pregnancy, child growth and development, and reproductive systems in both young children and adolescents.</p>"
+            "title": "Propellants",
+            "description": "<p>Many aerosol sprays rely on chemical propellants like butane, isobutane, and propane, which contribute to indoor VOC levels and potential respiratory irritation. We use clean, compressed air dispersion with zero flammable propellants.<\/p>"
           }
         },
         "drawer_Kxj7ng": {
           "type": "drawer",
           "settings": {
-            "title": "Phthalates",
-            "description": "<p>Phthalates are a series of widely used chemicals that demonstrate to be endocrine disruptors and are detrimental to human health. Phthalates can be found in most products that have contact with plastics during producing, packaging, or delivering. Despite the short half-lives in tissues, chronic exposure to phthalates will adversely influence the endocrine system and functioning of multiple organs, which has negative long-term impacts on the success of pregnancy, child growth and development, and reproductive systems in both young children and adolescents.</p>"
+            "title": "Petrochemicals",
+            "description": "<p>Petrochemical derivatives are found in many synthetic fragrances and solvents, but can contribute to indoor air pollution and long-term environmental harm. We use plant-based, biodegradable alternatives for a petroleum-free formula.<\/p>"
           }
         },
         "drawer_3cTG7H": {
           "type": "drawer",
           "settings": {
-            "title": "Phthalates",
-            "description": "<p>Phthalates are a series of widely used chemicals that demonstrate to be endocrine disruptors and are detrimental to human health. Phthalates can be found in most products that have contact with plastics during producing, packaging, or delivering. Despite the short half-lives in tissues, chronic exposure to phthalates will adversely influence the endocrine system and functioning of multiple organs, which has negative long-term impacts on the success of pregnancy, child growth and development, and reproductive systems in both young children and adolescents.</p>"
+            "title": "Formaldehyde",
+            "description": "<p>Formaldehyde is a known human carcinogen that may be released from certain preservatives and synthetic fragrance compounds. We strictly avoid all formaldehyde donors and formaldehyde-releasing agents.<\/p>"
+          }
+        },
+        "drawer_gzKcYr": {
+          "type": "drawer",
+          "settings": {
+            "title": "Toluene",
+            "description": "<p>Toluene, a volatile solvent found in industrial degreasers and some conventional air products, is neurotoxic and classified as a developmental toxin. We exclude it entirely to ensure cleaner, safer breathing environments.<\/p>"
+          }
+        },
+        "drawer_jUrHgt": {
+          "type": "drawer",
+          "settings": {
+            "title": "Known Carcinogens",
+            "description": "<p>All ingredients are rigorously screened against authoritative health and safety databases to exclude any substances classified or suspected as carcinogenic.<\/p>"
+          }
+        },
+        "drawer_9VJmBb": {
+          "type": "drawer",
+          "settings": {
+            "title": "Known Endocrine Disruptors",
+            "description": "<p>Realm avoids ingredients identified as endocrine-disrupting by organizations such as the EWG and TEDX, minimizing interference with hormonal pathways and supporting long-term wellness through ingredient integrity.<\/p>"
           }
         }
       },
@@ -90,28 +101,31 @@
         "drawer_Nt8WHr",
         "drawer_E7LiqK",
         "drawer_Kxj7ng",
-        "drawer_3cTG7H"
+        "drawer_3cTG7H",
+        "drawer_gzKcYr",
+        "drawer_jUrHgt",
+        "drawer_9VJmBb"
       ],
       "settings": {
-        "title": "<p><strong>Consciously</strong><br/>formulated <em>without :</em></p>",
-        "image_1": "shopify://shop_images/Frame_2147.png",
-        "image_2": "shopify://shop_images/Frame_2148.png"
+        "title": "<p><strong>Consciously<\/strong><br\/>formulated <em>without :<\/em><\/p>",
+        "image_1": "shopify:\/\/shop_images\/stills_383424_charlotte-jane.jpg",
+        "image_2": "shopify:\/\/shop_images\/DTS_AWAY_Daniel_Faro_Photo_ID7513.jpg"
       }
     },
     "bumper_image_ticker_QRmxD7": {
       "type": "bumper-image-ticker",
       "settings": {
-        "title": "<p>It’s Time to<br/><strong>Clean Up Air Care </strong></p>",
-        "description": "<p>Our natural, patent-pending formula works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means cleaner air—and cleaner lungs.</p>",
-        "url": "shopify://pages/about",
+        "title": "<p>It’s Time to<br\/><strong>Clean Up Air Care <\/strong><\/p>",
+        "description": "<p>Our natural, patent-pending formula works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means cleaner air—and cleaner lungs.<\/p>",
+        "url": "shopify:\/\/pages\/about",
         "cta": "Our Story",
-        "background_image": "shopify://shop_images/Clean_air_for_all.png"
+        "background_image": "shopify:\/\/shop_images\/Clean_air_for_all.png"
       }
     },
     "product_reviews_tUb8iT": {
       "type": "product-reviews",
       "settings": {
-        "image": "shopify://shop_images/image_6.jpg"
+        "image": "shopify:\/\/shop_images\/image_6.jpg"
       }
     }
   },

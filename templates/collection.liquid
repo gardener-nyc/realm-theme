@@ -6,30 +6,26 @@
 
 <div class="py-4 md:py-8 relative overflow-hidden">
     <div
-        data-component="parallaxBackground"
-        class="absolute inset-x-0 inset-y-[-25vh]">
-        <div
-            data-component="image"
-            class="image absolute inset-0">
-            <picture class="blur-xl scale-110">
-                <source
-                    data-srcset="{{ collection.featured_image | image_url: width: 2000 }}"
-                    media="(min-width: 1200px)">
-                <source
-                    data-srcset="{{ collection.featured_image | image_url: width: 1400 }}"
-                    media="(min-width: 1000px)">
-                <source
-                    data-srcset="{{ collection.featured_image | image_url: width: 1200 }}"
-                    media="(min-width: 800px)">
-                
-                {% assign lqip = collection.featured_image | format: 'jpg' | image_url: width: 10 %}
-                <img
-                    src="{{ lqip }}"
-                    data-src="{{ collection.featured_image | image_url: width: 800 }}"
-                    alt="{{ collection.featured_image.alt }}"
-                />
-            </picture>
-        </div>
+        data-component="image"
+        class="image absolute inset-0">
+        <picture class="blur-xl scale-110">
+            <source
+                data-srcset="{{ collection.featured_image | image_url: width: 2000 }}"
+                media="(min-width: 1200px)">
+            <source
+                data-srcset="{{ collection.featured_image | image_url: width: 1400 }}"
+                media="(min-width: 1000px)">
+            <source
+                data-srcset="{{ collection.featured_image | image_url: width: 1200 }}"
+                media="(min-width: 800px)">
+            
+            {% assign lqip = collection.featured_image | format: 'jpg' | image_url: width: 10 %}
+            <img
+                src="{{ lqip }}"
+                data-src="{{ collection.featured_image | image_url: width: 800 }}"
+                alt="{{ collection.featured_image.alt }}"
+            />
+        </picture>
     </div>
 
     <div class="px-container-mobile md:px-container-desktop relative z-1 text-white text-center">

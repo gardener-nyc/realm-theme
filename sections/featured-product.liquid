@@ -66,30 +66,26 @@
             <div class="col-span-6 md:col-span-9 md:pl-2 lg:pl-4">
                 <div class="h-full w-full relative overflow-hidden">
                     <div
-                        data-component="parallaxBackground"
-                        class="absolute inset-x-0 inset-y-[-25vh]">
-                        <div
-                            data-component="image"
-                            class="hidden md:block image absolute inset-0">
-                            <picture class="blur-xl scale-110">
-                                <source
-                                    data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
-                                    media="(min-width: 1200px)">
-                                <source
-                                    data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
-                                    media="(min-width: 1000px)">
-                                <source
-                                    data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
-                                    media="(min-width: 800px)">
-                                
-                                {% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
-                                <img
-                                    src="{{ lqip }}"
-                                    data-src="{{ section.settings.background_image | image_url: width: 800 }}"
-                                    alt="{{ section.settings.background_image.alt }}"
-                                />
-                            </picture>
-                        </div>
+                        data-component="image"
+                        class="hidden md:block image absolute inset-0">
+                        <picture class="blur-xl scale-110">
+                            <source
+                                data-srcset="{{ section.settings.background_image | image_url: width: 2000 }}"
+                                media="(min-width: 1200px)">
+                            <source
+                                data-srcset="{{ section.settings.background_image | image_url: width: 1400 }}"
+                                media="(min-width: 1000px)">
+                            <source
+                                data-srcset="{{ section.settings.background_image | image_url: width: 1200 }}"
+                                media="(min-width: 800px)">
+                            
+                            {% assign lqip = section.settings.background_image | format: 'jpg' | image_url: width: 10 %}
+                            <img
+                                src="{{ lqip }}"
+                                data-src="{{ section.settings.background_image | image_url: width: 800 }}"
+                                alt="{{ section.settings.background_image.alt }}"
+                            />
+                        </picture>
                     </div>
 
                     <div class="relative z-1 flex justify-end md:py-4 md:pr-[10%]">

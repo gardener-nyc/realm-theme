@@ -4,7 +4,7 @@
 {% endcomment %}
 {% assign path = assets | replace: '~/', '../' | replace: '@/', '../' %}
 {% if path == "/src/entrypoints/theme.css" or path == "theme.css" %}
-  {{ 'theme-tmTZWfaz.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload_stylesheet }}
+  {{ 'theme-BW2-ZBtl.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload_stylesheet }}
 {% elsif path == "/src/entrypoints/theme.js" or path == "theme.js" %}
   <script src="{{ 'theme-Cw3i7yeT.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
 {% endif %}

@@ -1,47 +1,43 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "current": {
-    "favicon": "shopify://shop_images/Realm_Logo_Black_RGB.png",
+    "favicon": "shopify:\/\/shop_images\/Realm_Logo_Black_RGB.png",
     "sections": {
       "footer-instagram-carousel": {
         "type": "footer-instagram-carousel",
         "blocks": {
           "slide_hkJqpj": {
             "type": "slide",
+            "disabled": true,
             "settings": {
-              "image": "shopify://shop_images/image_4.jpg"
+              "image": "shopify:\/\/shop_images\/image_4.jpg"
             }
           },
           "slide_WEeJiy": {
             "type": "slide",
+            "disabled": true,
             "settings": {
-              "image": "shopify://shop_images/image_6.jpg"
+              "image": "shopify:\/\/shop_images\/image_6.jpg"
             }
           },
           "slide_TzARPW": {
             "type": "slide",
+            "disabled": true,
             "settings": {
-              "image": "shopify://shop_images/image_12.jpg"
+              "image": "shopify:\/\/shop_images\/image_12.jpg"
             }
           },
           "slide_NknkhC": {
             "type": "slide",
+            "disabled": true,
             "settings": {
-              "image": "shopify://shop_images/image_1.jpg"
+              "image": "shopify:\/\/shop_images\/image_1.jpg"
             }
           },
           "slide_UTbAti": {
             "type": "slide",
+            "disabled": true,
             "settings": {
-              "image": "shopify://shop_images/image_7.jpg"
+              "image": "shopify:\/\/shop_images\/image_7.jpg"
             }
           }
         },
@@ -54,7 +50,7 @@
         ],
         "settings": {
           "title": "Welcome to our Realm™",
-          "description": "<a href=\"https://www.instagram.com/experiencetherealm\" target=\"_blank\" title=\"@experiencetherealm\">@experiencetherealm</a>"
+          "description": "<a href=\"https:\/\/www.instagram.com\/experiencetherealm\" target=\"_blank\" title=\"@experiencetherealm\">@experiencetherealm<\/a>"
         }
       },
       "footer": {
@@ -65,7 +61,7 @@
           "klaviyo_source_id": "website_footer",
           "menu": "footer",
           "legal_menu": "footer-legal",
-          "logo": "shopify://shop_images/icon-logo-footer.svg"
+          "logo": "shopify:\/\/shop_images\/icon-logo-footer.svg"
         }
       },
       "header": {
@@ -75,7 +71,7 @@
           "menu_mobile": "main-menu-mobile",
           "menu_mobile_footer": "main-menu-mobile-footer",
           "featured_product": "the-discovery-collection",
-          "logo": "shopify://shop_images/icon-logo-footer.svg"
+          "logo": "shopify:\/\/shop_images\/icon-logo-footer.svg"
         }
       },
       "cart": {
