@@ -8,245 +8,249 @@
  * ------------------------------------------------------------
  */
 {
-	"sections": {
-		"hero_full_width_image_xBVAw8": {
-			"type": "hero-full-width-image",
-			"settings": {
-				"title": "<p><strong>Your home is your safe space.</strong></p><p>Our products help you keep it that way. </p>",
-				"background_image": "shopify://shop_images/Frame_2149.png"
-			}
-		},
-		"section_nav_L4GYpk": {
-			"type": "section-nav",
-			"blocks": {
-				"section_rrTPzb": {
-					"type": "section",
-					"settings": {
-						"title": "The Truth About Fragrance",
-						"url": "#truth-about-fragrance"
-					}
-				},
-				"section_UFG9LQ": {
-					"type": "section",
-					"settings": {
-						"title": "A New Standard",
-						"url": "#new-standard"
-					}
-				},
-				"section_iyQB3f": {
-					"type": "section",
-					"settings": {
-						"title": "My Story",
-						"url": "#my-story"
-					}
-				}
-			},
-			"block_order": [
-				"section_rrTPzb",
-				"section_UFG9LQ",
-				"section_iyQB3f"
-			],
-			"settings": {}
-		},
-		"section_id_7VcR64": {
-			"type": "section-id",
-			"settings": {
-				"id": "truth-about-fragrance"
-			}
-		},
-		"text_ribbon_eaLJ6F": {
-			"type": "text-ribbon",
-			"settings": {
-				"title": "<p><strong>Just because something smells good</strong> doesn’t mean it isn’t bad.</p>",
-				"description": "<p>In the US, companies aren’t required to disclose the ingredients they use in fragrance formulas. That means that potentially harmful chemicals are often hiding in plain sight—like these common air care ingredients:</p>",
-				"background_color": "#c98c68",
-				"invert_text_color": true
-			}
-		},
-		"text_ribbon_A9gp7T": {
-			"type": "text-ribbon",
-			"settings": {
-				"background_image": "shopify://shop_images/DTS_Geometry_Daniel_Faro_Photo_ID6289.jpg",
-				"title": "<p><strong>The EU has banned over 1,700 cosmetic ingredients. The US? Just 11.</strong>⁽¹⁾</p>",
-				"description": "",
-				"background_color": "#f2e5be",
-				"invert_text_color": true
-			}
-		},
-		"section_id_GwC3Mq": {
-			"type": "section-id",
-			"settings": {
-				"id": "new-standard"
-			}
-		},
-		"text_ribbon_eAYFGN": {
-			"type": "text-ribbon",
-			"settings": {
-				"title": "<p><strong>We’re raising the standards for air care, so you never have to compromise yours.</strong></p>",
-				"description": "",
-				"background_color": "#a4b79f",
-				"invert_text_color": true
-			}
-		},
-		"benefits_mfWP4M": {
-			"type": "benefits",
-			"blocks": {
-				"slide_AxPfiE": {
-					"type": "slide",
-					"settings": {
-						"image": "shopify://shop_images/Realm_NaturalDeodorizer_White_HighRes_1.png",
-						"title": "Natural Deodorizer"
-					}
-				},
-				"slide_HTwBk9": {
-					"type": "slide",
-					"settings": {
-						"image": "shopify://shop_images/Realm_InstantDeodorizing_White_HighRes.png",
-						"title": "No Phthalates"
-					}
-				},
-				"slide_a6i4fR": {
-					"type": "slide",
-					"settings": {
-						"image": "shopify://shop_images/Realm_LongLasting_White_HighRes_1.png",
-						"title": "Long Lasting Freshness"
-					}
-				},
-				"slide_f7pk4D": {
-					"type": "slide",
-					"settings": {
-						"image": "shopify://shop_images/Realm_CertifiedNonToxic_White_HighRes.png",
-						"title": "Safe Scent Certified"
-					}
-				}
-			},
-			"block_order": [
-				"slide_AxPfiE",
-				"slide_HTwBk9",
-				"slide_a6i4fR",
-				"slide_f7pk4D"
-			],
-			"settings": {}
-		},
-		"value_grid_DUUip6": {
-			"type": "value-grid",
-			"blocks": {
-				"slide_dVHj7R": {
-					"type": "slide",
-					"settings": {
-						"image": "shopify://shop_images/DTS_AWAY_Daniel_Faro_Photo_ID7513.jpg",
-						"title": "Effective",
-						"description": "<p>We put in hundreds of hours of research, worked with multiple formulators, and tested dozens of iterations until we were satisfied that our products would work without covering anything up—odors or ingredients.</p>"
-					}
-				},
-				"slide_ReC6ew": {
-					"type": "slide",
-					"settings": {
-						"image": "shopify://shop_images/Screenshot_2024-10-02_at_4.37.59_PM_1.png",
-						"title": "Safe",
-						"description": "<p>Our products are certified Made Safe and formulated with non-toxic ingredients. They’re also Safe Scent-certified—a new standard for air care products that we’ve pioneered.</p>"
-					}
-				},
-				"slide_dabYLb": {
-					"type": "slide",
-					"settings": {
-						"image": "shopify://shop_images/stills_249569_amber-canterbury.jpg",
-						"title": "Enveloping",
-						"description": "<p>We partnered with a Swiss fragrance house that has over 125 years of experience to craft scents that enhance your everyday routine.</p>"
-					}
-				}
-			},
-			"block_order": ["slide_dVHj7R", "slide_ReC6ew", "slide_dabYLb"],
-			"settings": {}
-		},
-		"press_carousel_tgfr44": {
-			"type": "press-carousel",
-			"blocks": {
-				"quote_YjepgV": {
-					"type": "quote",
-					"settings": {
-						"quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
-						"author": "Quote Credit"
-					}
-				},
-				"quote_jKLiNM": {
-					"type": "quote",
-					"settings": {
-						"quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
-						"author": "Quote Credit"
-					}
-				},
-				"quote_KzxPL4": {
-					"type": "quote",
-					"settings": {
-						"quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
-						"author": "Quote Credit"
-					}
-				},
-				"quote_3wym7y": {
-					"type": "quote",
-					"settings": {
-						"quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
-						"author": "Quote Credit"
-					}
-				}
-			},
-			"block_order": [
-				"quote_YjepgV",
-				"quote_jKLiNM",
-				"quote_KzxPL4",
-				"quote_3wym7y"
-			],
-			"disabled": true,
-			"settings": {
-				"background_image": "shopify://shop_images/Frame_2167.png"
-			}
-		},
-		"section_id_R44daW": {
-			"type": "section-id",
-			"settings": {
-				"id": "my-story"
-			}
-		},
-		"about_bio_MFpRfy": {
-			"type": "about-bio",
-			"settings": {
-				"image": "shopify://shop_images/bio.png",
-				"title": "It started when I found a lump in my breast.",
-				"description": "<p>I started researching the carcinogens that my doctor had asked me about, and was shocked to  learn that not only are they a common ingredient in anything in fragrance (and these days, that’s pretty much everything)—including the air care products I used every day. And because companies aren’t required to disclose them on the label, they’re pretty much impossible to avoid.</p><p>When I couldn’t find any alternative air care products that were safe, effective, and smelled great, I decided to create Realm: so everyone can care for their space without compromise. </p>"
-			}
-		},
-		"bumper_spray_Yzyjgz": {
-			"type": "bumper-spray",
-			"settings": {
-				"title": "<p><strong>A breath</strong><br/>of fresh air.</p>",
-				"description": "",
-				"url": "shopify://products/lavender-bergamot-air-fabric-spray",
-				"cta": "Get spraying"
-			}
-		},
-		"small_rich_text_gNy8f7": {
-			"type": "small-rich-text",
-			"settings": {
-				"title": "Sources",
-				"description": "<p>Food & Drug Admin., Prohibited & Restricted Ingredients<br/>https://www.fda.gov/cosmetics/guidanceregulation/ lawsregul ations/ucm127406.htm. </p><p>Food & Drug Admin., Prohibited & Restricted Ingredients<br/>https://www.fda.gov/cosmetics/guidanceregulation/ lawsregul ations/ucm127406.htm. </p>"
-			}
-		}
-	},
-	"order": [
-		"hero_full_width_image_xBVAw8",
-		"section_nav_L4GYpk",
-		"section_id_7VcR64",
-		"text_ribbon_eaLJ6F",
-		"text_ribbon_A9gp7T",
-		"section_id_GwC3Mq",
-		"text_ribbon_eAYFGN",
-		"benefits_mfWP4M",
-		"value_grid_DUUip6",
-		"press_carousel_tgfr44",
-		"section_id_R44daW",
-		"about_bio_MFpRfy",
-		"bumper_spray_Yzyjgz",
-		"small_rich_text_gNy8f7"
-	]
+  "sections": {
+    "hero_full_width_image_xBVAw8": {
+      "type": "hero-full-width-image",
+      "settings": {
+        "title": "<p><strong>Your home is your safe space.</strong></p><p>Our products help you keep it that way. </p>",
+        "background_image": "shopify://shop_images/Frame_2149.png"
+      }
+    },
+    "section_nav_L4GYpk": {
+      "type": "section-nav",
+      "blocks": {
+        "section_rrTPzb": {
+          "type": "section",
+          "settings": {
+            "title": "The Truth About Fragrance",
+            "url": "#truth-about-fragrance"
+          }
+        },
+        "section_UFG9LQ": {
+          "type": "section",
+          "settings": {
+            "title": "A New Standard",
+            "url": "#new-standard"
+          }
+        },
+        "section_iyQB3f": {
+          "type": "section",
+          "settings": {
+            "title": "My Story",
+            "url": "#my-story"
+          }
+        }
+      },
+      "block_order": [
+        "section_rrTPzb",
+        "section_UFG9LQ",
+        "section_iyQB3f"
+      ],
+      "settings": {}
+    },
+    "section_id_7VcR64": {
+      "type": "section-id",
+      "settings": {
+        "id": "truth-about-fragrance"
+      }
+    },
+    "text_ribbon_eaLJ6F": {
+      "type": "text-ribbon",
+      "settings": {
+        "title": "<p><strong>Just because something smells good</strong> doesn’t mean it isn’t bad.</p>",
+        "description": "<p>In the US, companies aren’t required to disclose the ingredients they use in fragrance formulas. That means that potentially harmful chemicals are often hiding in plain sight—like these common air care ingredients:</p>",
+        "background_color": "#c98c68",
+        "invert_text_color": true
+      }
+    },
+    "text_ribbon_A9gp7T": {
+      "type": "text-ribbon",
+      "settings": {
+        "background_image": "shopify://shop_images/DTS_Geometry_Daniel_Faro_Photo_ID6289.jpg",
+        "title": "<p><strong>The EU has banned over 1,700 cosmetic ingredients. The US? Just 11.</strong>⁽¹⁾</p>",
+        "description": "",
+        "background_color": "#f2e5be",
+        "invert_text_color": true
+      }
+    },
+    "section_id_GwC3Mq": {
+      "type": "section-id",
+      "settings": {
+        "id": "new-standard"
+      }
+    },
+    "text_ribbon_eAYFGN": {
+      "type": "text-ribbon",
+      "settings": {
+        "title": "<p><strong>We’re raising the standards for air care, so you never have to compromise yours.</strong></p>",
+        "description": "",
+        "background_color": "#a4b79f",
+        "invert_text_color": true
+      }
+    },
+    "benefits_mfWP4M": {
+      "type": "benefits",
+      "blocks": {
+        "slide_AxPfiE": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Realm_NaturalDeodorizer_White_HighRes_1.png",
+            "title": "Natural Deodorizer"
+          }
+        },
+        "slide_HTwBk9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Realm_InstantDeodorizing_White_HighRes.png",
+            "title": "No Phthalates"
+          }
+        },
+        "slide_a6i4fR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Realm_LongLasting_White_HighRes_1.png",
+            "title": "Long Lasting Freshness"
+          }
+        },
+        "slide_f7pk4D": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Realm_CertifiedNonToxic_White_HighRes.png",
+            "title": "Safe Scent Certified"
+          }
+        }
+      },
+      "block_order": [
+        "slide_AxPfiE",
+        "slide_HTwBk9",
+        "slide_a6i4fR",
+        "slide_f7pk4D"
+      ],
+      "settings": {}
+    },
+    "value_grid_DUUip6": {
+      "type": "value-grid",
+      "blocks": {
+        "slide_dVHj7R": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DTS_AWAY_Daniel_Faro_Photo_ID7513.jpg",
+            "title": "Effective",
+            "description": "<p>We put in hundreds of hours of research, worked with multiple formulators, and tested dozens of iterations until we were satisfied that our products would work without covering anything up—odors or ingredients.</p>"
+          }
+        },
+        "slide_ReC6ew": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-10-02_at_4.37.59_PM_1.png",
+            "title": "Safe",
+            "description": "<p>Our products are certified Made Safe and formulated with non-toxic ingredients. They’re also Safe Scent-certified—a new standard for air care products that we’ve pioneered.</p>"
+          }
+        },
+        "slide_dabYLb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stills_249569_amber-canterbury.jpg",
+            "title": "Enveloping",
+            "description": "<p>We partnered with a Swiss fragrance house that has over 125 years of experience to craft scents that enhance your everyday routine.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_dVHj7R",
+        "slide_ReC6ew",
+        "slide_dabYLb"
+      ],
+      "settings": {}
+    },
+    "press_carousel_tgfr44": {
+      "type": "press-carousel",
+      "blocks": {
+        "quote_YjepgV": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
+            "author": "Quote Credit"
+          }
+        },
+        "quote_jKLiNM": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
+            "author": "Quote Credit"
+          }
+        },
+        "quote_KzxPL4": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
+            "author": "Quote Credit"
+          }
+        },
+        "quote_3wym7y": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
+            "author": "Quote Credit"
+          }
+        }
+      },
+      "block_order": [
+        "quote_YjepgV",
+        "quote_jKLiNM",
+        "quote_KzxPL4",
+        "quote_3wym7y"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_image": "shopify://shop_images/Frame_2167.png"
+      }
+    },
+    "section_id_R44daW": {
+      "type": "section-id",
+      "settings": {
+        "id": "my-story"
+      }
+    },
+    "about_bio_MFpRfy": {
+      "type": "about-bio",
+      "settings": {
+        "image": "shopify://shop_images/bio.png",
+        "title": "It started when I found a lump in my breast.",
+        "description": "<p>I started researching the carcinogens that my doctor had asked me about, and was shocked to  learn that not only are they a common ingredient in anything in fragrance (and these days, that’s pretty much everything)—including the air care products I used every day. And because companies aren’t required to disclose them on the label, they’re pretty much impossible to avoid.</p><p>When I couldn’t find any alternative air care products that were safe, effective, and smelled great, I decided to create Realm: so everyone can care for their space without compromise. </p>"
+      }
+    },
+    "bumper_spray_Yzyjgz": {
+      "type": "bumper-spray",
+      "settings": {
+        "title": "<p><strong>A breath</strong><br/>of fresh air.</p>",
+        "description": "",
+        "url": "shopify://products/the-discovery-collection",
+        "cta": "Get spraying"
+      }
+    },
+    "small_rich_text_gNy8f7": {
+      "type": "small-rich-text",
+      "settings": {
+        "title": "Sources",
+        "description": "<p>Food & Drug Admin., Prohibited & Restricted Ingredients<br/>https://www.fda.gov/cosmetics/guidanceregulation/ lawsregul ations/ucm127406.htm. </p><p>Food & Drug Admin., Prohibited & Restricted Ingredients<br/>https://www.fda.gov/cosmetics/guidanceregulation/ lawsregul ations/ucm127406.htm. </p>"
+      }
+    }
+  },
+  "order": [
+    "hero_full_width_image_xBVAw8",
+    "section_nav_L4GYpk",
+    "section_id_7VcR64",
+    "text_ribbon_eaLJ6F",
+    "text_ribbon_A9gp7T",
+    "section_id_GwC3Mq",
+    "text_ribbon_eAYFGN",
+    "benefits_mfWP4M",
+    "value_grid_DUUip6",
+    "press_carousel_tgfr44",
+    "section_id_R44daW",
+    "about_bio_MFpRfy",
+    "bumper_spray_Yzyjgz",
+    "small_rich_text_gNy8f7"
+  ]
 }
