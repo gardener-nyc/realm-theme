@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "favicon": "shopify:\/\/shop_images\/Realm_Logo_Black_RGB.png",
+    "favicon": "shopify://shop_images/Realm_Logo_Black_RGB.png",
     "sections": {
       "footer-instagram-carousel": {
         "type": "footer-instagram-carousel",
@@ -18,35 +18,35 @@
             "type": "slide",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/image_4.jpg"
+              "image": "shopify://shop_images/image_4.jpg"
             }
           },
           "slide_WEeJiy": {
             "type": "slide",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/image_6.jpg"
+              "image": "shopify://shop_images/image_6.jpg"
             }
           },
           "slide_TzARPW": {
             "type": "slide",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/image_12.jpg"
+              "image": "shopify://shop_images/image_12.jpg"
             }
           },
           "slide_NknkhC": {
             "type": "slide",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/image_1.jpg"
+              "image": "shopify://shop_images/image_1.jpg"
             }
           },
           "slide_UTbAti": {
             "type": "slide",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/image_7.jpg"
+              "image": "shopify://shop_images/image_7.jpg"
             }
           }
         },
@@ -59,18 +59,18 @@
         ],
         "settings": {
           "title": "Welcome to our Realm™",
-          "description": "<a href=\"https:\/\/www.instagram.com\/experiencetherealm\" target=\"_blank\" title=\"@experiencetherealm\">@experiencetherealm<\/a>"
+          "description": "<a href=\"https://www.instagram.com/experiencetherealm\" target=\"_blank\" title=\"@experiencetherealm\">@experiencetherealm</a>"
         }
       },
       "footer": {
         "type": "footer",
         "settings": {
-          "newsletter_title": "Join the movement for better air care. Sign up to get the latest news from Realm™.",
+          "newsletter_title": "Join the movement for better air care. Sign up to get the latest news from Realm.",
           "klaviyo_list_id": "RmXajH",
           "klaviyo_source_id": "website_footer",
           "menu": "footer",
           "legal_menu": "footer-legal",
-          "logo": "shopify:\/\/shop_images\/icon-logo-footer.svg"
+          "logo": "shopify://shop_images/icon-logo-footer.svg"
         }
       },
       "header": {
@@ -80,7 +80,7 @@
           "menu_mobile": "main-menu-mobile",
           "menu_mobile_footer": "main-menu-mobile-footer",
           "featured_product": "the-discovery-collection",
-          "logo": "shopify:\/\/shop_images\/icon-logo-footer.svg"
+          "logo": "shopify://shop_images/icon-logo-footer.svg"
         }
       },
       "cart": {
