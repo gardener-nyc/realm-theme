@@ -13,7 +13,7 @@
       "type": "home-hero",
       "settings": {
         "disable_window": true,
-        "text_alignment": "left",
+        "text_alignment": "right",
         "title": "<h1><strong>The New Standard<br/></strong>of Air Care</h1>",
         "subtitle": "<h1>(Without the Toxic Chemicals)</h1>",
         "url": "shopify://collections/all",
