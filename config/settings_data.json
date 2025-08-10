@@ -86,7 +86,7 @@
       "cart": {
         "type": "cart",
         "settings": {
-          "free_shipping_threshold": 5000
+          "free_shipping_threshold": 3500
         }
       }
     },
