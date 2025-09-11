@@ -1,168 +1,177 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "sections": {
-    "product_hero": {
-      "type": "product-hero",
-      "settings": {}
-    },
-    "product_benefits": {
-      "type": "product-benefits",
-      "settings": {}
-    },
-    "fragrance_carousel_edT8CF": {
-      "type": "fragrance-carousel",
-      "blocks": {
-        "slide_DcFUKw": {
-          "type": "slide",
-          "settings": {
-            "background_color": "#c98c68",
-            "title": "Saffron Citrus",
-            "description": "<p>A radiant contrast of golden spice and zesty peel—warm, luminous, and lightly exotic, like sun-warmed skin after a late summer stroll.<\/p>"
-          }
-        },
-        "slide_7Ekezq": {
-          "type": "slide",
-          "settings": {
-            "background_color": "#a4b79f",
-            "title": "Verbena Santal",
-            "description": "<p>A blend of the bright snap of lemon verbena with the creamy depth of sandalwood—fresh and grounding, like a walk through dew-covered woods at dawn.<\/p>"
-          }
-        },
-        "slide_pGtmYy": {
-          "type": "slide",
-          "settings": {
-            "background_color": "#cac0db",
-            "title": "Lavender Bergamot",
-            "description": "<p>A crisp, herbaceous blend where soothing lavender meets the bright, citrusy snap of bergamot. Like a sunlit breeze through a  garden—calming yet quietly invigorating.<\/p>"
-          }
-        },
-        "slide_LByAYW": {
-          "type": "slide",
-          "settings": {
-            "background_color": "#f2e5be",
-            "title": "Fresh Poplin",
-            "description": "<p>A crisp, weightless blend of sun-dried linens and cool morning air—clean, airy, and effortlessly elegant, like slipping into a freshly pressed shirt on a bright, quiet morning.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "slide_DcFUKw",
-        "slide_7Ekezq",
-        "slide_pGtmYy",
-        "slide_LByAYW"
-      ],
-      "settings": {
-        "title": "What it smells like",
-        "background_image": "shopify:\/\/shop_images\/DTS_HI-TREK_Fanette_Guilloud_Photo_ID11185.png"
-      }
-    },
-    "centered_rich_text_cNQdat": {
-      "type": "centered-rich-text",
-      "settings": {
-        "description": "<p>Realm uses a patent-pending formula that works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means clean air (and lungs), all without the chemicals.<\/p>",
-        "background_color": "#c98c68",
-        "invert_text_color": true
-      }
-    },
-    "product_without_KaAVta": {
-      "type": "product-without",
-      "blocks": {
-        "drawer_dqpW8A": {
-          "type": "drawer",
-          "settings": {
-            "title": "Phthalates",
-            "description": "<p>Phthalates are a series of widely used chemicals that demonstrate to be endocrine disruptors and are detrimental to human health. Phthalates can be found in most products that have contact with plastics during producing, packaging, or delivering. Despite the short half-lives in tissues, chronic exposure to phthalates will adversely influence the endocrine system and functioning of multiple organs, which has negative long-term impacts on the success of pregnancy, child growth and development, and reproductive systems in both young children and adolescents.<\/p>"
-          }
-        },
-        "drawer_Nt8WHr": {
-          "type": "drawer",
-          "settings": {
-            "title": "Parabens",
-            "description": "<p>Parabens are synthetic preservatives commonly used to extend shelf life, but they’ve been linked to potential endocrine disruption due to their estrogen-mimicking properties. Our formulations are paraben-free to support safer, low-risk air environments.<\/p>"
-          }
-        },
-        "drawer_E7LiqK": {
-          "type": "drawer",
-          "settings": {
-            "title": "Propellants",
-            "description": "<p>Many aerosol sprays rely on chemical propellants like butane, isobutane, and propane, which contribute to indoor VOC levels and potential respiratory irritation. We use clean, compressed air dispersion with zero flammable propellants.<\/p>"
-          }
-        },
-        "drawer_Kxj7ng": {
-          "type": "drawer",
-          "settings": {
-            "title": "Petrochemicals",
-            "description": "<p>Petrochemical derivatives are found in many synthetic fragrances and solvents, but can contribute to indoor air pollution and long-term environmental harm. We use plant-based, biodegradable alternatives for a petroleum-free formula.<\/p>"
-          }
-        },
-        "drawer_3cTG7H": {
-          "type": "drawer",
-          "settings": {
-            "title": "Formaldehyde",
-            "description": "<p>Formaldehyde is a known human carcinogen that may be released from certain preservatives and synthetic fragrance compounds. We strictly avoid all formaldehyde donors and formaldehyde-releasing agents.<\/p>"
-          }
-        },
-        "drawer_BTqWnA": {
-          "type": "drawer",
-          "settings": {
-            "title": "Toluene",
-            "description": "<p>Toluene, a volatile solvent found in industrial degreasers and some conventional air products, is neurotoxic and classified as a developmental toxin. We exclude it entirely to ensure cleaner, safer breathing environments.<\/p>"
-          }
-        },
-        "drawer_xtbFp3": {
-          "type": "drawer",
-          "settings": {
-            "title": "Known Carcinogens",
-            "description": "<p>All ingredients are rigorously screened against authoritative health and safety databases to exclude any substances classified or suspected as carcinogenic.<\/p>"
-          }
-        },
-        "drawer_yHWWPg": {
-          "type": "drawer",
-          "settings": {
-            "title": "Known Endocrine Disruptors",
-            "description": "<p>Realm avoids ingredients identified as endocrine-disrupting by organizations such as the EWG and TEDX, minimizing interference with hormonal pathways and supporting long-term wellness through ingredient integrity.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "drawer_dqpW8A",
-        "drawer_Nt8WHr",
-        "drawer_E7LiqK",
-        "drawer_Kxj7ng",
-        "drawer_3cTG7H",
-        "drawer_BTqWnA",
-        "drawer_xtbFp3",
-        "drawer_yHWWPg"
-      ],
-      "settings": {
-        "title": "<p><strong>Consciously<\/strong><br\/>formulated <em>without :<\/em><\/p>",
-        "image_1": "shopify:\/\/shop_images\/stills_383424_charlotte-jane.jpg",
-        "image_2": "shopify:\/\/shop_images\/DTS_AWAY_Daniel_Faro_Photo_ID7513.jpg"
-      }
-    },
-    "bumper_image_ticker_QRmxD7": {
-      "type": "bumper-image-ticker",
-      "settings": {
-        "title": "<p>It’s Time to<br\/><strong>Clean Up Air Care <\/strong><\/p>",
-        "description": "<p>Our natural, patent-pending formula works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means cleaner air—and cleaner lungs.<\/p>",
-        "url": "shopify:\/\/pages\/about",
-        "cta": "Our Story",
-        "background_image": "shopify:\/\/shop_images\/Clean_air_for_all.png"
-      }
-    },
-    "product_reviews_tUb8iT": {
-      "type": "product-reviews",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/image_6.jpg"
-      }
-    }
-  },
-  "order": [
-    "product_hero",
-    "product_benefits",
-    "fragrance_carousel_edT8CF",
-    "centered_rich_text_cNQdat",
-    "product_without_KaAVta",
-    "bumper_image_ticker_QRmxD7",
-    "product_reviews_tUb8iT"
-  ]
+	"sections": {
+		"product_hero": {
+			"type": "product-hero",
+			"settings": {}
+		},
+		"product_benefits": {
+			"type": "product-benefits",
+			"settings": {}
+		},
+		"fragrance_carousel_edT8CF": {
+			"type": "fragrance-carousel",
+			"blocks": {
+				"slide_DcFUKw": {
+					"type": "slide",
+					"settings": {
+						"background_color": "#c98c68",
+						"title": "Saffron Citrus",
+						"description": "<p>A radiant contrast of golden spice and zesty peel—warm, luminous, and lightly exotic, like sun-warmed skin after a late summer stroll.</p>"
+					}
+				},
+				"slide_7Ekezq": {
+					"type": "slide",
+					"settings": {
+						"background_color": "#a4b79f",
+						"title": "Verbena Santal",
+						"description": "<p>A blend of the bright snap of lemon verbena with the creamy depth of sandalwood—fresh and grounding, like a walk through dew-covered woods at dawn.</p>"
+					}
+				},
+				"slide_pGtmYy": {
+					"type": "slide",
+					"settings": {
+						"background_color": "#cac0db",
+						"title": "Lavender Bergamot",
+						"description": "<p>A crisp, herbaceous blend where soothing lavender meets the bright, citrusy snap of bergamot. Like a sunlit breeze through a  garden—calming yet quietly invigorating.</p>"
+					}
+				},
+				"slide_LByAYW": {
+					"type": "slide",
+					"settings": {
+						"background_color": "#f2e5be",
+						"title": "Fresh Poplin",
+						"description": "<p>A crisp, weightless blend of sun-dried linens and cool morning air—clean, airy, and effortlessly elegant, like slipping into a freshly pressed shirt on a bright, quiet morning.</p>"
+					}
+				}
+			},
+			"block_order": [
+				"slide_DcFUKw",
+				"slide_7Ekezq",
+				"slide_pGtmYy",
+				"slide_LByAYW"
+			],
+			"settings": {
+				"title": "What it smells like",
+				"background_image": "shopify://shop_images/DTS_HI-TREK_Fanette_Guilloud_Photo_ID11185.png"
+			}
+		},
+		"centered_rich_text_cNQdat": {
+			"type": "centered-rich-text",
+			"settings": {
+				"description": "<p>Realm uses a patent-pending formula that works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means clean air (and lungs), all without the chemicals.</p>",
+				"background_color": "#c98c68",
+				"invert_text_color": true
+			}
+		},
+		"product_without_KaAVta": {
+			"type": "product-without",
+			"blocks": {
+				"drawer_dqpW8A": {
+					"type": "drawer",
+					"settings": {
+						"title": "Phthalates",
+						"description": "<p>Phthalates are a series of widely used chemicals that demonstrate to be endocrine disruptors and are detrimental to human health. Phthalates can be found in most products that have contact with plastics during producing, packaging, or delivering. Despite the short half-lives in tissues, chronic exposure to phthalates will adversely influence the endocrine system and functioning of multiple organs, which has negative long-term impacts on the success of pregnancy, child growth and development, and reproductive systems in both young children and adolescents.</p>"
+					}
+				},
+				"drawer_Nt8WHr": {
+					"type": "drawer",
+					"settings": {
+						"title": "Parabens",
+						"description": "<p>Parabens are synthetic preservatives commonly used to extend shelf life, but they’ve been linked to potential endocrine disruption due to their estrogen-mimicking properties. Our formulations are paraben-free to support safer, low-risk air environments.</p>"
+					}
+				},
+				"drawer_E7LiqK": {
+					"type": "drawer",
+					"settings": {
+						"title": "Propellants",
+						"description": "<p>Many aerosol sprays rely on chemical propellants like butane, isobutane, and propane, which contribute to indoor VOC levels and potential respiratory irritation. We use clean, compressed air dispersion with zero flammable propellants.</p>"
+					}
+				},
+				"drawer_Kxj7ng": {
+					"type": "drawer",
+					"settings": {
+						"title": "Petrochemicals",
+						"description": "<p>Petrochemical derivatives are found in many synthetic fragrances and solvents, but can contribute to indoor air pollution and long-term environmental harm. We use plant-based, biodegradable alternatives for a petroleum-free formula.</p>"
+					}
+				},
+				"drawer_3cTG7H": {
+					"type": "drawer",
+					"settings": {
+						"title": "Formaldehyde",
+						"description": "<p>Formaldehyde is a known human carcinogen that may be released from certain preservatives and synthetic fragrance compounds. We strictly avoid all formaldehyde donors and formaldehyde-releasing agents.</p>"
+					}
+				},
+				"drawer_BTqWnA": {
+					"type": "drawer",
+					"settings": {
+						"title": "Toluene",
+						"description": "<p>Toluene, a volatile solvent found in industrial degreasers and some conventional air products, is neurotoxic and classified as a developmental toxin. We exclude it entirely to ensure cleaner, safer breathing environments.</p>"
+					}
+				},
+				"drawer_xtbFp3": {
+					"type": "drawer",
+					"settings": {
+						"title": "Known Carcinogens",
+						"description": "<p>All ingredients are rigorously screened against authoritative health and safety databases to exclude any substances classified or suspected as carcinogenic.</p>"
+					}
+				},
+				"drawer_yHWWPg": {
+					"type": "drawer",
+					"settings": {
+						"title": "Known Endocrine Disruptors",
+						"description": "<p>Realm avoids ingredients identified as endocrine-disrupting by organizations such as the EWG and TEDX, minimizing interference with hormonal pathways and supporting long-term wellness through ingredient integrity.</p>"
+					}
+				}
+			},
+			"block_order": [
+				"drawer_dqpW8A",
+				"drawer_Nt8WHr",
+				"drawer_E7LiqK",
+				"drawer_Kxj7ng",
+				"drawer_3cTG7H",
+				"drawer_BTqWnA",
+				"drawer_xtbFp3",
+				"drawer_yHWWPg"
+			],
+			"settings": {
+				"title": "<p><strong>Consciously</strong><br/>formulated <em>without :</em></p>",
+				"image_1": "shopify://shop_images/stills_383424_charlotte-jane.jpg",
+				"image_2": "shopify://shop_images/DTS_AWAY_Daniel_Faro_Photo_ID7513.jpg"
+			}
+		},
+		"bumper_image_ticker_QRmxD7": {
+			"type": "bumper-image-ticker",
+			"settings": {
+				"title": "<p>It’s Time to<br/><strong>Clean Up Air Care </strong></p>",
+				"description": "<p>Our natural, patent-pending formula works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means cleaner air—and cleaner lungs.</p>",
+				"url": "shopify://pages/about",
+				"cta": "Our Story",
+				"background_image": "shopify://shop_images/Clean_air_for_all.png"
+			}
+		},
+		"product_reviews_tUb8iT": {
+			"type": "product-reviews",
+			"settings": {
+				"image": "shopify://shop_images/image_6.jpg"
+			}
+		}
+	},
+	"order": [
+		"product_hero",
+		"product_benefits",
+		"fragrance_carousel_edT8CF",
+		"centered_rich_text_cNQdat",
+		"product_without_KaAVta",
+		"bumper_image_ticker_QRmxD7",
+		"product_reviews_tUb8iT"
+	]
 }
