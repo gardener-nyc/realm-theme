@@ -14,7 +14,7 @@
         "slide_DcFUKw": {
           "type": "slide",
           "settings": {
-            "background_color": "",
+            "background_color": "#a4b79f",
             "title": "Verbena Santal",
             "description": "<p>A blend of the bright snap of lemon verbena with the creamy depth of sandalwood—fresh and grounding, like a walk through dew-covered woods at dawn.<\/p>"
           }
@@ -25,7 +25,7 @@
       ],
       "settings": {
         "title": "What it smells like",
-        "background_image": "shopify:\/\/shop_images\/Verbena_Santal_Tree.jpg"
+        "background_image": "shopify:\/\/shop_images\/Verbena_Santal_Tree_Crop.jpg"
       }
     },
     "centered_rich_text_cNQdat": {

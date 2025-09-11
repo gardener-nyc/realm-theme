@@ -12,6 +12,17 @@ export default {
 	server: {
 		host: true,
 		port: 3000,
+
+		server: {
+			cors: {
+				origin: [
+					/^https?:\/\/(?:(?:[^:]+\.)?localhost|127\.0\.0\.1|\[::1\])(?::\d+)?$/,
+					'http://970a4f-40.myshopify.com',
+					'https://970a4f-40.myshopify.com',
+					'https://www.breatherealm.co',
+				],
+			},
+		},
 	},
 
 	publicDir: 'public',

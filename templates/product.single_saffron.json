@@ -14,7 +14,7 @@
         "slide_DcFUKw": {
           "type": "slide",
           "settings": {
-            "background_color": "",
+            "background_color": "#c98c68",
             "title": "Saffron Citrus",
             "description": "<p>A radiant contrast of golden spice and zesty peel—warm, luminous, and lightly exotic, like sun-warmed skin after a late summer stroll.<\/p>"
           }
@@ -32,7 +32,7 @@
       "type": "centered-rich-text",
       "settings": {
         "description": "<p>Realm uses a patent-pending formula that works instantly to remove odors, capture VOCs, and refresh your space with long-lasting non-toxic scents. That means clean air (and lungs), all without the chemicals.<\/p>",
-        "background_color": "#c98c68",
+        "background_color": "#636154",
         "invert_text_color": true
       }
     },

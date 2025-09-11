@@ -8,7 +8,7 @@ export default component((node, ctx) => {
 	const nextButton = node.querySelector('button[data-nav="next"]');
 
 	const slider = new KeenSlider(sliderEl, {
-		loop: slides.length > 1,
+		// loop: slides.length > 1,
 		drag: slides.length > 1,
 		slides: {
 			perView: 1.25,
@@ -17,7 +17,7 @@ export default component((node, ctx) => {
 		},
 		breakpoints: {
 			'(min-width: 800px)': {
-				loop: slides.length > 1,
+				// loop: slides.length > 1,
 				drag: slides.length > 1,
 				slides: {
 					perView: 1.25,
@@ -26,7 +26,7 @@ export default component((node, ctx) => {
 				},
 			},
 			'(min-width: 1200px)': {
-				loop: slides.length > 1,
+				// loop: slides.length > 1,
 				drag: slides.length > 1,
 				slides: {
 					perView: 1,

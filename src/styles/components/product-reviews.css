@@ -1,0 +1,124 @@
+.yotpo-reviews-container {
+	.yotpo-base-layout {
+		width: 100% !important;
+
+		@screen md {
+			padding: 0 40px;
+		}
+	}
+
+	.yotpo-widget-clear {
+		--primary-font-family: theme('fontFamily.sans');
+		--secondary-font-family: theme('fontFamily.sans');
+	}
+
+	.yotpo-layout-header-wrapper {
+		flex-direction: column !important;
+
+		.yotpo-bottom-line {
+			flex-direction: column !important;
+		}
+
+		.yotpo-bottom-line-text {
+			font-family: theme('fontFamily.sans') !important;
+			text-align: center !important;
+			margin-top: 5px !important;
+		}
+	}
+
+	.yotpo-header-container + .yotpo-review-border-smooth {
+		display: none;
+	}
+
+	.yotpo-review-center-panel {
+		padding-left: 0 !important;
+	}
+
+	.yotpo-review-rating-title {
+		flex-direction: column !important;
+		gap: 10px;
+		margin-bottom: 10px !important;
+	}
+
+	.yotpo-bottom-line-right-panel {
+		margin-left: 0 !important;
+		padding-top: 0 !important;
+		padding-right: 0 !important;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.yotpo-bottom-line {
+		margin-right: 0 !important;
+	}
+
+	.yotpo-summary-section {
+		margin-bottom: 10px !important;
+
+		.yotpo-vertical-border {
+			display: none;
+		}
+	}
+
+	.yotpo-head {
+		display: none !important;
+	}
+
+	.yotpo-bottom-line-summary {
+		flex-direction: column !important;
+	}
+
+	.yotpo-review-title {
+		margin-left: 0 !important;
+		font-family: theme('fontFamily.serif') !important;
+		font-size: 18px !important;
+		line-height: 24px !important;
+		font-weight: 400 !important;
+
+		@screen md {
+			font-size: 24px !important;
+			line-height: 30px !important;
+		}
+	}
+
+	.yotpo-new-review-btn-wrapper {
+		margin-top: 20px;
+		width: 100% !important;
+	}
+
+	#yotpo-main-widget-btn {
+		width: 100% !important;
+		display: block !important;
+		text-transform: uppercase !important;
+		font-family: theme('fontFamily.sans') !important;
+		font-weight: 400 !important;
+		font-size: 16px !important;
+		height: 48px !important;
+		border-radius: 48px !important;
+	}
+
+	.yotpo-review-border-smooth {
+		background-image: none !important;
+		border-bottom: 1px solid theme('colors.brown') !important;
+		opacity: 0.25;
+	}
+
+	.yotpo-review {
+		position: relative;
+		margin: 20px 0 !important;
+		padding-top: 60px !important;
+
+		.yotpo-review-left-panel {
+			@apply absolute -top-1 inset-x-0;
+		}
+	}
+
+	.yotpo-review-votes-wrapper {
+		justify-content: start;
+		opacity: 0.5;
+	}
+
+	.yotpo-filters-container {
+		display: none;
+	}
+}

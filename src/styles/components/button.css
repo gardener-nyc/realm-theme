@@ -66,7 +66,7 @@ button,
 		height: 48px;
 		border-radius: 48px;
 		font-size: 16px;
-		line-height: 48px;
+		line-height: 46px;
 		border: 1px solid theme('colors.brown');
 
 		&:hover,
@@ -84,7 +84,7 @@ button,
 			height: 32px;
 			border-radius: 32px;
 			font-size: 12px;
-			line-height: 32px;
+			line-height: 30px;
 		}
 	}
 
@@ -93,7 +93,7 @@ button,
 		height: 48px;
 		border-radius: 48px;
 		font-size: 16px;
-		line-height: 48px;
+		line-height: 46px;
 		border: 1px solid theme('colors.brown');
 
 		&:hover,
@@ -111,7 +111,7 @@ button,
 			height: 32px;
 			border-radius: 32px;
 			font-size: 12px;
-			line-height: 32px;
+			line-height: 30px;
 		}
 	}
 
@@ -120,7 +120,7 @@ button,
 		height: 48px;
 		border-radius: 48px;
 		font-size: 16px;
-		line-height: 48px;
+		line-height: 46px;
 		border: 1px solid theme('colors.brown');
 
 		&:hover,
@@ -138,7 +138,7 @@ button,
 			height: 32px;
 			border-radius: 32px;
 			font-size: 12px;
-			line-height: 32px;
+			line-height: 30px;
 		}
 	}
 
@@ -147,7 +147,7 @@ button,
 		height: 48px;
 		border-radius: 48px;
 		font-size: 16px;
-		line-height: 48px;
+		line-height: 46px;
 		border: 1px solid theme('colors.brown');
 
 		&:hover,
@@ -165,7 +165,7 @@ button,
 			height: 32px;
 			border-radius: 32px;
 			font-size: 12px;
-			line-height: 32px;
+			line-height: 30px;
 		}
 	}
 
