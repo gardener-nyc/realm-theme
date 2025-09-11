@@ -13,12 +13,12 @@
       "type": "home-hero",
       "settings": {
         "disable_window": true,
-        "text_alignment": "right",
+        "text_alignment": "center",
         "title": "<h1><strong>The New Standard<br/></strong>of Air Care</h1>",
-        "subtitle": "<h1>(Without the Toxic Chemicals)</h1>",
+        "subtitle": "",
         "url": "shopify://collections/all",
         "cta": "Enter Realm",
-        "background_image": "shopify://shop_images/Untitled_design.jpg"
+        "background_image": "shopify://shop_images/Bottle_on_Birds.gif"
       }
     },
     "home_product_benefits_pYxBCG": {
