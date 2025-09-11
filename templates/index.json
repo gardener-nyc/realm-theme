@@ -1,241 +1,258 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-	"sections": {
-		"home_hero_RgQpwU": {
-			"type": "home-hero",
-			"settings": {
-				"disable_window": true,
-				"text_alignment": "center",
-				"title": "<h1><strong>The New Standard<br/></strong>of Air Care</h1>",
-				"subtitle": "",
-				"url": "shopify://collections/all",
-				"cta": "Enter Realm",
-				"background_image": "shopify://shop_images/Group_480966259-2.png"
-			}
-		},
-		"home_product_benefits_pYxBCG": {
-			"type": "home-product-benefits",
-			"blocks": {
-				"benefit_kBdEMh": {
-					"type": "benefit",
-					"settings": {
-						"title": "Natural Deodorizer",
-						"image": "shopify://shop_images/Realm_NaturalDeodorizer_White_HighRes_1.png"
-					}
-				},
-				"benefit_bfzWtE": {
-					"type": "benefit",
-					"settings": {
-						"title": "No Phthalates",
-						"image": "shopify://shop_images/Realm_InstantDeodorizing_White_HighRes.png"
-					}
-				},
-				"benefit_6wqC97": {
-					"type": "benefit",
-					"settings": {
-						"title": "Long Lasting Freshness",
-						"image": "shopify://shop_images/Realm_LongLasting_White_HighRes_1.png"
-					}
-				},
-				"benefit_NqYjBB": {
-					"type": "benefit",
-					"settings": {
-						"title": "Safe Scent Certified",
-						"image": "shopify://shop_images/Realm_Seal_Musk.png"
-					}
-				}
-			},
-			"block_order": [
-				"benefit_kBdEMh",
-				"benefit_bfzWtE",
-				"benefit_6wqC97",
-				"benefit_NqYjBB"
-			],
-			"settings": {
-				"title": "<p><strong>Air Refresher Without The Toxic Chemicals.</strong></p><p>We know, it's about time.</p>",
-				"description": "<p>Your home is your safe space. Our products are both safe and effective, so you don’t have to compromise.</p>",
-				"background_image": "shopify://shop_images/Value_Prop_Icons.png",
-				"invert_text_color": false
-			}
-		},
-		"featured_product_CVGqYk": {
-			"type": "featured-product",
-			"settings": {
-				"title": "<p><strong>Breathe Clean</strong></p>",
-				"description": "<p>Realm is formulated to be safe to use every day, and smell so good that you’ll actually want to.</p>",
-				"url": "shopify://products/the-discovery-collection",
-				"cta": "Get Fresh",
-				"background_image": "shopify://shop_images/DTS_HI-TREK_Fanette_Guilloud_Photo_ID11203_copy.png",
-				"product": "the-discovery-collection"
-			}
-		},
-		"bumper_image_ticker_TdwJqL": {
-			"type": "bumper-image-ticker",
-			"blocks": {
-				"ticker_item_WUza3h": {
-					"type": "ticker_item",
-					"settings": {
-						"text": "<strong>NO</strong> Benzene"
-					}
-				},
-				"ticker_item_K8gFi4": {
-					"type": "ticker_item",
-					"settings": {
-						"text": "<strong>NO</strong> Phthalates"
-					}
-				},
-				"ticker_item_MyLi3z": {
-					"type": "ticker_item",
-					"settings": {
-						"text": "<strong>NO</strong> Formaldehyde"
-					}
-				}
-			},
-			"block_order": [
-				"ticker_item_WUza3h",
-				"ticker_item_K8gFi4",
-				"ticker_item_MyLi3z"
-			],
-			"settings": {
-				"title": "<p><strong>It’s Time to</strong><br/>Clean Up Air Care</p>",
-				"description": "<p>Our patent-pending formula works instantly to neutralize odors and freshen your space with premium Safe Scent Certified scents without harmful VOC’s, masking, or compromise leaving you with cleaner air and cleaner lungs.</p>",
-				"url": "shopify://pages/about",
-				"cta": "Our Story",
-				"background_image": "shopify://shop_images/SHOT09_240923REALM_1224_copy.png"
-			}
-		},
-		"featured_product_hero_feGHmb": {
-			"type": "featured-product-hero",
-			"settings": {
-				"product": "the-discovery-collection"
-			}
-		},
-		"image_grid_carousel_AyVRfC": {
-			"type": "image-grid-carousel",
-			"blocks": {
-				"image_GXHPPH": {
-					"type": "image",
-					"settings": {
-						"image": "shopify://shop_images/DTS_Caldo_Daniel_Faro_Photo_ID3951.jpg"
-					}
-				},
-				"image_7cRqea": {
-					"type": "image",
-					"settings": {
-						"image": "shopify://shop_images/stills_144592_megan-rogers.jpg"
-					}
-				},
-				"image_LyfPUX": {
-					"type": "image",
-					"settings": {
-						"image": "shopify://shop_images/DTS_Caldo_Daniel_Faro_Photo_ID3942.jpg"
-					}
-				}
-			},
-			"block_order": ["image_GXHPPH", "image_7cRqea", "image_LyfPUX"],
-			"settings": {
-				"title": "<p><strong>No</strong><br/>Hidden Toxins</p>",
-				"description": "<p>In the US, the term “fragrance” on a product label can be used to hide up to 3,000 ingredients—including known carcinogens. We developed our products using only those ingredients that are proven safe, and list them all on our label. Because when it comes to odors and ingredients, we don’t cover anything up.</p>",
-				"url": "shopify://pages/about",
-				"cta": "Learn more"
-			}
-		},
-		"press_ticker_9zAeHR": {
-			"type": "press-ticker",
-			"blocks": {
-				"ticker_item_PEA88m": {
-					"type": "ticker_item",
-					"settings": {
-						"logo": "shopify://shop_images/placeholder-hypebeast.png",
-						"url": "",
-						"cta": "Hypebeast"
-					}
-				},
-				"ticker_item_Rdd6rC": {
-					"type": "ticker_item",
-					"settings": {
-						"logo": "shopify://shop_images/placeholder-hypebeast.png",
-						"url": "",
-						"cta": "Hypebeast"
-					}
-				},
-				"ticker_item_NU4ULF": {
-					"type": "ticker_item",
-					"settings": {
-						"logo": "shopify://shop_images/placeholder-hypebeast.png",
-						"url": "",
-						"cta": "Hypebeast"
-					}
-				},
-				"ticker_item_y6jA6h": {
-					"type": "ticker_item",
-					"settings": {
-						"logo": "shopify://shop_images/placeholder-hypebeast.png",
-						"url": "",
-						"cta": "Hypebeast"
-					}
-				}
-			},
-			"block_order": [
-				"ticker_item_PEA88m",
-				"ticker_item_Rdd6rC",
-				"ticker_item_NU4ULF",
-				"ticker_item_y6jA6h"
-			],
-			"disabled": true,
-			"settings": {
-				"title": "As seen in"
-			}
-		},
-		"press_carousel_tgfr44": {
-			"type": "press-carousel",
-			"blocks": {
-				"quote_jKLiNM": {
-					"type": "quote",
-					"settings": {
-						"quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
-						"author": "Quote Credit"
-					}
-				},
-				"quote_KzxPL4": {
-					"type": "quote",
-					"settings": {
-						"quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
-						"author": "Quote Credit"
-					}
-				},
-				"quote_3wym7y": {
-					"type": "quote",
-					"settings": {
-						"quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
-						"author": "Quote Credit"
-					}
-				}
-			},
-			"block_order": ["quote_jKLiNM", "quote_KzxPL4", "quote_3wym7y"],
-			"disabled": true,
-			"settings": {
-				"background_image": "shopify://shop_images/Screenshot_2025-07-15_at_8.58.02_PM.png"
-			}
-		},
-		"bumper_spray_Yzyjgz": {
-			"type": "bumper-spray",
-			"settings": {
-				"title": "<p><strong>A breath</strong><br/>of fresh air.</p>",
-				"description": "",
-				"url": "shopify://products/the-discovery-collection",
-				"cta": "Get spraying"
-			}
-		}
-	},
-	"order": [
-		"home_hero_RgQpwU",
-		"home_product_benefits_pYxBCG",
-		"featured_product_CVGqYk",
-		"bumper_image_ticker_TdwJqL",
-		"featured_product_hero_feGHmb",
-		"image_grid_carousel_AyVRfC",
-		"press_ticker_9zAeHR",
-		"press_carousel_tgfr44",
-		"bumper_spray_Yzyjgz"
-	]
+  "sections": {
+    "home_hero_RgQpwU": {
+      "type": "home-hero",
+      "settings": {
+        "disable_window": true,
+        "text_alignment": "center",
+        "title": "<h1><strong>The New Standard<br/></strong>of Air Care</h1>",
+        "subtitle": "",
+        "url": "shopify://collections/all",
+        "cta": "Enter Realm",
+        "background_image": "shopify://shop_images/Saffron_Citrus_Spray.png"
+      }
+    },
+    "home_product_benefits_pYxBCG": {
+      "type": "home-product-benefits",
+      "blocks": {
+        "benefit_kBdEMh": {
+          "type": "benefit",
+          "settings": {
+            "title": "Natural Deodorizer",
+            "image": "shopify://shop_images/Realm_NaturalDeodorizer_White_HighRes_1.png"
+          }
+        },
+        "benefit_bfzWtE": {
+          "type": "benefit",
+          "settings": {
+            "title": "No Phthalates",
+            "image": "shopify://shop_images/Realm_InstantDeodorizing_White_HighRes.png"
+          }
+        },
+        "benefit_6wqC97": {
+          "type": "benefit",
+          "settings": {
+            "title": "Long Lasting Freshness",
+            "image": "shopify://shop_images/Realm_LongLasting_White_HighRes_1.png"
+          }
+        },
+        "benefit_NqYjBB": {
+          "type": "benefit",
+          "settings": {
+            "title": "Safe Scent Certified",
+            "image": "shopify://shop_images/Realm_Seal_Musk.png"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_kBdEMh",
+        "benefit_bfzWtE",
+        "benefit_6wqC97",
+        "benefit_NqYjBB"
+      ],
+      "settings": {
+        "title": "<p><strong>Air Refresher Without The Toxic Chemicals.</strong></p><p>We know, it's about time.</p>",
+        "description": "<p>Your home is your safe space. Our products are both safe and effective, so you don’t have to compromise.</p>",
+        "background_image": "shopify://shop_images/Value_Prop_Icons.png",
+        "invert_text_color": false
+      }
+    },
+    "featured_product_CVGqYk": {
+      "type": "featured-product",
+      "settings": {
+        "title": "<p><strong>Breathe Clean</strong></p>",
+        "description": "<p>Realm is formulated to be safe to use every day, and smell so good that you’ll actually want to.</p>",
+        "url": "shopify://products/the-discovery-collection",
+        "cta": "Get Fresh",
+        "background_image": "shopify://shop_images/DTS_HI-TREK_Fanette_Guilloud_Photo_ID11203_copy.png",
+        "product": "the-discovery-collection"
+      }
+    },
+    "bumper_image_ticker_TdwJqL": {
+      "type": "bumper-image-ticker",
+      "blocks": {
+        "ticker_item_WUza3h": {
+          "type": "ticker_item",
+          "settings": {
+            "text": "<strong>NO</strong> Benzene"
+          }
+        },
+        "ticker_item_K8gFi4": {
+          "type": "ticker_item",
+          "settings": {
+            "text": "<strong>NO</strong> Phthalates"
+          }
+        },
+        "ticker_item_MyLi3z": {
+          "type": "ticker_item",
+          "settings": {
+            "text": "<strong>NO</strong> Formaldehyde"
+          }
+        }
+      },
+      "block_order": [
+        "ticker_item_WUza3h",
+        "ticker_item_K8gFi4",
+        "ticker_item_MyLi3z"
+      ],
+      "settings": {
+        "title": "<p><strong>It’s Time to</strong><br/>Clean Up Air Care</p>",
+        "description": "<p>Our patent-pending formula works instantly to neutralize odors and freshen your space with premium Safe Scent Certified scents without harmful VOC’s, masking, or compromise leaving you with cleaner air and cleaner lungs.</p>",
+        "url": "shopify://pages/about",
+        "cta": "Our Story",
+        "background_image": "shopify://shop_images/SHOT09_240923REALM_1224_copy.png"
+      }
+    },
+    "featured_product_hero_feGHmb": {
+      "type": "featured-product-hero",
+      "settings": {
+        "product": "the-discovery-collection"
+      }
+    },
+    "image_grid_carousel_AyVRfC": {
+      "type": "image-grid-carousel",
+      "blocks": {
+        "image_GXHPPH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DTS_Caldo_Daniel_Faro_Photo_ID3951.jpg"
+          }
+        },
+        "image_7cRqea": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/stills_144592_megan-rogers.jpg"
+          }
+        },
+        "image_LyfPUX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DTS_Caldo_Daniel_Faro_Photo_ID3942.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_GXHPPH",
+        "image_7cRqea",
+        "image_LyfPUX"
+      ],
+      "settings": {
+        "title": "<p><strong>No</strong><br/>Hidden Toxins</p>",
+        "description": "<p>In the US, the term “fragrance” on a product label can be used to hide up to 3,000 ingredients—including known carcinogens. We developed our products using only those ingredients that are proven safe, and list them all on our label. Because when it comes to odors and ingredients, we don’t cover anything up.</p>",
+        "url": "shopify://pages/about",
+        "cta": "Learn more"
+      }
+    },
+    "press_ticker_9zAeHR": {
+      "type": "press-ticker",
+      "blocks": {
+        "ticker_item_PEA88m": {
+          "type": "ticker_item",
+          "settings": {
+            "logo": "shopify://shop_images/placeholder-hypebeast.png",
+            "url": "",
+            "cta": "Hypebeast"
+          }
+        },
+        "ticker_item_Rdd6rC": {
+          "type": "ticker_item",
+          "settings": {
+            "logo": "shopify://shop_images/placeholder-hypebeast.png",
+            "url": "",
+            "cta": "Hypebeast"
+          }
+        },
+        "ticker_item_NU4ULF": {
+          "type": "ticker_item",
+          "settings": {
+            "logo": "shopify://shop_images/placeholder-hypebeast.png",
+            "url": "",
+            "cta": "Hypebeast"
+          }
+        },
+        "ticker_item_y6jA6h": {
+          "type": "ticker_item",
+          "settings": {
+            "logo": "shopify://shop_images/placeholder-hypebeast.png",
+            "url": "",
+            "cta": "Hypebeast"
+          }
+        }
+      },
+      "block_order": [
+        "ticker_item_PEA88m",
+        "ticker_item_Rdd6rC",
+        "ticker_item_NU4ULF",
+        "ticker_item_y6jA6h"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "As seen in"
+      }
+    },
+    "press_carousel_tgfr44": {
+      "type": "press-carousel",
+      "blocks": {
+        "quote_jKLiNM": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
+            "author": "Quote Credit"
+          }
+        },
+        "quote_KzxPL4": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
+            "author": "Quote Credit"
+          }
+        },
+        "quote_3wym7y": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>",
+            "author": "Quote Credit"
+          }
+        }
+      },
+      "block_order": [
+        "quote_jKLiNM",
+        "quote_KzxPL4",
+        "quote_3wym7y"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_image": "shopify://shop_images/Screenshot_2025-07-15_at_8.58.02_PM.png"
+      }
+    },
+    "bumper_spray_Yzyjgz": {
+      "type": "bumper-spray",
+      "settings": {
+        "title": "<p><strong>A breath</strong><br/>of fresh air.</p>",
+        "description": "",
+        "url": "shopify://products/the-discovery-collection",
+        "cta": "Get spraying"
+      }
+    }
+  },
+  "order": [
+    "home_hero_RgQpwU",
+    "home_product_benefits_pYxBCG",
+    "featured_product_CVGqYk",
+    "bumper_image_ticker_TdwJqL",
+    "featured_product_hero_feGHmb",
+    "image_grid_carousel_AyVRfC",
+    "press_ticker_9zAeHR",
+    "press_carousel_tgfr44",
+    "bumper_spray_Yzyjgz"
+  ]
 }
