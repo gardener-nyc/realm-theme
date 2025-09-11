@@ -13,12 +13,12 @@
       "type": "home-hero",
       "settings": {
         "disable_window": true,
-        "text_alignment": "left",
+        "text_alignment": "center",
         "title": "<h1><strong>The New Standard<br/></strong>of Air Care</h1>",
         "subtitle": "",
         "url": "shopify://collections/all",
         "cta": "Enter Realm",
-        "background_image": "shopify://shop_images/Group_480966258.png"
+        "background_image": "shopify://shop_images/Group_480966259.png"
       }
     },
     "home_product_benefits_pYxBCG": {
