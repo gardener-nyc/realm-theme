@@ -1,0 +1,84 @@
+{% schema %}
+{
+	"name": "Banned Ingredients",
+	"settings": [
+        {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "slide",
+            "name": "Slide",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                }
+            ]
+        }
+    ],
+    "presets": [{
+		"name": "Banned Ingredients",
+		"category": "Marketing"
+	}]
+}
+{% endschema %}
+
+<div class="overflow-hidden relative py-10 px-container-mobile md:px-container-desktop">
+	<div class="flex flex-col gap-3 md:gap-6 z-1 relative">
+        <p class="text-white text-30/38 md:text-36/45 text-center">
+            {{ section.settings.title }}
+        </p>
+
+        <div
+            data-component="bannedIngredients"
+            class="flex flex-col gap-3">
+
+            <div class="keen-slider overflow-visible">
+                {% for block in section.blocks %}
+                    <div class="keen-slider__slide banned-ingredients__slide">
+                        <div class="banned-ingredients__slide-inner bg-rust text-white aspect-square rounded-full w-full p-[20%] flex flex-col justify-center items-center">
+                            <p class="text-center text-24/30 md:text-36/44">
+                                {{ block.settings.title }}
+                            </p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <div class="text-center mx-auto max-w-48 rich-text line-break text-14/18 md:text-18/24">
+                    {{ section.settings.description }}
+                </div>
+
+                {% if section.blocks.size > 1 %}
+                    <div class="flex justify-center items-center">
+                        <button
+                        data-nav="previous"
+                        class="block p-1 link-opacity-hover">
+                        <img
+                            src="{{ 'icon-arrow-carousel.svg' | asset_url }}"
+                            alt="Previous"
+                            class="block w-[21px] h-[8px] rotate-180"
+                        />
+                    </button>
+                    <button
+                        data-nav="next"
+                        class="block p-1 link-opacity-hover">
+                        <img
+                            src="{{ 'icon-arrow-carousel.svg' | asset_url }}"
+                            alt="Previous"
+                            class="block w-[21px] h-[8px]"
+                        />
+                        </button>
+                    </div>
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+</div>

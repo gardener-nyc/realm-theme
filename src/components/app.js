@@ -19,6 +19,7 @@ import drawer from './drawer';
 import drawerWithout from './drawerWithout';
 import fragranceCarousel from './fragranceCarousel';
 import navAnchor from './navAnchor';
+import bannedIngredients from './bannedIngredients';
 
 const defaultState = {
 	cart: {},
@@ -47,6 +48,7 @@ const components = {
 	drawerWithout,
 	fragranceCarousel,
 	navAnchor,
+	bannedIngredients,
 };
 
 export default function createApp(initialState) {
