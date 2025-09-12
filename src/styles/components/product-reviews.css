@@ -121,4 +121,23 @@
 	.yotpo-filters-container {
 		display: none;
 	}
+
+	.yotpo-empty-state {
+		.yotpo-title-text {
+			font-family: theme('fontFamily.serif') !important;
+			font-size: 18px !important;
+			line-height: 24px !important;
+			font-weight: 400 !important;
+			margin-top: 30px !important;
+
+			@screen md {
+				font-size: 24px !important;
+				line-height: 30px !important;
+			}
+		}
+
+		svg {
+			display: none;
+		}
+	}
 }

@@ -17,31 +17,33 @@
 
 <div class="px-container-mobile md:px-container-desktop my-6 md:my-10">
     <div class="mx-auto max-w-grid">
-        <div class="grid grid-cols-6 md:grid-cols-12 gap-y-4 gap-x-gutter-mobile md:gap-gutter-desktop items-start">
-            <div class="col-span-6 md:sticky top-[85px]">
-                <div
-                    data-component="image"
-                    class="image w-full h-[80vw] md:h-[calc(100vh-105px)]">
-                    <picture class="blur-xl scale-110">
-                        <source
-                            data-srcset="{{ section.settings.image | image_url: width: 1400 }}"
-                            media="(min-width: 1200px)">
-                        <source
-                            data-srcset="{{ section.settings.image | image_url: width: 1200 }}"
-                            media="(min-width: 1000px)">
-                        <source
-                            data-srcset="{{ section.settings.image | image_url: width: 1000 }}"
-                            media="(min-width: 800px)">
-                        {% assign lqip = section.settings.image | image_url: width: 10 %}
-                        <img
-                            src="{{ lqip }}"
-                            data-src="{{ section.settings.image | image_url: width: 800 }}"
-                            alt="{{ section.settings.image.alt }}"
-                        />
-                    </picture>
+        <div class="grid grid-cols-12 gap-y-4 gap-x-gutter-mobile md:gap-gutter-desktop items-start">
+            {% if section.settings.image != blank %}
+                <div class="col-span-12 md:col-span-6 md:sticky top-[85px]">
+                    <div
+                        data-component="image"
+                        class="image w-full h-[80vw] md:h-[calc(100vh-105px)]">
+                        <picture class="blur-xl scale-110">
+                            <source
+                                data-srcset="{{ section.settings.image | image_url: width: 1400 }}"
+                                media="(min-width: 1200px)">
+                            <source
+                                data-srcset="{{ section.settings.image | image_url: width: 1200 }}"
+                                media="(min-width: 1000px)">
+                            <source
+                                data-srcset="{{ section.settings.image | image_url: width: 1000 }}"
+                                media="(min-width: 800px)">
+                            {% assign lqip = section.settings.image | image_url: width: 10 %}
+                            <img
+                                src="{{ lqip }}"
+                                data-src="{{ section.settings.image | image_url: width: 800 }}"
+                                alt="{{ section.settings.image.alt }}"
+                            />
+                        </picture>
+                    </div>
                 </div>
-            </div>
-            <div class="col-span-6 yotpo-reviews-container">
+            {% endif %}
+            <div class="col-span-12 md:col-span-6 {% if section.settings.image == blank %}md:col-start-4{% endif %} yotpo-reviews-container">
                 <div
                     class="yotpo-widget-instance"
                     data-yotpo-instance-id="961415"
