@@ -73,6 +73,59 @@
 				"invert_text_color": true
 			}
 		},
+		"banned_ingredients_hNFECr": {
+			"type": "banned-ingredients",
+			"blocks": {
+				"slide_48bAiP": {
+				"type": "slide",
+				"settings": {
+					"title": "Phthalates"
+				}
+				},
+				"slide_WPNzEB": {
+				"type": "slide",
+				"settings": {
+					"title": "Toluene"
+				}
+				},
+				"slide_b8G47y": {
+				"type": "slide",
+				"settings": {
+					"title": "Styrene"
+				}
+				},
+				"slide_kaWPgQ": {
+				"type": "slide",
+				"settings": {
+					"title": "Formaldehyde Releasers"
+				}
+				},
+				"slide_iqTteR": {
+				"type": "slide",
+				"settings": {
+					"title": "Parabens"
+				}
+				},
+				"slide_UKNL4k": {
+				"type": "slide",
+				"settings": {
+					"title": ""
+				}
+				}
+			},
+			"block_order": [
+				"slide_48bAiP",
+				"slide_WPNzEB",
+				"slide_b8G47y",
+				"slide_kaWPgQ",
+				"slide_iqTteR",
+				"slide_UKNL4k"
+			],
+			"name": "Banned Ingredients",
+			"settings": {
+				"description": "<p>There’s no legal standard for what ingredients are safe to use in air care products—so we made our own. Now we’re working on making it official, so that whenever you see the Certified Safe seal, you can breathe easier.<\/p>"
+			}
+		},
 		"section_id_GwC3Mq": {
 			"type": "section-id",
 			"settings": {
@@ -239,6 +292,7 @@
 		"section_id_7VcR64",
 		"text_ribbon_eaLJ6F",
 		"text_ribbon_A9gp7T",
+		"banned_ingredients_hNFECr",
 		"section_id_GwC3Mq",
 		"text_ribbon_eAYFGN",
 		"benefits_mfWP4M",
