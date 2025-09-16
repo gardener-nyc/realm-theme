@@ -12,7 +12,8 @@
     "hero_full_width_image_xBVAw8": {
       "type": "hero-full-width-image",
       "settings": {
-        "title": "<p><strong>Your home is your safe space.</strong></p><p>Our products help you keep it that way. </p>"
+        "title": "<p><strong>Your home is your safe space.</strong></p><p>Our products help you keep it that way. </p>",
+        "background_image": "shopify://shop_images/Fresh_Poplin_Home_3382ec74-3c41-4660-bc30-61db52e1ec8d.jpg"
       }
     },
     "section_nav_L4GYpk": {
