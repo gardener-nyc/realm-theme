@@ -1,6 +1,6 @@
 {% assign product_title_parts = product.title | split: "-" %}
 {% assign product_title = product_title_parts[0] | trim %}
-{% assign product_subtitle = product_title_parts[1] | downcase | trim %}
+{% assign product_subtitle = product_title_parts[1] | trim %}
 {% assign product_image = product.featured_image %}
 {% assign product_color = product.metafields.custom.color %}
 {% assign product_description = product.metafields.custom.tile_description %}
