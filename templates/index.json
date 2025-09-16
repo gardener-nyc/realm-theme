@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "home_hero_RgQpwU": {
@@ -18,7 +9,7 @@
         "subtitle": "",
         "url": "shopify:\/\/collections\/all",
         "cta": "Enter Realm",
-        "background_image": "shopify:\/\/shop_images\/Verbena_Santal_Shelf.png"
+        "background_image": "shopify:\/\/shop_images\/Verbena_Santal_Shelf_88ca4560-52df-439b-a1df-83985437b655.jpg"
       }
     },
     "home_product_benefits_pYxBCG": {
@@ -60,7 +51,7 @@
         "benefit_NqYjBB"
       ],
       "settings": {
-        "title": "<p><strong>Air Refresher Without The Toxic Chemicals.<\/strong><\/p><p>We know, it's about time.<\/p>",
+        "title": "<p><strong>Air Refresher Without The Toxic Chemicals.<br\/><\/strong><br\/>We know, it's about time.<\/p>",
         "description": "<p>Your home is your safe space. Our products are both safe and effective, so you don’t have to compromise.<\/p>",
         "background_image": "shopify:\/\/shop_images\/Value_Prop_Icons.png",
         "invert_text_color": false
@@ -71,10 +62,10 @@
       "settings": {
         "title": "<p><strong>Breathe Clean<\/strong><\/p>",
         "description": "<p>Realm is formulated to be safe to use every day, and smell so good that you’ll actually want to.<\/p>",
-        "url": "shopify:\/\/products\/the-discovery-collection",
+        "url": "shopify:\/\/collections\/all",
         "cta": "Get Fresh",
         "background_image": "shopify:\/\/shop_images\/DTS_HI-TREK_Fanette_Guilloud_Photo_ID11203_copy.png",
-        "product": "the-discovery-collection"
+        "product": "the-earthy-set"
       }
     },
     "bumper_image_ticker_TdwJqL": {

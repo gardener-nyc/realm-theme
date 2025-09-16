@@ -17,6 +17,11 @@
                     "type": "text",
                     "id": "title",
                     "label": "Title"
+                },
+                {
+                    "type": "richtext",
+                    "id": "description",
+                    "label": "Description"
                 }
             ]
         }
@@ -28,7 +33,7 @@
 }
 {% endschema %}
 
-{% assign background_banned_ingredients = "Phthalates,Phthalates,Phthalates,Phthalates,Phthalates,Phthalates,Phthalates,Phthalates,Phthalates,Phthalates,Phthalates,Phthalates" | split: "," %}
+{% assign background_banned_ingredients = "Phthalates,Parabens,Propellants,Petrochemicals,Formaldehyde,Formaldehyde,Carcinogens,Endocrine Disruptors,Phthalates,Parabens,Propellants,Petrochemicals" | split: "," %}
 
 
 <div class="overflow-hidden relative py-10 px-container-mobile md:px-container-desktop">
@@ -79,7 +84,9 @@
 
             <div class="keen-slider overflow-visible">
                 {% for block in section.blocks %}
-                    <div class="keen-slider__slide banned-ingredients__slide">
+                    <div
+                        class="keen-slider__slide banned-ingredients__slide"
+                        data-description="{{ block.settings.description }}">
                         <div class="banned-ingredients__slide-inner bg-rust text-white aspect-square rounded-full w-full p-[20%] flex flex-col justify-center items-center">
                             <p class="text-center text-24/30 md:text-36/44">
                                 {{ block.settings.title }}
@@ -90,7 +97,8 @@
             </div>
 
             <div class="flex flex-col gap-3">
-                <div class="text-center mx-auto max-w-48 rich-text line-break text-14/18 md:text-18/24">
+                <div class="banned-ingredients__description text-center mx-auto max-w-48 rich-text line-break text-14/18 md:text-18/24"
+                    data-original-description="{{ section.settings.description }}">
                     {{ section.settings.description }}
                 </div>
 

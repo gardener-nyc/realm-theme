@@ -6,6 +6,7 @@ export default component((node, ctx) => {
 	const slides = node.querySelectorAll('.keen-slider__slide');
 	const previousButton = node.querySelector('button[data-nav="previous"]');
 	const nextButton = node.querySelector('button[data-nav="next"]');
+	const description = node.querySelector('.banned-ingredients__description');
 
 	const slider = new KeenSlider(sliderEl, {
 		loop: slides.length > 1,
@@ -38,7 +39,7 @@ export default component((node, ctx) => {
 	});
 
 	// Function to update proximity classes based on active slide
-	const updateProximityClasses = () => {
+	const onSlideChanged = () => {
 		const activeIndex = slider.track.details.rel;
 		const totalSlides = slides.length;
 
@@ -85,13 +86,19 @@ export default component((node, ctx) => {
 				slide.classList.add('active-after');
 			}
 		});
+
+		const slideDescription =
+			slides[slider.track.details.rel].dataset.description;
+		const originalDescription = description.dataset.originalDescription;
+
+		description.innerHTML = slideDescription || originalDescription;
 	};
 
 	// Listen for slide changes
-	slider.on('slideChanged', updateProximityClasses);
+	slider.on('slideChanged', onSlideChanged);
 
 	// Set initial proximity classes
-	updateProximityClasses();
+	onSlideChanged();
 
 	const onClickPrevious = () => {
 		slider.prev();
