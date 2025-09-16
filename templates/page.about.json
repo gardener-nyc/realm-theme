@@ -12,8 +12,7 @@
     "hero_full_width_image_xBVAw8": {
       "type": "hero-full-width-image",
       "settings": {
-        "title": "<p><strong>Your home is your safe space.</strong></p><p>Our products help you keep it that way. </p>",
-        "background_image": "shopify://shop_images/Frame_2149.png"
+        "title": "<p><strong>Your home is your safe space.</strong></p><p>Our products help you keep it that way. </p>"
       }
     },
     "section_nav_L4GYpk": {
@@ -188,7 +187,7 @@
         "slide_ReC6ew": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2024-10-02_at_4.37.59_PM_1.png",
+            "image": "shopify://shop_images/Fresh_Poplin_Side_Table_No_Flowers.jpg",
             "title": "Safe",
             "description": "<p>Our products are the first air care products certified by the Clean Label Project and are formulated with non-toxic ingredients. They’re also Safe Scent-certified—a new standard for air care products that we’re pioneering.</p>"
           }
