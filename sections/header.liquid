@@ -41,7 +41,7 @@
 			{% assign featured_product = section.settings.featured_product %}
 			{% assign featured_product_title_parts = featured_product.title | split: "-" %}
 			{% assign featured_product_title = featured_product_title_parts[0] | trim %}
-			{% assign featured_product_subtitle = featured_product_title_parts[1] | downcase | trim %}
+			{% assign featured_product_subtitle = featured_product_title_parts[1] | trim %}
 			{% assign featured_product_description = featured_product.metafields.custom.tile_description %}
 			{% assign featured_product_color = featured_product.metafields.custom.color %}
 			{% assign featured_product_image = featured_product.featured_image %}
