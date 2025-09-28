@@ -1,11 +1,20 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "page_hero_eLxRWM": {
       "type": "page-hero",
       "settings": {
-        "title": "<p>Frequently Asked Questions<\/p>",
+        "title": "<p>Frequently Asked Questions</p>",
         "description": "",
-        "background_image": "shopify:\/\/shop_images\/SHOT09_240923REALM_1224_copy.png"
+        "background_image": "shopify://shop_images/SHOT09_240923REALM_1224_copy.png"
       }
     },
     "faq_list_Y6AfNg": {
@@ -15,7 +24,7 @@
           "type": "question",
           "settings": {
             "title": "How can I contact customer service?",
-            "question": "<p>Reach us anytime via hello@breatherealm.co and we’ll get back to you as soon as we’re able.<\/p>"
+            "question": "<p>Reach us anytime via hello@breatherealm.co and we’ll get back to you as soon as we’re able.</p>"
           }
         }
       },
@@ -34,42 +43,42 @@
           "type": "question",
           "settings": {
             "title": "Where can I purchase Realm products?",
-            "question": "<p>Currently, Realm products are available exclusively at <a href=\"https:\/\/breatherealm.co\/\"><span style=\"text-decoration:underline\">breatherealm.co<\/span><\/a>.<\/p>"
+            "question": "<p>Currently, Realm products are available exclusively at <a href=\"https://breatherealm.co/\"><span style=\"text-decoration:underline\">breatherealm.co</span></a>.</p>"
           }
         },
         "question_znGUnk": {
           "type": "question",
           "settings": {
             "title": "Do you offer subscriptions?",
-            "question": "<p>Yes. You can subscribe to receive your favorite scents on a recurring schedule, with the flexibility to skip, pause, or cancel anytime.<\/p>"
+            "question": "<p>Yes. You can subscribe to receive your favorite scents on a recurring schedule, with the flexibility to skip, pause, or cancel anytime.</p>"
           }
         },
         "question_QGecVe": {
           "type": "question",
           "settings": {
             "title": "Do you ship internationally?",
-            "question": "<p>No, at this time we currently only ship within the US.<\/p>"
+            "question": "<p>No, at this time we currently only ship within the US.</p>"
           }
         },
         "question_e37Pyc": {
           "type": "question",
           "settings": {
-            "title": "What is your returns\/exchange policy?",
-            "question": "<p>Unopened, unused products may be returned or exchanged within 30 days of delivery. For opened products, we may issue store credit on a case-by-case basis.<\/p>"
+            "title": "What is your returns/exchange policy?",
+            "question": "<p>Unopened, unused products may be returned or exchanged within 30 days of delivery. For opened products, we may issue store credit on a case-by-case basis.</p>"
           }
         },
         "question_jXphLB": {
           "type": "question",
           "settings": {
             "title": "How long does shipping take?",
-            "question": "<p>Orders are typically processed within 1–2 business days and delivered within 3–7 business days, depending on your location.<\/p>"
+            "question": "<p>Orders are typically processed within 1–2 business days and delivered within 3–7 business days, depending on your location.</p>"
           }
         },
         "question_4DMG8b": {
           "type": "question",
           "settings": {
             "title": "Can I track my order?",
-            "question": "<p>Yes, you’ll receive a tracking link via email once your order has shipped.<\/p>"
+            "question": "<p>Yes, you’ll receive a tracking link via email once your order has shipped.</p>"
           }
         }
       },
@@ -93,49 +102,49 @@
           "type": "question",
           "settings": {
             "title": "What is Safe Scent Certified™?",
-            "question": "<p>Safe Scent Certified™ is our internal safety benchmark—the first of its kind in fragrance. Because fragrance isn’t strictly regulated in the U.S., we created our own rigorous standard. Safe Scent Certified™ means our products are free from harmful ingredients like parabens, phthalates, petrochemicals, propellants, formaldehyde, toluene, ethanolamines, carcinogens, and endocrine disruptors. We hold third-party certifications that validate our safety claims and exclude known toxins, bringing transparency and accountability to air care.<\/p>"
+            "question": "<p>Safe Scent Certified™ is our internal safety benchmark—the first of its kind in fragrance. Because fragrance isn’t strictly regulated in the U.S., we created our own rigorous standard. Safe Scent Certified™ means our products are free from harmful ingredients like parabens, phthalates, petrochemicals, propellants, formaldehyde, toluene, ethanolamines, carcinogens, and endocrine disruptors. We hold third-party certifications that validate our safety claims and exclude known toxins, bringing transparency and accountability to air care.</p>"
           }
         },
         "question_F4HqxE": {
           "type": "question",
           "settings": {
             "title": "How do you ensure the quality and safety of Realm products?",
-            "question": "<p>Every product goes through rigorous testing, benchmarked against the Environmental Working Group (EWG), Made Safe, and Clean Label Project standards. We also publish full ingredient lists with nothing to hide. Our partnerships with world-class formulators and fragrance houses allow us to create hormone-safe fragrances that bring a new dimension to clean scent.<\/p>"
+            "question": "<p>Every product goes through rigorous testing, benchmarked against the Environmental Working Group (EWG), Made Safe, and Clean Label Project standards. We also publish full ingredient lists with nothing to hide. Our partnerships with world-class formulators and fragrance houses allow us to create hormone-safe fragrances that bring a new dimension to clean scent.</p>"
           }
         },
         "question_pAeCNW": {
           "type": "question",
           "settings": {
             "title": "What sets Realm apart from competitors?",
-            "question": "<p>Unlike traditional air care, which relies on undisclosed “fragrance” blends and harmful chemicals, Realm is fully transparent and rigorously safe. Our products feature patent-pending odor-neutralizing technology, Safe Scent Certified™ ingredients, refillable packaging, and modern scent profiles developed by leading fragrance experts. We don’t mask odors—we neutralize them at the molecular level, without compromise.<\/p>"
+            "question": "<p>Unlike traditional air care, which relies on undisclosed “fragrance” blends and harmful chemicals, Realm is fully transparent and rigorously safe. Our products feature patent-pending odor-neutralizing technology, Safe Scent Certified™ ingredients, refillable packaging, and modern scent profiles developed by leading fragrance experts. We don’t mask odors—we neutralize them at the molecular level, without compromise.</p>"
           }
         },
         "question_3mC9hX": {
           "type": "question",
           "settings": {
             "title": "Are Realm products safe for children and pets?",
-            "question": "<p>Yes. Realm products are non-toxic and free from known carcinogens and hormone disruptors. However, we recommend spraying in well-ventilated areas and keeping bottles out of reach of children and pets.<\/p>"
+            "question": "<p>Yes. Realm products are non-toxic and free from known carcinogens and hormone disruptors. However, we recommend spraying in well-ventilated areas and keeping bottles out of reach of children and pets.</p>"
           }
         },
         "question_7PAFtU": {
           "type": "question",
           "settings": {
             "title": "Do your products contain synthetic fragrance?",
-            "question": "<p>We use a blend of natural and safe synthetic notes to ensure both performance and safety. Every ingredient is disclosed and meets the highest global safety benchmarks.<\/p>"
+            "question": "<p>We use a thoughtful blend of natural and safe synthetic notes to ensure performance and safety, while also preventing the overharvesting of plants and flowers, supporting sustainable agriculture, and protecting delicate ecosystems for future generations. Every formula is Clean Label Project™ certified, phthalate-free, and free from known endocrine disruptors and carcinogens. In addition, we disclose every ingredient, all of which meet the highest global safety benchmarks.</p>"
           }
         },
         "question_PQBgCf": {
           "type": "question",
           "settings": {
             "title": "How long does the scent last?",
-            "question": "<p>Typically, a few sprays linger for several hours depending on room size, airflow, and surface interaction.<\/p>"
+            "question": "<p>Typically, a few sprays linger anywhere from a few hours, up to 36 hours depending on room size, airflow, and surface interaction. On fabrics, it can last up to 30 days.</p>"
           }
         },
         "question_hHB6pC": {
           "type": "question",
           "settings": {
             "title": "Can I spray Realm on fabrics?",
-            "question": "<p>Yes. Our sprays are designed to be fabric-safe, though we recommend testing on a small, hidden area first.<\/p>"
+            "question": "<p>Yes. Our sprays are designed to be fabric-safe, though we recommend testing on a small, hidden area first.</p>"
           }
         }
       },
@@ -159,21 +168,21 @@
           "type": "question",
           "settings": {
             "title": "Is your packaging sustainable?",
-            "question": "<p>Yes. All Realm bottles are designed to be refillable for long-term use, significantly reducing single-use plastic. Our bottles and packaging materials are recyclable.<\/p>"
+            "question": "<p>Yes. All Realm bottles are designed to be refillable for long-term use, significantly reducing single-use plastic. Our bottles and packaging materials are recyclable.</p>"
           }
         },
         "question_KPmkh8": {
           "type": "question",
           "settings": {
             "title": "Why do you use plastic bottles?",
-            "question": "<p>We chose durable, refillable plastic to balance safety, accessibility, and sustainability. This allows us to offer a long-lasting product at an accessible price point while reducing environmental impact.<\/p>"
+            "question": "<p>We chose durable, refillable plastic to balance safety, accessibility, and sustainability. This allows us to offer a long-lasting product at an accessible price point while reducing environmental impact.</p>"
           }
         },
         "question_Yf7qfD": {
           "type": "question",
           "settings": {
             "title": "Do you offer refills?",
-            "question": "<p>Yes, we will. We designed our bottles to be a part of a refill system designed to extend the life of your Realm bottle and minimize packaging waste.<\/p>"
+            "question": "<p>Yes, we will. We designed our bottles to be a part of a refill system designed to extend the life of your Realm bottle and minimize packaging waste.</p>"
           }
         }
       },
@@ -194,28 +203,28 @@
           "type": "question",
           "settings": {
             "title": "What is Realm?",
-            "question": "<p>Realm is setting a new standard in air care that prioritizes both well-being and experience. For decades, consumers have been sold the illusion of freshness—while unknowingly breathing in toxins that disrupt health. Powered by patent-pending technology and our trademarked Safe Scent Certified™ standard, Realm neutralizes odor at the molecular level—without masking and without compromise. Every scent is made with non-toxic, transparent ingredients that meet the highest safety benchmarks, delivering real performance and a sensorial experience worth breathing in.<\/p>"
+            "question": "<p>Realm is setting a new standard in air care that prioritizes both well-being and experience. For decades, consumers have been sold the illusion of freshness—while unknowingly breathing in toxins that disrupt health. Powered by patent-pending technology and our trademarked Safe Scent Certified™ standard, Realm neutralizes odor at the molecular level—without masking and without compromise. Every scent is made with non-toxic, transparent ingredients that meet the highest safety benchmarks, delivering real performance and a sensorial experience worth breathing in.</p>"
           }
         },
         "question_Bhr9x3": {
           "type": "question",
           "settings": {
             "title": "What is Realm's founding story?",
-            "question": "<p>Realm was founded in 2022 by Ashley Sweeney after a personal health scare led her down an unexpected path. When Ashley discovered a lump in her breast, she began researching carcinogens her doctor had mentioned, only to uncover that these harmful substances were commonly found in fragranced products, including the air care items she used every day. With no safe, effective, beautifully scented alternatives available, Ashley decided to create her own. Realm was born so everyone could care for their spaces without compromise.<\/p>"
+            "question": "<p>Realm was founded in 2022 by Ashley Sweeney after a personal health scare led her down an unexpected path. When Ashley discovered a lump in her breast, she began researching carcinogens her doctor had mentioned, only to uncover that these harmful substances were commonly found in fragranced products, including the air care items she used every day. With no safe, effective, beautifully scented alternatives available, Ashley decided to create her own. Realm was born so everyone could care for their spaces without compromise.</p>"
           }
         },
         "question_fw7zXa": {
           "type": "question",
           "settings": {
             "title": "What is Realm's mission?",
-            "question": "<p>Realm is on a mission to change the way we scent our spaces. What we breathe in every day should never come at the cost of our health or environment. Safe Scent Certified™, non-toxic, and rooted in design, Realm is air care without compromise.<\/p>"
+            "question": "<p>Realm is on a mission to change the way we scent our spaces. What we breathe in every day should never come at the cost of our health or environment. Safe Scent Certified™, non-toxic, and rooted in design, Realm is air care without compromise.</p>"
           }
         },
         "question_R6KYXq": {
           "type": "question",
           "settings": {
             "title": "Have you collaborated with any scientists on the formulation of Realm?",
-            "question": "<p>Yes. We worked closely with a veteran air care formulator, along with a world-renowned fragrance house, to ensure our products are both safe and sensorially elevated.<\/p>"
+            "question": "<p>Yes. We worked closely with a veteran air care formulator, along with a world-renowned fragrance house, to ensure our products are both safe and sensorially elevated.</p>"
           }
         }
       },
